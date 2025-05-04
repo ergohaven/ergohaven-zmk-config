@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: ergohaven
       url-base: https://github.com/ergohaven
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,5 +14,8 @@ manifest:
     - name: ergohaven-zmk
       remote: ergohaven
       revision: devel
+    - name: zmk-pmw3610-driver
+      remote: badjeff
+      revision: main
   self:
     path: config
