@@ -22,9 +22,9 @@ include:
 
   - board: ergohaven
     shield: velvet_v3_ui_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    snippet: zmk-usb-logging
   - board: ergohaven
+    snippet: zmk-usb-logging
     shield: velvet_v3_ui_right
 
   - board: ergohaven
