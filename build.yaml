@@ -21,6 +21,13 @@ include:
     shield: velvet_v3_right
 
   - board: ergohaven
+    shield: velvet_v3_ui_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: ergohaven
+    shield: velvet_v3_ui_right
+
+  - board: ergohaven
     shield: op36_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
