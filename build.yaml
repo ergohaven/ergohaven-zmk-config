@@ -13,12 +13,12 @@
 #nrfmicro_13
 ---
 include:
-  - board: nrfmicro_13
+  - board: ergohaven
     shield: velvet_v3_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nrfmicro_13
+  - board: ergohaven
     shield: velvet_v3_right
 
-  - board: nrfmicro_13
+  - board: ergohaven
     shield: settings_reset
