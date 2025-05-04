@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: ergohaven-zmk
       remote: ergohaven
-      revision: main
+      revision: custom-board
   self:
     path: config
