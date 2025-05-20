@@ -67,9 +67,9 @@
 
         base {
             bindings = <
-  &kp B        &kp L        &kp D         &kp C          &kp V                              &kp Z  &kp Y         &kp O         &kp U          &kp COMMA
-  &hml LGUI N  &hml LALT R  &hml LSHFT T  &hml LCTRL S   &kp G                              &kp P  &hmr RCTRL H  &hmr RSHFT A  &hmr LALT E    &hmr RGUI I
-  &kp Q        &kp X        &kp M         &kp W          &kp J                              &kp K  &kp F         &kp SQT       &kp SEMICOLON  &kp PERIOD
+  &kp F        &kp D        &kp L         &kp B          &kp V                              &kp J  &kp G         &kp O         &kp U          &kp COMMA
+  &hml LGUI S  &hml LALT T  &hml LSHFT R  &hml LCTRL N   &kp K                              &kp Y  &hmr RCTRL M  &hmr RSHFT A  &hmr LALT E    &hmr RGUI I
+  &kp Z        &kp Q        &kp X         &kp H          &kp P                              &kp W  &kp C         &kp SQT       &kp SEMICOLON  &kp PERIOD
                                           &kp BACKSPACE  &lt 1 ESC  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
             >;
         };
