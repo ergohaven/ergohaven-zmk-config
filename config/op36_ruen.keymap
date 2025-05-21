@@ -65,6 +65,16 @@
             key-positions = <2 3>;
             layers = <0>;
         };
+
+        quetion {
+            bindings = <&kp QUESTION>;
+            key-positions = <29 28>;
+        };
+
+        excl {
+            bindings = <&kp EXCL>;
+            key-positions = <28 27>;
+        };
     };
 
     macros {
