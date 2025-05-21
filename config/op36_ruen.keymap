@@ -79,14 +79,14 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(LA(LG(N2))))>;
+            bindings = <&kp LS(LC(LA(N2)))>;
             label = "TO_RU";
         };
 
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(LA(LG(N1))))>;
+            bindings = <&kp LS(LC(LA(N1)))>;
             label = "TO_EN";
         };
 
