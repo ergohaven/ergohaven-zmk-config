@@ -25,6 +25,11 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: ergohaven
+    shield: op36_ruen op36_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: op36_left_ruen-ergohaven-zmk
+  - board: ergohaven
     shield: op36_right
 
   - board: ergohaven
