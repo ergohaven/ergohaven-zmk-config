@@ -150,9 +150,9 @@
 
         sym_ru {
             bindings = <
-  &en TILDE               &en LT          &kp EQUAL         &en GT           &en GRAVE                    &en DOLLAR  &en LBKT  &kp UNDER           &en RBKT  &en COMMA
-  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT   &en LBRC  &hmr RSHFT RU_SEMI  &en RBRC  &hmr RGUI EXCL
-  &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &kp AMPS                     &en AT      &en PIPE  &kp SQT             &en SEMI  &kp DOT
+  &en TILDE               &en LT          &kp EQUAL         &en GT           &en GRAVE                    &en DOLLAR  &en LBKT  &kp UNDER             &en RBKT     &en RU_COMMA
+  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT   &en LBRC  &hmr RSHFT RU_SEMI    &en RBRC     &hmr RGUI EXCL
+  &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &kp AMPS                     &en AT      &en PIPE  &kp RU_DOUBLE_QUOTES  &en RU_SEMI  &kp RU_DOT
                                                             &trans           &mo 4      &trans    &trans  &none       &trans
             >;
         };
