@@ -78,6 +78,7 @@
         ru_io {
             bindings = <&kp RU_CYRILLIC_IO>;
             key-positions = <3 4>;
+            layers = <1>;
         };
     };
 
