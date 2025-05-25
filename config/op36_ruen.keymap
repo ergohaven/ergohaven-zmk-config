@@ -65,16 +65,6 @@
             layers = <0>;
         };
 
-        quetion {
-            bindings = <&kp QUESTION>;
-            key-positions = <29 28>;
-        };
-
-        excl {
-            bindings = <&kp EXCL>;
-            key-positions = <28 27>;
-        };
-
         ru_io {
             bindings = <&kp RU_CYRILLIC_IO>;
             key-positions = <3 4>;
@@ -147,19 +137,19 @@
 
         sym_en {
             bindings = <
-  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp DOLLAR  &kp LBKT         &kp UNDER        &kp RBKT        &kp COMMA
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT   &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                     &kp AT      &kp PIPE         &kp SQT          &kp SEMI        &kp DOT
-                                                    &trans           &mo 4      &trans    &trans  &none       &trans
+  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp EXCLAMATION                    &kp DOLLAR  &kp LBKT         &kp UNDER            &kp RBKT        &kp COMMA
+  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                           &kp PRCNT   &hmr RCTRL LBRC  &hmr RSHFT QUESTION  &hmr LALT RBRC  &hmr RGUI COLON
+  &kp HASH        &kp STAR        &kp GRAVE         &kp FSLH         &kp AMPS                           &kp AT      &kp PIPE         &kp SQT              &kp SEMI        &kp DOT
+                                                    &trans           &mo 4            &trans    &trans  &none       &trans
             >;
         };
 
         sym_ru {
             bindings = <
-  &kp TILDE               &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp DOLLAR  &kp LBKT  &kp UNDER             &kp RBKT     &kp RU_COMMA
-  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT   &kp LBRC  &hmr RSHFT RU_SEMI    &kp RBRC     &hmr RGUI EXCL
-  &kp HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &kp AMPS                     &kp AT      &kp PIPE  &kp RU_DOUBLE_QUOTES  &kp RU_SEMI  &kp RU_DOT
-                                                            &trans           &mo 4      &trans    &trans  &none       &trans
+  &kp TILDE               &kp LT          &kp EQUAL         &kp GT           &kp EXCLAMATION                    &kp DOLLAR  &kp LBKT  &kp UNDER             &kp RBKT     &kp RU_COMMA
+  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                           &kp PRCNT   &kp LBRC  &hmr RSHFT QUESTION   &kp RBRC     &hmr RGUI RU_COLON
+  &kp HASH                &kp STAR        &kp GRAVE         &kp RU_FSLH      &kp AMPS                           &kp AT      &kp PIPE  &kp RU_DOUBLE_QUOTES  &kp RU_SEMI  &kp RU_DOT
+                                                            &trans           &mo 4            &trans    &trans  &none       &trans
             >;
         };
 
