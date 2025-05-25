@@ -139,7 +139,7 @@
             bindings = <
   &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp EXCLAMATION                    &kp DOLLAR  &kp LBKT         &kp UNDER            &kp RBKT        &kp COMMA
   &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                           &kp PRCNT   &hmr RCTRL LBRC  &hmr RSHFT QUESTION  &hmr LALT RBRC  &hmr RGUI COLON
-  &kp HASH        &kp STAR        &kp GRAVE         &kp FSLH         &kp AMPS                           &kp AT      &kp PIPE         &kp SQT              &kp SEMI        &kp DOT
+  &kp HASH        &kp STAR        &kp GRAVE         &kp FSLH         &kp AMPS                           &kp AT      &kp PIPE         &kp DOUBLE_QUOTES    &kp SEMI        &kp DOT
                                                     &trans           &mo 4            &trans    &trans  &none       &trans
             >;
         };
