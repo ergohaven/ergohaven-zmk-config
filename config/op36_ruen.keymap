@@ -146,9 +146,9 @@
 
         sym_ru {
             bindings = <
-  &kp TILDE               &kp LT          &kp EQUAL         &kp GT           &kp EXCLAMATION                    &kp DOLLAR  &kp LBKT  &kp UNDER             &kp RBKT     &kp RU_COMMA
-  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                           &kp PRCNT   &kp LBRC  &hmr RSHFT RU_QMARK   &kp RBRC     &hmr RGUI RU_COLON
-  &kp HASH                &kp STAR        &kp GRAVE         &kp RU_FSLH      &kp AMPS                           &kp AT      &kp PIPE  &kp RU_DOUBLE_QUOTES  &kp RU_SEMI  &kp RU_DOT
+  &kp TILDE               &kp LT          &kp EQUAL         &kp GT           &kp EXCLAMATION                    &kp DOLLAR  &kp LBKT  &kp UNDER               &kp RBKT     &kp RU_COMMA
+  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                           &kp PRCNT   &kp LBRC  &hmr RSHFT RU_QUESTION  &kp RBRC     &hmr RGUI RU_COLON
+  &kp HASH                &kp STAR        &kp GRAVE         &kp RU_FSLH      &kp AMPS                           &kp AT      &kp PIPE  &kp RU_DOUBLE_QUOTES    &kp RU_SEMI  &kp RU_DOT
                                                             &trans           &mo 4            &trans    &trans  &none       &trans
             >;
         };
