@@ -129,10 +129,10 @@
 
         en {
             bindings = <
-  &kp F        &kp D        &kp L         &kp B          &kp V                          &kp J      &kp G         &kp O         &kp U        &kp COMMA
-  &hml LGUI S  &hml LALT T  &hml LSHFT R  &hml LCTRL N   &kp K                          &kp Y      &hmr RCTRL M  &hmr RSHFT A  &hmr LALT E  &hmr RGUI I
-  &kp Z        &kp Q        &kp X         &kp H          &kp P                          &kp W      &kp C         &kp SQT       &kp SEMI     &kp DOT
-                                          &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &lt 2 TAB  &kp ESC
+  &kp F        &kp D        &kp L         &kp B          &kp V                          &kp J  &kp G         &kp O         &kp U        &kp COMMA
+  &hml LGUI S  &hml LALT T  &hml LSHFT R  &hml LCTRL N   &kp K                          &kp Y  &hmr RCTRL M  &hmr RSHFT A  &hmr LALT E  &hmr RGUI I
+  &kp Z        &kp Q        &kp X         &kp H          &kp P                          &kp W  &kp C         &kp SQT       &kp SEMI     &kp DOT
+                                          &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp ESC
             >;
         };
 
@@ -141,7 +141,7 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &lt 3 TAB           &kp ESC
+                                                                                   &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp ESC
             >;
         };
 
@@ -167,7 +167,7 @@
             bindings = <
   &kp N1    &kp N2    &kp N3     &kp N4          &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
   &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL       &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &none     &kp HOME  &kp INS    &bt BT_CLR_ALL  &kp DELETE                    &kp CARET        &none            &kp PG_DN        &kp PG_UP     &kp CLCK
+  &none     &kp HOME  &kp INS    &bt BT_CLR_ALL  &kp DELETE                    &kp CARET        &kp TAB          &kp PG_DN        &kp PG_UP     &kp CLCK
                                  &trans          &none       &trans    &trans  &mo 2            &trans
             >;
         };
