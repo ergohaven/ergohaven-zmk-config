@@ -68,6 +68,11 @@
             key-positions = <3 4>;
             layers = <1>;
         };
+
+        newline {
+            bindings = <&kp LS(ENTER)>;
+            key-positions = <33 17>;
+        };
     };
 
     macros {
