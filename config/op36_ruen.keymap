@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <140>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <140>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
@@ -154,28 +154,28 @@
 
         ru {
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
-  &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
-  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp ESC
+  &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA                 &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                 &kp RU_CYRILLIC_SHA                  &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
+  &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hmr_150_left LSHFT RU_CYRILLIC_VE  &hmr_150_left LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr_150_right RCTRL RU_CYRILLIC_O  &hmr_150_right RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM                 &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN           &kp RU_CYRILLIC_BE                   &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
+                                                                                            &kp BACKSPACE                      &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp ESC
             >;
         };
 
         sym_en {
             bindings = <
-  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp EXCLAMATION                    &kp DOLLAR  &kp LBKT         &kp UNDER            &kp RBKT        &kp COMMA
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                           &kp PRCNT   &hmr RCTRL LBRC  &hmr RSHFT QUESTION  &hmr LALT RBRC  &hmr RGUI COLON
-  &kp HASH        &kp STAR        &kp GRAVE         &kp FSLH         &kp AMPS                           &kp AT      &kp PIPE         &kp DOUBLE_QUOTES    &kp SEMI        &kp DOT
-                                                    &trans           &mo 4            &trans    &trans  &none       &trans
+  &kp TILDE       &kp LT          &kp EQUAL                  &kp GT                    &kp EXCLAMATION                    &kp DOLLAR  &kp LBKT                   &kp UNDER                      &kp RBKT        &kp COMMA
+  &hml LGUI BSLH  &hml LALT LPAR  &hmr_150_left LSHFT MINUS  &hmr_150_left LCTRL RPAR  &kp PLUS                           &kp PRCNT   &hmr_150_right RCTRL LBRC  &hmr_150_right RSHFT QUESTION  &hmr LALT RBRC  &hmr RGUI COLON
+  &kp HASH        &kp STAR        &kp GRAVE                  &kp FSLH                  &kp AMPS                           &kp AT      &kp PIPE                   &kp DOUBLE_QUOTES              &kp SEMI        &kp DOT
+                                                             &trans                    &mo 4            &trans    &trans  &none       &trans
             >;
         };
 
         sym_ru {
             bindings = <
-  &kp TILDE               &kp LT          &kp EQUAL         &kp GT           &kp EXCLAMATION                    &kp DOLLAR  &kp LBKT  &kp UNDER               &kp RBKT     &kp RU_COMMA
-  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                           &kp PRCNT   &kp LBRC  &hmr RSHFT RU_QUESTION  &kp RBRC     &hmr RGUI RU_COLON
-  &kp HASH                &kp STAR        &kp GRAVE         &kp RU_FSLH      &kp AMPS                           &kp AT      &kp PIPE  &kp RU_DOUBLE_QUOTES    &kp RU_SEMI  &kp RU_DOT
-                                                            &trans           &mo 4            &trans    &trans  &none       &trans
+  &kp TILDE               &kp LT          &kp EQUAL                  &kp GT                    &kp EXCLAMATION                    &kp DOLLAR  &kp LBKT                   &kp UNDER                         &kp RBKT                 &kp RU_COMMA
+  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hmr_150_left LSHFT MINUS  &hmr_150_left LCTRL RPAR  &kp PLUS                           &kp PRCNT   &hmr_150_right RCTRL LBRC  &hmr_150_right RSHFT RU_QUESTION  &hmr RS(RIGHT_ALT) RBRC  &hmr RGUI RU_COLON
+  &kp HASH                &kp STAR        &kp GRAVE                  &kp RU_FSLH               &kp AMPS                           &kp AT      &kp PIPE                   &kp RU_DOUBLE_QUOTES              &kp RU_SEMI              &kp RU_DOT
+                                                                     &trans                    &mo 4            &trans    &trans  &none       &trans
             >;
         };
 
