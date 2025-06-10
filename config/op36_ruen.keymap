@@ -179,10 +179,10 @@
 
         nav {
             bindings = <
-  &kp N1    &kp N2    &kp N3     &kp N4          &kp N5                              &kp N6      &kp N7           &kp N8           &kp N9        &kp N0
-  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL       &kp ENTER                           &kp TAB     &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &none     &kp HOME  &kp INS    &bt BT_CLR_ALL  &kp CAPS                            &kp DELETE  &kp TAB          &kp PG_DN        &kp PG_UP     &kp CARET
-                                 &trans          &none      &trans    &kp LS(ENTER)  &mo 2       &trans
+  &kp N1    &kp N2    &kp N3     &kp N4          &kp N5                             &kp N6      &kp N7           &kp N8           &kp N9        &kp N0
+  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL       &kp F2                             &kp TAB     &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
+  &none     &kp HOME  &kp INS    &bt BT_CLR_ALL  &kp CAPS                           &kp DELETE  &kp TAB          &kp PG_DN        &kp PG_UP     &kp CARET
+                                 &trans          &none     &trans    &kp LS(ENTER)  &mo 2       &trans
             >;
         };
     };
