@@ -13,11 +13,85 @@
         cap_sen: cap_sen {
             compatible = "zmk,behavior-hold-tap";
             label = "CAP_SEN";
-            bindings = <&mo>, <&mkp>;
+            bindings = <&mo>, <&mo>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             hold-while-undecided;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        rt-left-par {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <5 4>;
+        };
+
+        er-min {
+            bindings = <&kp MINUS>;
+            key-positions = <3 4>;
+        };
+
+        we-plus {
+            bindings = <&kp PLUS>;
+            key-positions = <2 3>;
+        };
+
+        gf-sq-open {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <17 16>;
+        };
+
+        bv-curl-open {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <29 28>;
+        };
+
+        fd-double-q {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <16 15>;
+        };
+
+        qa-tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <1 13>;
+        };
+
+        grave {
+            bindings = <&kp LS(GRAVE)>;
+            key-positions = <25 13>;
+        };
+
+        yu-close-per {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        hj-sq-close {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <18 19>;
+        };
+
+        nm-close-curl {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <30 31>;
+        };
+
+        ui-underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <7 8>;
+        };
+
+        io-pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <8 9>;
+        };
+
+        jk-quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <19 20>;
         };
     };
 
@@ -26,10 +100,10 @@
 
         Base {
             bindings = <
-&kp ESC    &kp Q  &kp W     &kp E     &kp R      &kp T                        &kp Y  &kp U           &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G                        &kp H  &kp J           &kp K      &kp L     &kp SEMI  &kp BSLH
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B                        &kp N  &kp M           &kp COMMA  &kp DOT   &kp SQT   &kp RSHFT
-                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &cap_sen 4 MB1  &kp LBKT   &kp RBKT
+&kp TAB    &kp Q  &kp W   &kp E   &kp R   &kp T                      &kp Y          &kp U         &kp I          &kp O      &kp P     &kp LEFT_BRACKET
+&kp ESC    &kp A  &kp S   &kp D   &kp F   &kp G                      &kp H          &kp J         &kp K          &kp L      &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X   &kp C   &kp V   &kp B                      &kp N          &kp M         &kp COMMA      &kp DOT    &kp FSLH  &kp RIGHT_BRACKET
+                  &trans  &trans  &trans  &kp SPACE  &mo 1    &mo 2  &kp BACKSPACE  &cap_sen 4 4  &kp BACKSPACE  &kp ENTER
             >;
 
             display-name = "Base";
