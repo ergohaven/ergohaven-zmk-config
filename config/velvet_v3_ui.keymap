@@ -29,8 +29,8 @@
             key-positions = <5 4>;
             slow-release;
             layers = <0>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <75>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <35>;
         };
 
         er-min {
