@@ -14,18 +14,6 @@
 ---
 include:
   - board: ergohaven
-    shield: velvet_v3_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: ergohaven
-    shield: velvet_v3_ruen velvet_v3_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: velvet_v3_left_ruen-ergohaven-zmk
-  - board: ergohaven
-    shield: velvet_v3_right
-
-  - board: ergohaven
     shield: velvet_v3_ui_left
   - board: ergohaven
     shield: velvet_v3_ui_ruen velvet_v3_ui_right
@@ -36,18 +24,6 @@ include:
     shield: velvet_v3_ui_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-
-  - board: ergohaven
-    shield: op36_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: ergohaven
-    shield: op36_ruen op36_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: op36_left_ruen-ergohaven-zmk
-  - board: ergohaven
-    shield: op36_right
 
   - board: ergohaven
     shield: settings_reset
