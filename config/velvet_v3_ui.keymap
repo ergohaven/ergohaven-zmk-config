@@ -116,10 +116,10 @@
 
         Navigation {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
-&trans  &trans  &trans    &trans   &trans   &kp RET                    &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
-&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
-                &trans    &trans   &trans   &trans   &trans    &trans  &mo 3     &trans        &trans         &trans
+&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                    &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
+&trans  &trans  &trans    &trans   &trans   &kp RET                   &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
+&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                   &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
+                &trans    &trans   &trans   &trans   &trans    &mo 3  &trans    &trans        &trans         &trans
             >;
 
             display-name = "Navigation";
@@ -127,10 +127,10 @@
 
         Symbols {
             bindings = <
-&trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
-&trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
-&trans  &trans    &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                     &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
-                  &trans    &trans     &trans    &mo 3      &trans    &trans  &kp ENTER  &trans    &trans     &trans
+&trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                   &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
+&trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                    &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
+&trans  &trans    &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                    &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
+                  &trans    &trans     &trans    &trans     &mo 3    &trans  &kp ENTER  &trans    &trans     &trans
             >;
 
             display-name = "Symbols";
@@ -150,7 +150,7 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 5   &mkp MB3  &mkp MB2  &mkp MB1  &mo 6                     &mo 6   &mkp MB1  &mkp MB2  &mkp MB3  &mo 5   &trans
+&mo 6   &mo 5   &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 5   &mo 6
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
@@ -172,50 +172,6 @@
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
-        };
-
-        User0 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-
-            display-name = "User0";
-        };
-
-        User1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-
-            display-name = "User1";
-        };
-
-        User2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-
-            display-name = "User2";
-        };
-
-        User3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-
-            display-name = "User3";
         };
     };
 };
