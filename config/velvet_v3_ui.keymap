@@ -235,7 +235,7 @@
 &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp NUMBER_0                  &kp Y  &kp U   &kp I      &kp O    &kp P     &kp LEFT_BRACKET
 &kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H  &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                         &kp N  &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                  &none  &none  &none  &mo 3         &none    &none  &mo 9  &mo 10  &none      &none
+                  &none  &none  &none  &mo 3         &none    &none  &mo 8  &mo 10  &none      &none
             >;
         };
 
@@ -245,7 +245,7 @@
 &kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp NUMBER_1                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &kp ESCAPE  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp SLASH            &kp RU_CYRILLIC_HARD_SIGN
-                                     &kp RU_BACKSLASH      &none               &none               &mo 3               &none    &none  &mo 9               &mo 10                     &kp RU_CYRILLIC_IO   &none
+                                     &kp RU_BACKSLASH      &none               &none               &mo 3               &none    &none  &mo 8               &mo 10                     &kp RU_CYRILLIC_IO   &none
             >;
         };
 
@@ -255,7 +255,7 @@
 &trans  &trans             &trans               &trans            &kp NUMBER_2         &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
 &trans  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D   &hrm LEFT_COMMAND F  &trans                                      &trans       &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &trans
 &trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
-                           &trans               &kp LEFT_CONTROL  &kp LEFT_COMMAND     &lt 3 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 9 ENTER  &mo 10                &trans            &kp ENTER
+                           &trans               &kp LEFT_CONTROL  &kp LEFT_COMMAND     &lt 3 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 8 ENTER  &mo 10                &trans            &kp ENTER
             >;
         };
 
@@ -264,7 +264,7 @@
 &trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp NUMBER_3                    &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans           &trans       &trans    &to_en_mac  &to_ru_mac                      &trans     &trans         &kp QUESTION  &kp RU_QUESTION       &kp GRAVE              &trans
-                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 9      &trans         &trans        &trans
+                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 8      &trans         &trans        &trans
             >;
 
             display-name = "NumSymMac";
@@ -276,7 +276,7 @@
 &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp NUMBER_4                  &kp Y  &kp U   &kp I      &kp O    &kp P     &kp LEFT_BRACKET
 &kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H  &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                         &kp N  &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                  &none  &none  &none  &mo 3         &none    &none  &mo 9  &mo 10  &none      &none
+                  &none  &none  &none  &mo 7         &none    &none  &mo 8  &mo 10  &none      &none
             >;
         };
 
@@ -286,7 +286,7 @@
 &kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp NUMBER_5                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &kp ESCAPE  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp SLASH            &kp RU_CYRILLIC_HARD_SIGN
-                                     &kp RU_CYRILLIC_IO    &none               &none               &mo 3               &none    &none  &mo 9               &mo 10                     &kp RU_BACKSLASH     &none
+                                     &kp RU_CYRILLIC_IO    &none               &none               &mo 7               &none    &none  &mo 8               &mo 10                     &kp RU_BACKSLASH     &none
             >;
         };
 
@@ -296,14 +296,14 @@
 &trans  &trans             &trans               &trans            &kp NUMBER_6         &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
 &trans  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D   &hrm LEFT_COMMAND F  &trans                                      &trans       &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &trans
 &trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
-                           &trans               &kp LEFT_COMMAND  &kp LEFT_CONTROL     &lt 9 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 9 ENTER  &mo 10                &trans            &kp ENTER
+                           &trans               &kp LEFT_COMMAND  &kp LEFT_CONTROL     &lt 7 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 8 ENTER  &mo 10                &trans            &kp ENTER
             >;
         };
 
         NumSymWin {
             display-name = "NumSymWin";
             bindings = <
-&trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp NUMBER_3                    &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
+&trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp NUMBER_7                    &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans           &trans       &trans    &to_en_win  &to_ru_win                      &trans     &trans         &kp QUESTION  &kp RU_QUESTION       &kp GRAVE              &trans
                          &trans       &trans    &trans      &trans        &trans    &trans  &mo 9      &trans         &trans        &trans
@@ -312,7 +312,7 @@
 
         Navigation {
             bindings = <
-&trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp NUMBER_7                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
+&trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp NUMBER_8                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
 &trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                        &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
 &trans  &trans    &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                        &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
                   &trans    &trans     &trans    &mo 9         &trans    &trans  &trans     &trans    &trans     &trans
@@ -323,7 +323,7 @@
 
         Adjust {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp NUMBER_8                  &bt_mac       &bt_win       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp NUMBER_9                  &bt_mac       &bt_win       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &none        &none  &kp F5  &kp F6   &kp F7   &kp F8                        &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
 &none        &none  &kp F9  &kp F10  &kp F11  &kp F12                       &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
                     &none   &none    &none    &none         &none    &none  &none         &none         &none             &none
