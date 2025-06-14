@@ -130,6 +130,46 @@
             key-positions = <25 13>;
             timeout-ms = <20>;
         };
+
+        to_ru: to_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(N2))>;
+            label = "TO_RU";
+        };
+
+        to_en: to_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(N1))>;
+            label = "TO_EN";
+        };
+
+        layer_en: layer_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &to_en>;
+            label = "LAYER_EN";
+        };
+
+        layer_ru: layer_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &to_ru>;
+            label = "LAYER_RU";
+        };
+
+        en: en {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_wait_time 10>,
+                <&to_ru>,
+                <&macro_wait_time 10>;
+
+            label = "EN";
+        };
     };
 
     macros {
