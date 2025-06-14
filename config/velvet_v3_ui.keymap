@@ -175,40 +175,40 @@
         BaseEn {
             display-name = "BaseEn";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y        &kp U  &kp I          &kp O      &kp P     &kp LEFT_BRACKET
-&kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                                       &kp H        &kp J  &kp K          &kp L      &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                                       &kp N        &kp M  &kp COMMA      &kp DOT    &kp FSLH  &kp RIGHT_BRACKET
-                  &none  &none  &none  &lt 4 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 5 ENTER  &mo 7  &kp BACKSLASH  &kp ENTER
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                  &kp Y  &kp U  &kp I          &kp O    &kp P     &kp LEFT_BRACKET
+&kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                  &kp H  &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                  &kp N  &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+                  &none  &none  &none  &none  &none    &none  &none  &none  &kp BACKSLASH  &none
             >;
         };
 
         BaseRu {
             display-name = "BaseRu";
             bindings = <
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &kp BSLH
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp RSHFT
-                                    &kp RU_CYRILLIC_IO    &kp LGUI            &kp LCTRL           &mo 2               &kp SPACE    &kp RET  &mo 4               &kp LALT                   &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
+&kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
+&kp ESCAPE  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp LSHFT   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp SLASH            &kp RU_CYRILLIC_HARD_SIGN
+                                     &kp RU_CYRILLIC_IO    &none               &none               &none               &none    &none  &none               &none                      &kp RU_BACKSLASH     &none
             >;
         };
 
         MacMod {
             display-name = "MacMod";
             bindings = <
-&trans  &trans             &trans               &trans            &trans               &trans                    &trans  &trans                &trans            &trans                &trans                 &trans
-&trans  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D   &hrm LEFT_COMMAND F  &trans                    &trans  &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &trans
-&trans  &trans             &trans               &trans            &trans               &trans                    &trans  &trans                &trans            &trans                &trans                 &trans
-                           &trans               &kp LEFT_CONTROL  &kp LEFT_COMMAND     &trans  &trans    &trans  &trans  &trans                &trans            &trans
+&trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
+&trans  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D   &hrm LEFT_COMMAND F  &trans                                      &trans       &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &trans
+&trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
+                           &trans               &kp LEFT_CONTROL  &kp LEFT_COMMAND     &lt 4 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 5 ENTER  &mo 7                 &trans            &kp ENTER
             >;
         };
 
         WinMod {
             display-name = "WinMod";
             bindings = <
-&trans  &trans             &trans               &trans            &trans               &trans                    &trans  &trans                &trans            &trans                &trans                 &trans
-&trans  &hrm LEFT_SHIFT A  &hrm LEFT_COMMAND S  &hrm LEFT_ALT D   &hrm LEFT_CONTROL F  &trans                    &trans  &hrm RIGHT_CONTROL J  &hrm RIGHT_ALT K  &hrm RIGHT_COMMAND L  &hrm RIGHT_SHIFT SEMI  &trans
-&trans  &trans             &trans               &trans            &trans               &trans                    &trans  &trans                &trans            &trans                &trans                 &trans
-                           &trans               &kp LEFT_COMMAND  &kp LEFT_CONTROL     &trans  &trans    &trans  &trans  &trans                &trans            &trans
+&trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
+&trans  &hrm LEFT_SHIFT A  &hrm LEFT_COMMAND S  &hrm LEFT_ALT D   &hrm LEFT_CONTROL F  &trans                                      &trans       &hrm RIGHT_CONTROL J  &hrm RIGHT_ALT K  &hrm RIGHT_COMMAND L  &hrm RIGHT_SHIFT SEMI  &trans
+&trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
+                           &trans               &kp LEFT_COMMAND  &kp LEFT_CONTROL     &lt 4 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 5 ENTER  &mo 7                 &trans            &kp ENTER
             >;
         };
 
