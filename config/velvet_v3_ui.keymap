@@ -176,7 +176,7 @@
             bindings =
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 10>,
-                <&to 0 &tog_on 2>,
+                <&tog_on 2 &to 0>,
                 <&macro_wait_time 10>,
                 <&off_win>,
                 <&macro_wait_time 10>,
@@ -191,7 +191,7 @@
             bindings =
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 10>,
-                <&to 4 &tog_on 6>,
+                <&tog_on 6 &to 4>,
                 <&macro_wait_time 10>,
                 <&to_en_win>,
                 <&macro_wait_time 10>,
