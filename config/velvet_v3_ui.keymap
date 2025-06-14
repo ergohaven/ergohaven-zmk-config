@@ -176,9 +176,9 @@
             bindings =
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 10>,
-                <&off_win>,
+                <&to 0 &tog_on 2>,
                 <&macro_wait_time 10>,
-                <&tog_on 2 &to 0>,
+                <&off_win>,
                 <&macro_wait_time 10>,
                 <&to_en_mac>;
 
@@ -191,11 +191,11 @@
             bindings =
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 10>,
-                <&off_mac>,
+                <&to 4 &tog_on 6>,
                 <&macro_wait_time 10>,
-                <&tog_on 6 &to 4>,
+                <&to_en_win>,
                 <&macro_wait_time 10>,
-                <&to_en_win>;
+                <&off_mac>;
 
             label = "BT_WIN";
         };
