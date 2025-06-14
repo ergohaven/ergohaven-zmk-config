@@ -251,7 +251,7 @@
 &trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp NUMBER_3                    &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans           &trans       &trans    &to_en_mac  &to_ru_mac                      &trans     &trans         &kp QUESTION  &kp RU_QUESTION       &kp GRAVE              &trans
-                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 8      &trans         &trans        &trans
+                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 9      &trans         &trans        &trans
             >;
 
             display-name = "NumSymMac";
