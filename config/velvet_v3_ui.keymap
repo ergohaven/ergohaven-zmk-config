@@ -172,14 +172,14 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &off_win &to 0 &tog_on 2>;
+            bindings = <&bt BT_SEL 0 &off_win &to 0 &tog_on 2 &to_en_mac>;
             label = "BT_MAC";
         };
 
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &off_mac &to 4 &tog_on 6>;
+            bindings = <&bt BT_SEL 1 &off_mac &to 4 &tog_on 6 &to_en_win>;
             label = "BT_WIN";
         };
 
@@ -334,7 +334,7 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &kp A                     &trans  &trans    &trans    &trans    &trans  &trans
 &mo 12  &mo 11  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 11  &mo 12
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
