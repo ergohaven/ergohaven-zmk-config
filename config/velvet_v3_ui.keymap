@@ -35,88 +35,103 @@
     combos {
         compatible = "zmk,combos";
 
-        rt-left-par {
+        rt-par-open {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <5 4>;
-            slow-release;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <35>;
+            timeout-ms = <20>;
         };
 
-        er-min {
-            bindings = <&kp MINUS>;
-            key-positions = <3 4>;
-        };
-
-        we-plus {
-            bindings = <&kp PLUS>;
-            key-positions = <2 3>;
+        yu-par-close {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+            timeout-ms = <20>;
         };
 
         gf-sq-open {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <17 16>;
-        };
-
-        bv-curl-open {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <29 28>;
-        };
-
-        fd-double-q {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <16 15>;
-        };
-
-        qa-tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <1 13>;
-        };
-
-        grave {
-            bindings = <&kp LS(GRAVE)>;
-            key-positions = <25 13>;
-        };
-
-        yu-close-per {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <6 7>;
+            timeout-ms = <20>;
         };
 
         hj-sq-close {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
+            timeout-ms = <20>;
         };
 
-        nm-close-curl {
+        bv-curl-open {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <29 28>;
+            timeout-ms = <20>;
+        };
+
+        nm-curl-close {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
+            timeout-ms = <20>;
+        };
+
+        er-minus {
+            bindings = <&kp MINUS>;
+            key-positions = <3 4>;
+            timeout-ms = <20>;
         };
 
         ui-underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <7 8>;
+            timeout-ms = <20>;
+        };
+
+        fd-double-quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <16 15>;
+            timeout-ms = <20>;
+        };
+
+        jk-single-quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <19 20>;
+            timeout-ms = <20>;
+        };
+
+        we-plus {
+            bindings = <&kp PLUS>;
+            key-positions = <2 3>;
+            timeout-ms = <20>;
         };
 
         io-pipe {
             bindings = <&kp PIPE>;
             key-positions = <8 9>;
-        };
-
-        jk-quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <19 20>;
+            timeout-ms = <20>;
         };
 
         cv-less {
             bindings = <&kp LESS_THAN>;
             key-positions = <28 27>;
+            timeout-ms = <20>;
         };
 
         mB-great {
             bindings = <&kp GREATER_THAN>;
             key-positions = <31 32>;
+            timeout-ms = <20>;
         };
+
+        qa-tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <1 13>;
+            timeout-ms = <20>;
+        };
+
+        grave {
+            bindings = <&kp LS(GRAVE)>;
+            key-positions = <25 13>;
+            timeout-ms = <20>;
+        };
+
+
     };
 
     macros {
@@ -162,7 +177,7 @@
             bindings = <
 &trans  &kp N1           &kp N2       &kp N3    &kp N4                &kp N5                                     &kp N6     &kp N7         &kp N8           &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR            &kp PERCENT                                &kp CARET  &kp AMPERSAND  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &trans       &trans    &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))                       &trans     &trans         &mt F14 U_002C   &mt F13 U_002E        &mt F15 U_003F         &trans
+&trans  &trans           &trans       &trans    &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))                       &trans     &trans         &kp F14          &kp F13               &kp F15                &trans
                          &trans       &trans    &trans                &trans                &kp LCTRL    &trans  &mo 4      &trans         &trans           &trans
             >;
 
