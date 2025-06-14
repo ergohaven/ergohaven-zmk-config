@@ -136,14 +136,14 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &bt BT_SEL 0>;
+            bindings = <&to 2 &bt BT_SEL 0>;
             label = "BT_MAC";
         };
 
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &bt BT_SEL 1>;
+            bindings = <&to 0 &bt BT_SEL 1>;
             label = "BT_WIN";
         };
 
@@ -172,23 +172,43 @@
     keymap {
         compatible = "zmk,keymap";
 
-        MacBase {
-            display-name = "MacBase";
+        BaseEn {
+            display-name = "BaseEn";
             bindings = <
-&kp TAB    &kp Q              &kp W                &kp E             &kp R                &kp T                                       &kp Y        &kp U                 &kp I             &kp O                 &kp P                  &kp LEFT_BRACKET
-&kp ESC    &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D   &hrm LEFT_COMMAND F  &kp G                                       &kp H        &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &kp SQT
-&kp LSHFT  &kp Z              &kp X                &kp C             &kp V                &kp B                                       &kp N        &kp M                 &kp COMMA         &kp DOT               &kp FSLH               &kp RIGHT_BRACKET
-                              &trans               &kp LEFT_CONTROL  &kp LEFT_COMMAND     &lt 2 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 3 ENTER  &mo 5                 &kp BACKSLASH     &kp ENTER
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y        &kp U  &kp I          &kp O      &kp P     &kp LEFT_BRACKET
+&kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                                       &kp H        &kp J  &kp K          &kp L      &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                                       &kp N        &kp M  &kp COMMA      &kp DOT    &kp FSLH  &kp RIGHT_BRACKET
+                  &none  &none  &none  &lt 4 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 5 ENTER  &mo 7  &kp BACKSLASH  &kp ENTER
             >;
         };
 
-        WinBase {
-            display-name = "WinBase";
+        BaseRu {
+            display-name = "BaseRu";
             bindings = <
-&kp TAB    &kp Q              &kp W                &kp E              &kp R                &kp T                                       &kp Y        &kp U                 &kp I             &kp O                 &kp P                  &kp LEFT_BRACKET
-&kp ESC    &hrm LEFT_SHIFT A  &hrm LEFT_COMMAND S  &hrm LEFT_ALT D    &hrm LEFT_CONTROL F  &kp G                                       &kp H        &hrm RIGHT_CONTROL J  &hrm RIGHT_ALT K  &hrm RIGHT_COMMAND L  &hrm RIGHT_SHIFT SEMI  &kp SQT
-&kp LSHFT  &kp Z              &kp X                &kp C              &kp V                &kp B                                       &kp N        &kp M                 &kp COMMA         &kp DOT               &kp FSLH               &kp RIGHT_BRACKET
-                              &trans               &kp RIGHT_COMMAND  &kp LEFT_CONTROL     &lt 2 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 3 ENTER  &mo 5                 &kp BACKSLASH     &kp ENTER
+&kp TAB    &kp Q  &kp W   &kp E             &kp R             &kp T                                       &kp Y        &kp U  &kp I          &kp O      &kp P     &kp LEFT_BRACKET
+&kp ESC    &kp A  &kp S   &kp D             &kp F             &kp G                                       &kp H        &kp J  &kp K          &kp L      &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X   &kp C             &kp V             &kp B                                       &kp N        &kp M  &kp COMMA      &kp DOT    &kp FSLH  &kp RIGHT_BRACKET
+                  &trans  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &lt 4 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 5 ENTER  &mo 7  &kp BACKSLASH  &kp ENTER
+            >;
+        };
+
+        MacMod {
+            display-name = "MacMod";
+            bindings = <
+&trans  &trans             &trans               &trans            &trans               &trans                    &trans  &trans                &trans            &trans                &trans                 &trans
+&trans  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D   &hrm LEFT_COMMAND F  &trans                    &trans  &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &trans
+&trans  &trans             &trans               &trans            &trans               &trans                    &trans  &trans                &trans            &trans                &trans                 &trans
+                           &trans               &kp LEFT_CONTROL  &kp LEFT_COMMAND     &trans  &trans    &trans  &trans  &trans                &trans            &trans
+            >;
+        };
+
+        WinMod {
+            display-name = "WinMod";
+            bindings = <
+&trans  &trans             &trans               &trans            &trans               &trans                    &trans  &trans                &trans            &trans                &trans                 &trans
+&trans  &hrm LEFT_SHIFT A  &hrm LEFT_COMMAND S  &hrm LEFT_ALT D   &hrm LEFT_CONTROL F  &trans                    &trans  &hrm RIGHT_CONTROL J  &hrm RIGHT_ALT K  &hrm RIGHT_COMMAND L  &hrm RIGHT_SHIFT SEMI  &trans
+&trans  &trans             &trans               &trans            &trans               &trans                    &trans  &trans                &trans            &trans                &trans                 &trans
+                           &trans               &kp LEFT_COMMAND  &kp LEFT_CONTROL     &trans  &trans    &trans  &trans  &trans                &trans            &trans
             >;
         };
 
@@ -197,7 +217,7 @@
 &trans  &kp N1           &kp N2       &kp N3    &kp N4                &kp N5                                     &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR            &kp PERCENT                                &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans           &trans       &trans    &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))                       &trans     &trans         &kp QUESTION  &kp RU_QUESTION       &f_question            &trans
-                         &trans       &trans    &trans                &trans                &kp LCTRL    &trans  &mo 4      &trans         &trans        &trans
+                         &trans       &trans    &trans                &trans                &kp LCTRL    &trans  &mo 6      &trans         &trans        &trans
             >;
 
             display-name = "NumSym";
@@ -208,7 +228,7 @@
 &trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
 &trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
 &trans  &trans    &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                     &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
-                  &trans    &trans     &trans    &mo 4      &trans    &trans  &trans     &trans    &trans     &trans
+                  &trans    &trans     &trans    &mo 6      &trans    &trans  &trans     &trans    &trans     &trans
             >;
 
             display-name = "Nav";
@@ -228,7 +248,7 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&mo 7   &mo 6   &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 6   &mo 7
+&mo 9   &mo 8   &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 8   &mo 9
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
