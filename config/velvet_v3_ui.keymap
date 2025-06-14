@@ -173,30 +173,14 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&bt BT_SEL 0>,
-                <&macro_wait_time 10>,
-                <&tog_on 2 &to 0>,
-                <&macro_wait_time 10>,
-                <&off_win>,
-                <&macro_wait_time 10>,
-                <&to_en_mac>;
-
+            bindings = <&bt BT_SEL 0 &to 0 &tog_on 2 &off_win>;
             label = "BT_MAC";
         };
 
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&bt BT_SEL 1>,
-                <&macro_wait_time 10>,
-                <&tog_on 6 &to 4>,
-                <&macro_wait_time 10>,
-                <&to_en_win>,
-                <&macro_wait_time 10>,
-                <&off_mac>;
-
+            bindings = <&bt BT_SEL 1 &to 4 &tog_on 6 &off_mac>;
             label = "BT_WIN";
         };
 
