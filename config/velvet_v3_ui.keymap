@@ -136,36 +136,15 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 2 &bt BT_SEL 0>;
+            bindings = <&to 4 &bt BT_SEL 0>;
             label = "BT_MAC";
         };
 
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &bt BT_SEL 1>;
+            bindings = <&to 3 &bt BT_SEL 1>;
             label = "BT_WIN";
-        };
-
-        f_dot: f_dot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp B>;
-            label = "F_DOT";
-        };
-
-        f_comma: f_comma {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C>;
-            label = "F_COMMA";
-        };
-
-        f_question: f_question {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp D>;
-            label = "F_QUESTION";
         };
 
         to_ru: to_ru {
@@ -185,7 +164,7 @@
         layer_en: layer_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &to_en>;
+            bindings = <&to 2 &to_en>;
             label = "LAYER_EN";
         };
 
@@ -212,13 +191,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        BaseEn {
-            display-name = "BaseEn";
+        Base {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                  &kp Y  &kp U  &kp I          &kp O    &kp P     &kp LEFT_BRACKET
-&kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                  &kp H  &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                  &kp N  &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                  &none  &none  &none  &none  &none    &none  &none  &none  &kp BACKSLASH  &none
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -232,13 +210,13 @@
             >;
         };
 
-        MacMod {
-            display-name = "MacMod";
+        BaseEn {
+            display-name = "BaseEn";
             bindings = <
-&trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
-&trans  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D   &hrm LEFT_COMMAND F  &trans                                      &trans       &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &trans
-&trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
-                           &trans               &kp LEFT_CONTROL  &kp LEFT_COMMAND     &lt 4 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 5 ENTER  &mo 7                 &trans            &kp ENTER
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                  &kp Y  &kp U  &kp I          &kp O    &kp P     &kp LEFT_BRACKET
+&kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                  &kp H  &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                  &kp N  &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+                  &none  &none  &none  &none  &none    &none  &none  &none  &kp BACKSLASH  &none
             >;
         };
 
@@ -248,16 +226,26 @@
 &trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
 &trans  &hrm LEFT_SHIFT A  &hrm LEFT_COMMAND S  &hrm LEFT_ALT D   &hrm LEFT_CONTROL F  &trans                                      &trans       &hrm RIGHT_CONTROL J  &hrm RIGHT_ALT K  &hrm RIGHT_COMMAND L  &hrm RIGHT_SHIFT SEMI  &trans
 &trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
-                           &trans               &kp LEFT_COMMAND  &kp LEFT_CONTROL     &lt 4 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 5 ENTER  &mo 7                 &trans            &kp ENTER
+                           &trans               &kp LEFT_COMMAND  &kp LEFT_CONTROL     &lt 5 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 6 ENTER  &mo 8                 &trans            &kp ENTER
+            >;
+        };
+
+        MacMod {
+            display-name = "MacMod";
+            bindings = <
+&trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
+&trans  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D   &hrm LEFT_COMMAND F  &trans                                      &trans       &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &trans
+&trans  &trans             &trans               &trans            &trans               &trans                                      &trans       &trans                &trans            &trans                &trans                 &trans
+                           &trans               &kp LEFT_CONTROL  &kp LEFT_COMMAND     &lt 5 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 6 ENTER  &mo 8                 &trans            &kp ENTER
             >;
         };
 
         NumSym {
             bindings = <
-&trans  &kp N1           &kp N2       &kp N3    &kp N4                &kp N5                                     &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR            &kp PERCENT                                &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &trans       &trans    &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))                       &trans     &trans         &kp QUESTION  &kp RU_QUESTION       &f_question            &trans
-                         &trans       &trans    &trans                &trans                &kp LCTRL    &trans  &mo 6      &trans         &trans        &trans
+&trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5                            &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                       &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans           &trans       &trans    &layer_en   &layer_ru                         &trans     &trans         &kp QUESTION  &kp RU_QUESTION       &kp GRAVE              &trans
+                         &trans       &trans    &trans      &trans       &kp LCTRL    &trans  &mo 7      &trans         &trans        &trans
             >;
 
             display-name = "NumSym";
@@ -268,7 +256,7 @@
 &trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
 &trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
 &trans  &trans    &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                     &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
-                  &trans    &trans     &trans    &mo 6      &trans    &trans  &trans     &trans    &trans     &trans
+                  &trans    &trans     &trans    &mo 7      &trans    &trans  &trans     &trans    &trans     &trans
             >;
 
             display-name = "Nav";
@@ -288,7 +276,7 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&mo 9   &mo 8   &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 8   &mo 9
+&mo 10  &mo 9   &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 9   &mo 10
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
