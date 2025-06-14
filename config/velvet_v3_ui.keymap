@@ -172,14 +172,14 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &off_win &to_en_mac &tog_on 2 &to 0>;
+            bindings = <&bt BT_SEL 0 &to_en_mac &tog_on 2 &to 0 &off_win>;
             label = "BT_MAC";
         };
 
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &off_mac &to_en_win &tog_on 6 &to 4>;
+            bindings = <&bt BT_SEL 1 &to_en_win &tog_on 6 &to 4 &off_mac>;
             label = "BT_WIN";
         };
 
