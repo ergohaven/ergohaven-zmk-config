@@ -197,7 +197,7 @@
 &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                  &kp Y  &kp U  &kp I          &kp O    &kp P     &kp LEFT_BRACKET
 &kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                  &kp H  &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                  &kp N  &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                  &none  &none  &none  &none  &none    &none  &none  &none  &kp BACKSLASH  &none
+           &trans   &kp LEFT_CONTROL  &kp LEFT_COMMAND     &lt 4 SPACE  &kp LEFT_ALT    &kp BACKSPACE  &lt 5 ENTER  &mo 7                 &trans            &kp ENTER
             >;
         };
 
@@ -207,7 +207,7 @@
 &kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &kp ESCAPE  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_SLASH         &kp RU_CYRILLIC_HARD_SIGN
-                                     &kp RU_CYRILLIC_IO    &none               &none               &none               &none    &none  &none               &none                      &kp RU_BACKSLASH     &none
+                                     &kp RU_CYRILLIC_IO    &kp LEFT_CONTROL  &kp LEFT_COMMAND             &lt 4 SPACE  &kp LEFT_ALT   &kp BACKSPACE  &lt 5 ENTER  &mo 7                      &kp RU_BACKSLASH    &kp ENTER
             >;
         };
 
