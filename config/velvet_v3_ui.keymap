@@ -159,6 +159,7 @@
         to-en-win {
             bindings = <&to_en_win>;
             key-positions = <39 28>;
+            layers = <4 5 6 7>;
         };
 
         to-ru-win {
@@ -172,14 +173,30 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to_en_mac &tog_on 2 &to 0 &off_win>;
+            bindings =
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 10>,
+                <&off_win>,
+                <&macro_wait_time 10>,
+                <&tog_on 2 &to 0>,
+                <&macro_wait_time 10>,
+                <&to_en_mac>;
+
             label = "BT_MAC";
         };
 
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to_en_win &tog_on 6 &to 4 &off_mac>;
+            bindings =
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 10>,
+                <&off_mac>,
+                <&macro_wait_time 10>,
+                <&tog_on 6 &to 4>,
+                <&macro_wait_time 10>,
+                <&to_en_win>;
+
             label = "BT_WIN";
         };
 
