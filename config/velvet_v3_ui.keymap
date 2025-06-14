@@ -173,56 +173,42 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to 0 &tog_on 2 &off_win>;
+            bindings = <&bt BT_SEL 0 &to 0 &tog_on 2>;
             label = "BT_MAC";
         };
 
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 4 &tog_on 6 &off_mac>;
+            bindings = <&bt BT_SEL 1 &to 4 &tog_on 6>;
             label = "BT_WIN";
         };
 
         to_en_mac: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(NUMBER_1)) &tog_on 0 &tog_off 1>;
+            bindings = <&kp LC(LS(NUMBER_1)) &to 0 &tog_on 2>;
             label = "TO_EN";
         };
 
         to_ru_mac: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(NUMBER_2)) &tog_on 1 &tog_off 0>;
+            bindings = <&kp LS(LC(NUMBER_2)) &to 1 &tog_on 2>;
             label = "LAYER_RU";
-        };
-
-        off_win: off_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&tog_off 4 &tog_off 5 &tog_off 6 &tog_off 7>;
-            label = "OFF_WIN";
-        };
-
-        off_mac: off_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&tog_off 0 &tog_off 1 &tog_off 2 &tog_off 3>;
-            label = "OFF_MAC";
         };
 
         to_en_win: to_en_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(NUMBER_1)) &tog_on 4 &tog_off 5>;
+            bindings = <&kp LC(LS(NUMBER_1)) &to 4 &tog_on 6>;
             label = "TO_EN_WIN";
         };
 
         to_ru_win: to_ru_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(NUMBER_2)) &tog_on 5 &tog_off 4>;
+            bindings = <&kp LS(LC(NUMBER_2)) &to 5 &tog_on 6>;
             label = "TO_RU_WIN";
         };
     };
@@ -361,7 +347,19 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Mac {
+            if-layers = <3 8>;
+            then-layer = <9>;
+        };
+
+        Win {
+            if-layers = <7 8>;
+            then-layer = <9>;
+        };
+    };
 };
 
 &trackball { cpi = <1000>; };
