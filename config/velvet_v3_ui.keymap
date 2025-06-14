@@ -146,18 +146,18 @@
             display-name = "Base";
         };
 
-        Navigation {
+        NumSym {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3   &kp N4        &kp N5                        &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
-&trans  &trans  &trans    &trans   &trans        &kp RET                       &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
-&trans  &trans  &kp HOME  &kp INS  &kp END       &kp DEL                       &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
-                &trans    &trans   &kp LEFT_ALT  &trans   &kp LCTRL    &trans  &mo 3     &trans        &trans         &trans
+&trans  &kp N1           &kp N2       &kp N3    &kp N4                &kp N5                                     &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR            &kp PERCENT                                &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans           &trans       &trans    &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))                       &trans     &trans         &trans        &trans                &trans                 &trans
+                         &trans       &trans    &kp LEFT_ALT          &trans                &kp LCTRL    &trans  &mo 3      &trans         &trans        &trans
             >;
 
-            display-name = "Navigation";
+            display-name = "NumSym";
         };
 
-        Symbols {
+        Nav {
             bindings = <
 &trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
 &trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
@@ -165,7 +165,7 @@
                   &trans    &trans     &trans    &mo 3      &trans    &trans  &trans     &trans    &trans     &trans
             >;
 
-            display-name = "Symbols";
+            display-name = "Nav";
         };
 
         Adjust {
