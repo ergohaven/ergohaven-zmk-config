@@ -150,21 +150,21 @@
         f_dot: f_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F14>;
+            bindings = <&kp B>;
             label = "F_DOT";
         };
 
         f_comma: f_comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13>;
+            bindings = <&kp C>;
             label = "F_COMMA";
         };
 
         f_question: f_question {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F15>;
+            bindings = <&kp D>;
             label = "F_QUESTION";
         };
     };
