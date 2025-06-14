@@ -120,6 +120,16 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <19 20>;
         };
+
+        cv-less {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <28 27>;
+        };
+
+        mB-great {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
