@@ -347,19 +347,7 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        Mac {
-            if-layers = <3 8>;
-            then-layer = <9>;
-        };
-
-        Win {
-            if-layers = <7 8>;
-            then-layer = <9>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
 
 &trackball { cpi = <1000>; };
