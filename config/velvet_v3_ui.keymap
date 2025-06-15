@@ -26,9 +26,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <75>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            retro-tap;
         };
 
         tog_on: tog_on {
@@ -59,8 +59,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <50>;
+            tapping-term-ms = <180>;
         };
     };
 
