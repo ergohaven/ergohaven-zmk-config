@@ -257,10 +257,10 @@
         ModsMac {
             display-name = "ModsMac";
             bindings = <
-&trans  &trans             &trans               &trans            &trans               &trans                                 &trans         &trans                &trans            &trans                &trans                 &trans
-&trans  &hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D   &hrm LEFT_COMMAND F  &trans                                 &trans         &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMI  &trans
-&trans  &trans             &trans               &trans            &trans               &trans                                 &trans         &trans                &trans            &trans                &trans                 &trans
-                           &trans               &kp LEFT_CONTROL  &kp LEFT_COMMAND     &trans  &kp LEFT_ALT    &kp BACKSPACE  &ltc 10 ENTER  &mo 12                &trans            &kp ENTER
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+                &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &kp LEFT_COMMAND    &kp BACKSPACE  &ltc 10 ENTER  &mo 12  &trans  &kp ENTER
             >;
         };
 
@@ -308,10 +308,10 @@
         ModWin {
             display-name = "ModWin";
             bindings = <
-&trans  &trans             &trans               &trans            &trans               &trans                                 &trans         &trans               &trans            &trans                &trans                 &trans
-&trans  &hrm LEFT_SHIFT A  &hrm LEFT_COMMAND S  &hrm LEFT_ALT D   &hrm LEFT_CONTROL F  &trans                                 &trans         &hrm LEFT_CONTROL J  &hrm RIGHT_ALT K  &hrm RIGHT_COMMAND L  &hrm RIGHT_SHIFT SEMI  &trans
-&trans  &trans             &trans               &trans            &trans               &trans                                 &trans         &trans               &trans            &trans                &trans                 &trans
-                           &trans               &kp LEFT_COMMAND  &kp LEFT_CONTROL     &trans  &kp LEFT_ALT    &kp BACKSPACE  &ltc 10 ENTER  &mo 12               &trans            &kp ENTER
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+                &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 10 ENTER  &mo 12  &trans  &kp ENTER
             >;
         };
 
