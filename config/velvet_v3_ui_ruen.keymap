@@ -184,10 +184,10 @@
 
         number {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans    &trans     &trans     &trans                       &trans   &kp N7  &kp N8                &kp N9                 &trans  &trans
+&trans  &kp LG(LGUI)  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                       &trans   &kp N4  &kp N5                &kp N6                 &trans  &trans
+&trans  &trans        &trans    &trans     &trans     &trans                       &trans   &kp N1  &kp N2                &kp N3                 &trans  &trans
+                      &trans    &trans     &trans     &trans  &trans    &kp COMMA  &kp DOT  &kp N0  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
         };
 
