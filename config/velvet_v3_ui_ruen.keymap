@@ -41,14 +41,14 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C_MENU)>;
+            bindings = <&kp LS(CAPSLOCK)>;
             label = "TO_RU";
         };
 
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LEFT_WIN)>;
+            bindings = <&kp CAPSLOCK>;
             label = "TO_EN";
         };
 
