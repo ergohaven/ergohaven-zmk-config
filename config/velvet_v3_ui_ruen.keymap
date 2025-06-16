@@ -41,14 +41,14 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N2))>;
+            bindings = <&kp LC(C_MENU)>;
             label = "TO_RU";
         };
 
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N1))>;
+            bindings = <&kp LC(LEFT_WIN)>;
             label = "TO_EN";
         };
 
@@ -87,7 +87,7 @@
 &kp ESC    &kp Q           &kp W           &kp E        &kp R             &kp T                        &kp Y  &kp U             &kp I        &kp O           &kp P              &kp BSPC
 &kp TAB    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                        &kp H  &mt LEFT_SHIFT J  &mt LCTRL K  &mt L LEFT_ALT  &mt LEFT_WIN SEMI  &kp BSLH
 &kp LSHFT  &kp Z           &kp X           &kp C        &kp V             &kp B                        &kp N  &kp M             &kp COMMA    &kp DOT         &kp SQT            &kp RSHFT
-                           &kp CAPSLOCK    &kp CAPS     &kp LCTRL         &mo 2  &kp SPACE    &kp RET  &mo 3  &cap_sen 6 MB1    &kp LBKT     &kp RBKT
+                           &kp CAPSLOCK    &layer_ru    &kp LCTRL         &mo 2  &kp SPACE    &kp RET  &mo 3  &cap_sen 6 MB1    &kp LBKT     &kp RBKT
             >;
 
             display-name = "en";
@@ -99,7 +99,7 @@
 &kp ESC    &kp RU_CYRILLIC_SHORT_I      &kp RU_CYRILLIC_TSE            &kp RU_CYRILLIC_U         &kp RU_CYRILLIC_KA            &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE           &kp RU_CYRILLIC_SHA       &kp RU_CYRILLIC_SHCHA        &kp RU_CYRILLIC_ZE            &kp BSPC
 &kp TAB    &mt LEFT_WIN RU_CYRILLIC_EF  &mt LEFT_ALT RU_CYRILLIC_YERU  &mt LCTRL RU_CYRILLIC_VE  &mt LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &mt LEFT_SHIFT RU_CYRILLIC_O  &mt LCTRL RU_CYRILLIC_EL  &mt LEFT_ALT RU_CYRILLIC_DE  &mt LEFT_WIN RU_CYRILLIC_ZHE  &kp BSLH
 &kp LSHFT  &kp RU_CYRILLIC_YA           &kp RU_CYRILLIC_CHE            &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM            &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN     &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU           &kp RU_CYRILLIC_E             &kp RSHFT
-                                        &kp CAPSLOCK                   &kp CAPSLOCK              &kp LCTRL                     &mo 2               &kp SPACE    &kp RET  &mo 4               &cap_sen 6 MB1                &kp RU_CYRILLIC_HA        &kp RU_CYRILLIC_HARD_SIGN
+                                        &kp CAPSLOCK                   &layer_en                 &kp LCTRL                     &mo 2               &kp SPACE    &kp RET  &mo 4               &cap_sen 6 MB1                &kp RU_CYRILLIC_HA        &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
