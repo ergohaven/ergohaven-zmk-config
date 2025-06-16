@@ -175,10 +175,10 @@
 
         cursor {
             bindings = <
-&trans     &trans        &trans     &trans     &trans     &trans                     &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
-&kp LC(A)  &kp LG(LGUI)  &kp LALT   &kp LCTRL  &kp LSHFT  &trans                     &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
-&trans     &kp LC(Z)     &kp LC(X)  &kp LC(C)  &kp C      &trans                     &trans  &trans    &trans    &trans     &trans     &trans
-                         &trans     &trans     &trans     &trans  &trans    &kp RET  &trans  &trans    &trans    &trans
+&trans     &trans        &trans     &trans     &trans     &kp LC(F5)                     &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
+&kp LC(A)  &kp LG(LGUI)  &kp LALT   &kp LCTRL  &kp LSHFT  &trans                         &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
+&trans     &kp LC(Z)     &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans                         &trans  &trans    &trans    &trans     &trans     &trans
+                         &trans     &kp LS(D)  &trans     &trans      &trans    &kp RET  &trans  &trans    &trans    &trans
             >;
         };
 
