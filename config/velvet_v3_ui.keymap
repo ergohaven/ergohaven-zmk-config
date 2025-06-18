@@ -185,6 +185,11 @@
             key-positions = <39 29>;
             layers = <0 1 2 3>;
         };
+
+        bn-equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <29 30>;
+        };
     };
 
     macros {
