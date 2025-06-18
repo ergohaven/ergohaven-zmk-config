@@ -56,18 +56,6 @@
     combos {
         compatible = "zmk,combos";
 
-        mouse {
-            bindings = <&mo 6>;
-            key-positions = <3 4>;
-            layers = <1 6 0 8>;
-        };
-
-        sniper {
-            bindings = <&mo 8>;
-            key-positions = <27 28>;
-            layers = <1 0 6 8>;
-        };
-
         adj {
             bindings = <&mo 5>;
             key-positions = <39 40>;
@@ -76,6 +64,24 @@
         scroll {
             bindings = <&mo 7>;
             key-positions = <41 42>;
+        };
+
+        mb1 {
+            bindings = <&mkp MB1>;
+            key-positions = <19 20>;
+            layers = <0 1>;
+        };
+
+        mb2 {
+            bindings = <&mkp MB2>;
+            key-positions = <20 21>;
+            layers = <0 1>;
+        };
+
+        mb3 {
+            bindings = <&mkp MB3>;
+            key-positions = <19 21>;
+            layers = <0 1>;
         };
     };
 
@@ -128,7 +134,7 @@
             bindings = <
 &kp ESC         &kp Q            &kp W            &kp E         &kp R              &kp T                                        &kp Y        &kp U              &kp I         &kp O            &kp P               &kp BSPC
 &kp TAB         &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                                        &kp H        &hmr LEFT_SHIFT J  &hmr LCTRL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMI  &kp BSLH
-&kp LEFT_SHIFT  &kp Z            &kp X            &kp C         &kp V              &kp B                                        &kp N        &kp M              &kp COMMA     &kp DOT          &kp SQT             &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &kp Z            &kp X            &kp C         &kp V              &kp B                                        &kp N        &kp M              &lt 7 COMMA   &kp DOT          &kp SQT             &kp LEFT_SHIFT
                                  &kp CAPSLOCK     &layer_ru     &lt 9 BACKSPACE    &lt 10 DELETE  &lt 11 ESCAPE    &lt 6 ENTER  &lt 3 SPACE  &mo 6              &kp LBKT      &kp RBKT
             >;
 
@@ -140,7 +146,7 @@
             bindings = <
 &kp ESC         &kp RU_CYRILLIC_SHORT_I       &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA            &kp RU_CYRILLIC_IE                             &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE            &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA         &kp RU_CYRILLIC_ZE             &kp BSPC
 &kp TAB         &hml LEFT_WIN RU_CYRILLIC_EF  &hml LEFT_ALT RU_CYRILLIC_YERU  &hml LCTRL RU_CYRILLIC_VE  &mt LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                             &kp RU_CYRILLIC_ER  &hmr LEFT_SHIFT RU_CYRILLIC_O  &hmr LCTRL RU_CYRILLIC_EL  &hmr LEFT_ALT RU_CYRILLIC_DE  &hmr LEFT_WIN RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LEFT_SHIFT  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM            &kp RU_CYRILLIC_I                              &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN      &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU            &kp RU_COMMA                   &kp RU_DOT
+&kp LEFT_SHIFT  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM            &kp RU_CYRILLIC_I                              &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN      &lt 7 RU_CYRILLIC_BE       &kp RU_CYRILLIC_YU            &kp RU_COMMA                   &kp RU_DOT
                                               &kp CAPSLOCK                    &layer_en                  &lt 9 BACKSPACE               &lt 10 DELETE       &lt 11 ESC    &lt 6 ENTER  &lt 4 SPACE         &mo 6                          &kp RU_CYRILLIC_HA         &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
