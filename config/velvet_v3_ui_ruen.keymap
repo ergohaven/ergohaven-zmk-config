@@ -98,6 +98,18 @@
             key-positions = <15 16>;
             layers = <0>;
         };
+
+        rusync {
+            bindings = <&to 0>;
+            key-positions = <19 20>;
+            layers = <1>;
+        };
+
+        ensycn {
+            bindings = <&to 1>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
     };
 
     macros {
