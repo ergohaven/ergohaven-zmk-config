@@ -19,6 +19,7 @@
             tapping-term-ms = <150>;
             hold-while-undecided;
         };
+
         hrml: hrml {
             compatible = "zmk,behavior-hold-tap";
             label = "HRML";
@@ -88,13 +89,13 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <3 4>;
+            key-positions = <15 16>;
             layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <3 4>;
+            key-positions = <15 16>;
             layers = <0>;
         };
     };
@@ -146,10 +147,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W     &kp E     &kp R        &kp T                        &kp Y  &kp U  &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S     &kp D     &kp F        &kp G                        &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp BSLH
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V        &kp B                        &kp N  &kp M  &kp COMMA  &kp DOT   &kp SQT   &kp RSHFT
-                  &kp LALT  &kp LGUI  &lt 6 ENTER  &mo 2  &kp SPACE    &kp RET  &mo 3  &mo 6  &kp LBKT   &kp RBKT
+&kp ESC    &kp Q             &kp W             &kp E          &kp R               &kp T                        &kp Y  &kp U                &kp I          &kp O         &kp P                &kp BSPC
+&kp TAB    &hrml LEFT_GUI A  &hrml LEFT_ALT S  &hrml LCTRL D  &hrml LEFT_SHIFT F  &kp G                        &kp H  &hrmr RIGHT_SHIFT J  &hrmr RCTRL K  &hrmr RALT L  &hrmr LEFT_GUI SEMI  &kp BSLH
+&kp LSHFT  &kp Z             &kp X             &kp C          &kp V               &kp B                        &kp N  &kp M                &kp COMMA      &kp DOT       &kp SQT              &kp RSHFT
+                             &kp LALT          &kp LGUI       &lt 6 ENTER         &mo 2  &kp SPACE    &kp RET  &mo 3  &none                &kp LBKT       &kp RBKT
             >;
 
             display-name = "en";
@@ -158,19 +159,19 @@
         ru {
             display-name = "ru";
             bindings = <
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &kp BSLH
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp RSHFT
-                                    &kp LALT              &kp LGUI            &kp LCTRL           &mo 2               &kp SPACE    &kp RET  &mo 4               &cap_sen 6 MB1             &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
+&kp ESC    &kp RU_CYRILLIC_SHORT_I        &kp RU_CYRILLIC_TSE              &kp RU_CYRILLIC_U           &kp RU_CYRILLIC_KA              &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE         &kp RU_CYRILLIC_SHA         &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE               &kp BSPC
+&kp TAB    &hrml LEFT_GUI RU_CYRILLIC_EF  &hrml LEFT_ALT RU_CYRILLIC_YERU  &hrml LCTRL RU_CYRILLIC_VE  &hrml LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &hrmr RSHIFT RU_CYRILLIC_O  &hrmr RCTRL RU_CYRILLIC_EL  &hrmr RIGHT_ALT RU_CYRILLIC_DE  &hrmr RIGHT_GUI RU_CYRILLIC_ZHE  &kp BSLH
+&kp LSHFT  &kp RU_CYRILLIC_YA             &kp RU_CYRILLIC_CHE              &kp RU_CYRILLIC_ES          &kp RU_CYRILLIC_EM              &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN   &kp RU_CYRILLIC_BE          &kp RU_CYRILLIC_YU              &kp RU_CYRILLIC_E                &kp RSHFT
+                                          &kp LALT                         &kp LGUI                    &lt 6 RETURN                    &mo 2               &kp SPACE    &kp RET  &mo 4               &none                       &kp RU_CYRILLIC_HA          &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
         nav {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6        &kp N7         &kp N8     &kp N9         &kp N0             &trans
-&trans  &trans  &trans    &trans   &trans   &kp RET                    &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)  &kp DEL
-&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP  &kp LC(RIGHT)  &kp PAUSE_BREAK    &kp PRINTSCREEN
-                &trans    &trans   &trans   &trans   &trans    &trans  &mo 5         &trans         &trans     &trans
+&trans   &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6        &kp N7         &kp N8     &kp N9         &kp N0             &trans
+&trans   &trans  &trans    &trans   &trans   &kp RET                    &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)  &kp DEL
+&tog 11  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP  &kp LC(RIGHT)  &kp PAUSE_BREAK    &kp PRINTSCREEN
+                 &trans    &trans   &trans   &trans   &trans    &trans  &mo 5         &trans         &trans     &trans
             >;
 
             display-name = "nav";
@@ -234,23 +235,42 @@
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
         };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         Krita1 {
-                bindings = <
-    &kp ESC          &kp RET    &kp LC(S)         &kp X                   &kp R      &kp T                        &trans   &trans  &trans  &trans  &trans  &trans
-    &kp TAB          &kp LSHFT  &kp Z             &kp A                   &TD_Erase  &kp H                        &trans   &trans  &trans  &trans  &trans  &trans
-    &TD_Colorpeaker  &kp LALT   &kp F             &kp C                   &kp V      &kp M                        &trans   &trans  &trans  &trans  &trans  &trans
-                                &mt LS(SPACE) N5  &mt LC(SPACE) NUMBER_2  &TD_Brush  &mo 12  &kp SPACE    &trans  &tog 11  &mo 4   &trans  &trans
-                >;
-            };
-  
-            Krita2 {
-                bindings = <
-    &trans         &kp LC(G)           &kp LC(E)   &kp LC(T)      &kp INS    &kp LC(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
-    &kp LC(LS(I))  &kp LS(LC(A))       &kp LC(A)   &kp LC(PG_UP)  &kp LA(H)  &kp LA(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
-    &trans         &kp LC(LS(DELETE))  &kp DELETE  &kp LC(PG_DN)  &kp LS(H)  &kp LC(N)                      &trans  &trans  &trans  &trans  &trans  &trans
-                                       &kp LC(C)   &kp LC(V)      &trans     &trans       &trans    &trans  &trans  &trans  &trans  &trans
-                >;
-            };
+            bindings = <
+&kp ESC          &kp RET    &kp LC(S)         &kp X                   &kp R      &kp T                        &trans   &trans  &trans  &trans  &trans  &trans
+&kp TAB          &kp LSHFT  &kp Z             &kp A                   &TD_Erase  &kp H                        &trans   &trans  &trans  &trans  &trans  &trans
+&TD_Colorpeaker  &kp LALT   &kp F             &kp C                   &kp V      &kp M                        &trans   &trans  &trans  &trans  &trans  &trans
+                            &mt LS(SPACE) N5  &mt LC(SPACE) NUMBER_2  &TD_Brush  &mo 12  &kp SPACE    &trans  &tog 11  &mo 4   &trans  &trans
+            >;
+        };
+
+        Krita2 {
+            bindings = <
+&trans         &kp LC(G)           &kp LC(E)   &kp LC(T)      &kp INS    &kp LC(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(LS(I))  &kp LS(LC(A))       &kp LC(A)   &kp LC(PG_UP)  &kp LA(H)  &kp LA(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &kp LC(LS(DELETE))  &kp DELETE  &kp LC(PG_DN)  &kp LS(H)  &kp LC(N)                      &trans  &trans  &trans  &trans  &trans  &trans
+                                   &kp LC(C)   &kp LC(V)      &trans     &trans       &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
 
