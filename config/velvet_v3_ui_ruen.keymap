@@ -48,7 +48,7 @@
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&kp LG(SPACE)>;
             label = "TO_EN";
         };
 
