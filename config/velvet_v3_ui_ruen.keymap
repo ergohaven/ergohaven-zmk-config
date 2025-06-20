@@ -19,6 +19,68 @@
             tapping-term-ms = <150>;
             hold-while-undecided;
         };
+        hrml: hrml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 41>;
+        };
+
+        hrmr: hrmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40>;
+        };
+
+        TD_Brush: TD_Brush {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_BRUSH";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&kp Q>;
+        };
+
+        TD_Erase: TD_Erase {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ERASE";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp LA(E)>;
+        };
+
+        TD_Colorpeaker: TD_Colorpeaker {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COLORPEAKER";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&kp LA(LCTRL)>;
+        };
+
+        MBL_LT: MBL_LT {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MBL_LT";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <42>;
+            tapping-term-ms = <175>;
+            require-prior-idle-ms = <100>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
     };
 
     combos {
@@ -172,6 +234,23 @@
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
         };
+        Krita1 {
+                bindings = <
+    &kp ESC          &kp RET    &kp LC(S)         &kp X                   &kp R      &kp T                        &trans   &trans  &trans  &trans  &trans  &trans
+    &kp TAB          &kp LSHFT  &kp Z             &kp A                   &TD_Erase  &kp H                        &trans   &trans  &trans  &trans  &trans  &trans
+    &TD_Colorpeaker  &kp LALT   &kp F             &kp C                   &kp V      &kp M                        &trans   &trans  &trans  &trans  &trans  &trans
+                                &mt LS(SPACE) N5  &mt LC(SPACE) NUMBER_2  &TD_Brush  &mo 12  &kp SPACE    &trans  &tog 11  &mo 4   &trans  &trans
+                >;
+            };
+  
+            Krita2 {
+                bindings = <
+    &trans         &kp LC(G)           &kp LC(E)   &kp LC(T)      &kp INS    &kp LC(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
+    &kp LC(LS(I))  &kp LS(LC(A))       &kp LC(A)   &kp LC(PG_UP)  &kp LA(H)  &kp LA(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
+    &trans         &kp LC(LS(DELETE))  &kp DELETE  &kp LC(PG_DN)  &kp LS(H)  &kp LC(N)                      &trans  &trans  &trans  &trans  &trans  &trans
+                                       &kp LC(C)   &kp LC(V)      &trans     &trans       &trans    &trans  &trans  &trans  &trans  &trans
+                >;
+            };
     };
 };
 
