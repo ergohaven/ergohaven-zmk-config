@@ -41,14 +41,14 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N2))>;
+            bindings = <&kp LG(SPACE)>;
             label = "TO_RU";
         };
 
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N1))>;
+            bindings = <&kp LS(LC(SPACE))>;
             label = "TO_EN";
         };
 
@@ -105,9 +105,9 @@
 
         nav {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6        &kp N7         &kp N8     &kp N9         &kp N0           &trans
-&trans  &trans  &trans    &trans   &trans   &kp RET                    &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp PRINTSCREEN  &trans
-&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP  &kp LC(RIGHT)  &kp PAUSE_BREAK  &trans
+&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6        &kp N7         &kp N8     &kp N9         &kp N0             &trans
+&trans  &trans  &trans    &trans   &trans   &kp RET                    &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)  &kp DEL
+&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP  &kp LC(RIGHT)  &kp PAUSE_BREAK    &kp PRINTSCREEN
                 &trans    &trans   &trans   &trans   &trans    &trans  &mo 5         &trans         &trans     &trans
             >;
 
