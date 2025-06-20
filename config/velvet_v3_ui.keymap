@@ -61,6 +61,26 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
         };
+
+        bt_mac_mod: bt_mac_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT_MAC_MOD";
+            bindings = <&mod_mac>, <&bt_mac>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        bt_win_mod: bt_win_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT_WIN_MOD";
+            bindings = <&mod_win>, <&bt_win>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -234,6 +254,20 @@
             bindings = <&kp LS(LC(NUMBER_2)) &to 6 &tog_on 7>;
             label = "TO_RU_WIN";
         };
+
+        mod_mac: mod_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &tog_on 2>;
+            label = "MOD_MAC";
+        };
+
+        mod_win: mod_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 5 &tog_on 7>;
+            label = "MOD_WIN";
+        };
     };
 
     keymap {
@@ -353,10 +387,10 @@
 
         Adjust {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt_mac       &bt_win       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
-&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
-                    &none   &none    &none    &none    &none    &none  &none         &none         &none             &none
+&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt_mac_mod 0 0  &bt_win_mod 0 0  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE     &kp C_VOL_DN     &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
+&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB     &kp K_PREV       &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
+                    &none   &none    &none    &none    &none    &none  &none            &none            &none             &none
             >;
 
             display-name = "Adjust";
