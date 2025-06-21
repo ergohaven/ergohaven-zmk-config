@@ -271,7 +271,7 @@
 &kp ESC          &kp RET    &kp LC(S)         &kp X                   &kp R      &kp T                        &trans   &trans  &trans  &trans  &trans  &trans
 &kp TAB          &kp LSHFT  &kp Z             &kp A                   &TD_Erase  &kp H                        &trans   &trans  &trans  &trans  &trans  &trans
 &TD_Colorpeaker  &kp LALT   &kp F             &kp C                   &kp V      &kp M                        &trans   &trans  &trans  &trans  &trans  &trans
-                            &mt LS(SPACE) N5  &mt LC(SPACE) NUMBER_2  &TD_Brush  &mo 12  &kp SPACE    &trans  &tog 11  &mo 4   &trans  &trans
+                            &mt LS(SPACE) N5  &mt LC(SPACE) NUMBER_2  &TD_Brush  &mo 12  &kp SPACE    &trans  &tog 11  &mo 6   &trans  &trans
             >;
         };
 
@@ -280,7 +280,7 @@
 &trans         &kp LC(G)           &kp LC(E)   &kp LC(T)      &kp INS    &kp LC(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LC(LS(I))  &kp LS(LC(A))       &kp LC(A)   &kp LC(PG_UP)  &kp LA(H)  &kp LA(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &kp LC(LS(DELETE))  &kp DELETE  &kp LC(PG_DN)  &kp LS(H)  &kp LC(N)                      &trans  &trans  &trans  &trans  &trans  &trans
-                                   &kp LC(C)   &kp LC(V)      &trans     &trans       &trans    &trans  &trans  &trans  &trans  &trans
+                                   &kp LC(C)   &kp LC(V)      &trans     &trans       &trans    &trans  &trans  &trans  &mo 6  &trans
             >;
         };
     };
