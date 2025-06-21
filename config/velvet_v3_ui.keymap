@@ -16,7 +16,7 @@
             bindings = <&mo>, <&mo>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <10>;
             hold-while-undecided;
         };
 
@@ -31,6 +31,15 @@
             retro-tap;
         };
 
+        ltc: ltc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTC";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
+
         tog_on: tog_on {
             compatible = "zmk,behavior-toggle-layer";
             label = "TOG_ON";
@@ -42,24 +51,6 @@
             label = "TOG_OFF";
             #binding-cells = <1>;
             toggle-mode = "off";
-        };
-
-        mac_ru_dotcomma: mac_ru_dotcomma {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MAC_RU_DOTCOMMA";
-            bindings = <&kp LS(NUMBER_7)>, <&kp LS(NUMBER_6)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        ltc: ltc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LTC";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
         };
 
         bt_mac_mod: bt_mac_mod {
@@ -81,106 +72,21 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        mac_ru_dotcomma: mac_ru_dotcomma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_RU_DOTCOMMA";
+            bindings = <&kp LS(NUMBER_7)>, <&kp LS(NUMBER_6)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+
     };
 
     combos {
         compatible = "zmk,combos";
-
-        rt-par-open {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <5 4>;
-            timeout-ms = <20>;
-        };
-
-        yu-par-close {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <6 7>;
-            timeout-ms = <20>;
-        };
-
-        gf-sq-open {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <17 16>;
-            timeout-ms = <20>;
-        };
-
-        hj-sq-close {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <18 19>;
-            timeout-ms = <20>;
-        };
-
-        bv-curl-open {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <29 28>;
-            timeout-ms = <20>;
-        };
-
-        nm-curl-close {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <30 31>;
-            timeout-ms = <20>;
-        };
-
-        er-minus {
-            bindings = <&kp MINUS>;
-            key-positions = <3 4>;
-            timeout-ms = <20>;
-        };
-
-        ui-underscore {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <7 8>;
-            timeout-ms = <20>;
-        };
-
-        fd-double-quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <16 15>;
-            timeout-ms = <20>;
-        };
-
-        jk-single-quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <19 20>;
-            timeout-ms = <20>;
-        };
-
-        we-plus {
-            bindings = <&kp PLUS>;
-            key-positions = <2 3>;
-            timeout-ms = <20>;
-        };
-
-        io-pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <8 9>;
-            timeout-ms = <20>;
-        };
-
-        cv-less {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <28 27>;
-            timeout-ms = <20>;
-        };
-
-        mB-great {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <31 32>;
-            timeout-ms = <20>;
-        };
-
-        qa-tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <1 13>;
-            timeout-ms = <20>;
-        };
-
-        az-grave {
-            bindings = <&kp LS(GRAVE)>;
-            key-positions = <25 13>;
-            timeout-ms = <20>;
-        };
 
         to-en-mac {
             bindings = <&to_en_mac>;
@@ -206,9 +112,106 @@
             layers = <0 1 2 3>;
         };
 
+        rt-par-open {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <5 4>;
+            timeout-ms = <20>;
+        };
+
+        yu-par-close {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+            timeout-ms = <30>;
+        };
+
+        gf-sq-open {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <17 16>;
+            timeout-ms = <30>;
+        };
+
+        hj-sq-close {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <18 19>;
+            timeout-ms = <30>;
+        };
+
+        bv-curl-open {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <29 28>;
+            timeout-ms = <30>;
+        };
+
+        nm-curl-close {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <30 31>;
+            timeout-ms = <30>;
+        };
+
+        er-minus {
+            bindings = <&kp MINUS>;
+            key-positions = <3 4>;
+            timeout-ms = <30>;
+        };
+
+        ui-underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <7 8>;
+            timeout-ms = <30>;
+        };
+
+        fd-double-quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <16 15>;
+            timeout-ms = <30>;
+        };
+
+        jk-single-quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <19 20>;
+            timeout-ms = <30>;
+        };
+
+        we-plus {
+            bindings = <&kp PLUS>;
+            key-positions = <2 3>;
+            timeout-ms = <30>;
+        };
+
+        io-pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <8 9>;
+            timeout-ms = <30>;
+        };
+
+        cv-less {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <28 27>;
+            timeout-ms = <30>;
+        };
+
+        mB-great {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <31 32>;
+            timeout-ms = <30>;
+        };
+
+        qa-tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <1 13>;
+            timeout-ms = <30>;
+        };
+
+        az-grave {
+            bindings = <&kp LS(GRAVE)>;
+            key-positions = <25 13>;
+            timeout-ms = <30>;
+        };
+
         bn-equals {
             bindings = <&kp EQUAL>;
             key-positions = <29 30>;
+            timeout-ms = <30>;
         };
     };
 
@@ -225,6 +228,20 @@
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1 &to 5 &tog_on 7>;
             label = "BT_WIN";
+        };
+
+        mod_mac: mod_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &tog_on 2>;
+            label = "MOD_MAC";
+        };
+
+        mod_win: mod_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 5 &tog_on 7>;
+            label = "MOD_WIN";
         };
 
         to_en_mac: to_en {
@@ -253,20 +270,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LC(NUMBER_2)) &to 6 &tog_on 7>;
             label = "TO_RU_WIN";
-        };
-
-        mod_mac: mod_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0 &tog_on 2>;
-            label = "MOD_MAC";
-        };
-
-        mod_win: mod_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 5 &tog_on 7>;
-            label = "MOD_WIN";
         };
     };
 
