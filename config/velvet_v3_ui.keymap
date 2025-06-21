@@ -74,7 +74,7 @@
         hrm_r: hrm_r {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_R";
-            bindings = <&kp>, <&trans>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -365,9 +365,9 @@
         ModWin {
             display-name = "ModWin";
             bindings = <
-&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                 &trans
-&trans  &hrm_l LEFT_COMMAND 0  &hrm_l LEFT_ALT 0  &hrm_l LEFT_CONTROL 0  &hrm_l LEFT_SHIFT 0  &trans                                     &trans         &hrm_r LEFT_SHIFT 0  &hrm_r LEFT_CONTROL 0  &hrm_r LEFT_ALT 0  &hrm_r LEFT_COMMAND 0  &trans
-&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                 &trans
+&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                         &trans
+&trans  &hrm_l LEFT_COMMAND 0  &hrm_l LEFT_ALT 0  &hrm_l LEFT_CONTROL 0  &hrm_l LEFT_SHIFT 0  &trans                                     &trans         &hrm_r LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &trans
+&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                         &trans
                                &trans             &kp LEFT_COMMAND       &kp LEFT_ALT         &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 10 ENTER  &mo 12               &trans                 &kp ENTER
             >;
         };
