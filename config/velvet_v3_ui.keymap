@@ -79,7 +79,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             flavor = "balanced";
-            retro-tap;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -94,7 +93,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             flavor = "balanced";
-            retro-tap;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -132,103 +130,103 @@
         rt-par-open {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <5 4>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
         };
 
         yu-par-close {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <6 7>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         gf-sq-open {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <17 16>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         hj-sq-close {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         bv-curl-open {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <29 28>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         nm-curl-close {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         er-minus {
             bindings = <&kp MINUS>;
             key-positions = <3 4>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         ui-underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <7 8>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         fd-double-quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <16 15>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         jk-single-quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <19 20>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         we-plus {
             bindings = <&kp PLUS>;
             key-positions = <2 3>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         io-pipe {
             bindings = <&kp PIPE>;
             key-positions = <8 9>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         cv-less {
             bindings = <&kp LESS_THAN>;
             key-positions = <28 27>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         mB-great {
             bindings = <&kp GREATER_THAN>;
             key-positions = <31 32>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         qa-tilde {
             bindings = <&kp TILDE>;
             key-positions = <1 13>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         az-grave {
             bindings = <&kp LS(GRAVE)>;
             key-positions = <25 13>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         bn-equals {
             bindings = <&kp EQUAL>;
             key-positions = <29 30>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
     };
 
