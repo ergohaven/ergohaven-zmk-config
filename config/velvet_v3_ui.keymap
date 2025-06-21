@@ -88,7 +88,7 @@
         hrm_l: hrm_l {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_L";
-            bindings = <&kp>, <&trans>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -294,30 +294,30 @@
         BaseEnMac {
             display-name = "BaseEnMac";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LEFT_BRACKET
-&kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                         &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                  &none  &none  &none  &ltc 3 SPACE  &none    &none  &mo 10  &mo 12  &none      &none
+&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                         &kp Y   &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
+&kp ESC    &hrm_l LEFT_CONTROL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l LEFT_SHIFT F  &kp G                         &kp H   &hrm_l LEFT_SHIFT J  &hrm_r LEFT_COMMAND K  &hrm_r LEFT_ALT L  &hrm_r LEFT_CONTROL SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                &kp B                         &kp N   &kp M                &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
+                                  &none              &none                  &none                &ltc 3 SPACE  &none    &none  &mo 10  &mo 12               &none                  &none
             >;
         };
 
         BaseRuMac {
             display-name = "BaseRuMac";
             bindings = <
-&kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
-&kp ESCAPE  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &mac_ru_dotcomma     &kp RU_CYRILLIC_HARD_SIGN
-                                     &kp RU_BACKSLASH      &none               &none               &ltc 4 SPACE        &none    &none  &mo 10              &mo 12                     &kp RU_CYRILLIC_IO   &none
+&kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE              &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
+&kp ESCAPE  &hrm_l LEFT_CONTROL RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_COMMAND RU_CYRILLIC_VE  &hrm_l LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &hrm_r LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_COMMAND RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_CONTROL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM               &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN        &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &mac_ru_dotcomma                     &kp RU_CYRILLIC_HARD_SIGN
+                                                &kp RU_BACKSLASH                  &none                               &none                            &ltc 4 SPACE        &none    &none  &mo 10              &mo 12                           &kp RU_CYRILLIC_IO                  &none
             >;
         };
 
         ModsMac {
             display-name = "ModsMac";
             bindings = <
-&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                 &trans
-&trans  &hrm_l LEFT_CONTROL 0  &hrm_l LEFT_ALT 0  &hrm_l LEFT_COMMAND 0  &hrm_l LEFT_SHIFT 0  &trans                                     &trans         &hrm_r LEFT_SHIFT 0  &hrm_r LEFT_COMMAND 0  &hrm_r LEFT_ALT 0  &hrm_r LEFT_CONTROL 0  &trans
-&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                 &trans
-                               &trans             &kp LEFT_CONTROL       &kp LEFT_ALT         &trans  &kp LEFT_COMMAND    &kp BACKSPACE  &ltc 10 ENTER  &mo 12               &trans                 &kp ENTER
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+                &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &kp LEFT_COMMAND    &kp BACKSPACE  &ltc 10 ENTER  &mo 12  &trans  &kp ENTER
             >;
         };
 
@@ -345,30 +345,30 @@
         BaseEnWin {
             display-name = "BaseEnWin";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LEFT_BRACKET
-&kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                         &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                  &none  &none  &none  &ltc 8 SPACE  &none    &none  &mo 10  &mo 12  &none      &none
+&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                         &kp Y   &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
+&kp ESC    &hrm_l LEFT_COMMAND A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G                         &kp H   &hrm_r LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                &kp B                         &kp N   &kp M                &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
+                                  &none              &none                  &none                &ltc 8 SPACE  &none    &none  &mo 10  &mo 12               &none                  &none
             >;
         };
 
         BaseRuWin {
             display-name = "BaseRuWin";
             bindings = <
-&kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
-&kp ESCAPE  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp SLASH            &kp RU_CYRILLIC_HARD_SIGN
-                                     &kp RU_CYRILLIC_IO    &none               &none               &ltc 9 SPACE        &none    &none  &mo 10              &mo 12                     &kp RU_BACKSLASH     &none
+&kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE              &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
+&kp ESCAPE  &hrm_l LEFT_COMMAND RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_CONTROL RU_CYRILLIC_VE  &hrm_l LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &hrm_r LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_CONTROL RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_COMMAND RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM               &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN        &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &kp SLASH                            &kp RU_CYRILLIC_HARD_SIGN
+                                                &kp RU_CYRILLIC_IO                &none                               &none                            &ltc 9 SPACE        &none    &none  &mo 10              &mo 12                           &kp RU_BACKSLASH                    &none
             >;
         };
 
         ModWin {
             display-name = "ModWin";
             bindings = <
-&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                         &trans
-&trans  &hrm_l LEFT_COMMAND 0  &hrm_l LEFT_ALT 0  &hrm_l LEFT_CONTROL 0  &hrm_l LEFT_SHIFT 0  &trans                                     &trans         &hrm_r LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &trans
-&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                         &trans
-                               &trans             &kp LEFT_COMMAND       &kp LEFT_ALT         &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 10 ENTER  &mo 12               &trans                 &kp ENTER
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
+                &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 10 ENTER  &mo 12  &trans  &kp ENTER
             >;
         };
 
