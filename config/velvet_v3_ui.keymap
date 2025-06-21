@@ -20,17 +20,6 @@
             hold-while-undecided;
         };
 
-        hrm: hrm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            retro-tap;
-        };
-
         ltc: ltc {
             compatible = "zmk,behavior-hold-tap";
             label = "LTC";
@@ -82,7 +71,35 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        hrm_r: hrm_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_R";
+            bindings = <&kp>, <&trans>;
 
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            retro-tap;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 41>;
+        };
+
+        hrm_l: hrm_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_L";
+            bindings = <&kp>, <&trans>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            retro-tap;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <1 2 3 5 4 17 16 15 14 13 25 26 27 28 29 36 0 12 24 37 40 39 38 13 14 15 16 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37>;
+        };
     };
 
     combos {
@@ -299,10 +316,10 @@
         ModsMac {
             display-name = "ModsMac";
             bindings = <
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-                &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &kp LEFT_COMMAND    &kp BACKSPACE  &ltc 10 ENTER  &mo 12  &trans  &kp ENTER
+&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                 &trans
+&trans  &hrm_l LEFT_CONTROL 0  &hrm_l LEFT_ALT 0  &hrm_l LEFT_COMMAND 0  &hrm_l LEFT_SHIFT 0  &trans                                     &trans         &hrm_r LEFT_SHIFT 0  &hrm_r LEFT_COMMAND 0  &hrm_r LEFT_ALT 0  &hrm_r LEFT_CONTROL 0  &trans
+&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                 &trans
+                               &trans             &kp LEFT_CONTROL       &kp LEFT_ALT         &trans  &kp LEFT_COMMAND    &kp BACKSPACE  &ltc 10 ENTER  &mo 12               &trans                 &kp ENTER
             >;
         };
 
@@ -350,10 +367,10 @@
         ModWin {
             display-name = "ModWin";
             bindings = <
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-                &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 10 ENTER  &mo 12  &trans  &kp ENTER
+&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                 &trans
+&trans  &hrm_l LEFT_COMMAND 0  &hrm_l LEFT_ALT 0  &hrm_l LEFT_CONTROL 0  &hrm_l LEFT_SHIFT 0  &trans                                     &trans         &hrm_r LEFT_SHIFT 0  &hrm_r LEFT_CONTROL 0  &hrm_r LEFT_ALT 0  &hrm_r LEFT_COMMAND 0  &trans
+&trans  &trans                 &trans             &trans                 &trans               &trans                                     &trans         &trans               &trans                 &trans             &trans                 &trans
+                               &trans             &kp LEFT_COMMAND       &kp LEFT_ALT         &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 10 ENTER  &mo 12               &trans                 &kp ENTER
             >;
         };
 
