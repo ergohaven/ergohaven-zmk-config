@@ -297,7 +297,7 @@
 &kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                         &kp Y   &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
 &kp ESC    &hrm_l LEFT_CONTROL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l LEFT_SHIFT F  &kp G                         &kp H   &hrm_l LEFT_SHIFT J  &hrm_r LEFT_COMMAND K  &hrm_r LEFT_ALT L  &hrm_r LEFT_CONTROL SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                &kp B                         &kp N   &kp M                &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
-                                  &none              &none                  &none                &ltc 3 SPACE  &none    &none  &mo 10  &mo 12               &none                  &none
+                                  &kp GRAVE          &none                  &none                &ltc 3 SPACE  &none    &none  &mo 10  &mo 12               &kp BACKSLASH          &none
             >;
         };
 
@@ -348,7 +348,7 @@
 &kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                         &kp Y   &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
 &kp ESC    &hrm_l LEFT_COMMAND A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G                         &kp H   &hrm_r LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                &kp B                         &kp N   &kp M                &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
-                                  &none              &none                  &none                &ltc 8 SPACE  &none    &none  &mo 10  &mo 12               &none                  &none
+                                  &kp GRAVE          &none                  &none                &ltc 8 SPACE  &none    &none  &mo 10  &mo 12               &kp BACKSLASH          &none
             >;
         };
 
