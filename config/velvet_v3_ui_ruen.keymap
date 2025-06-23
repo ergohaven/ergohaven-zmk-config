@@ -89,25 +89,25 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <15 16>;
+            key-positions = <3 4>;
             layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <15 16>;
+            key-positions = <3 4>;
             layers = <0>;
         };
 
         rusync {
             bindings = <&to 0>;
-            key-positions = <19 20>;
+            key-positions = <8 7>;
             layers = <1>;
         };
 
         ensycn {
             bindings = <&to 1>;
-            key-positions = <19 20>;
+            key-positions = <8 7>;
             layers = <0>;
         };
     };
@@ -180,10 +180,10 @@
 
         nav {
             bindings = <
-&trans   &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6        &kp N7         &kp N8     &kp N9         &kp N0             &trans
-&trans   &trans  &trans    &trans   &trans   &kp RET                    &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)  &kp DEL
-&tog 11  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP  &kp LC(RIGHT)  &kp PAUSE_BREAK    &kp PRINTSCREEN
-                 &trans    &trans   &trans   &trans   &trans    &trans  &mo 5         &trans         &trans     &trans
+&trans   &kp N1  &kp N2     &kp N3     &kp N4   &kp N5                     &kp N6        &kp N7         &kp N8     &kp N9         &kp N0             &trans
+&trans   &trans  &trans     &trans     &trans   &kp RET                    &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)  &kp DEL
+&tog 11  &trans  &kp HOME   &kp INS    &kp END  &kp DEL                    &kp LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP  &kp LC(RIGHT)  &kp PAUSE_BREAK    &kp PRINTSCREEN
+                 &kp LC(C)  &kp LC(V)  &trans   &trans   &trans    &trans  &mo 5         &trans         &trans     &trans
             >;
 
             display-name = "nav";
