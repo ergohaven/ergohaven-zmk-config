@@ -328,6 +328,20 @@
             key-positions = <30 29>;
             timeout-ms = <35>;
         };
+
+        nm-m-ru {
+            bindings = <&kp QMARK>;
+            key-positions = <31 30>;
+            timeout-ms = <25>;
+            layers = <1 4>;
+        };
+
+        nm-w-ru {
+            bindings = <&kp QMARK>;
+            key-positions = <31 30>;
+            timeout-ms = <25>;
+            layers = <8 11>;
+        };
     };
 
     macros {
@@ -386,13 +400,20 @@
             bindings = <&kp LS(LC(NUMBER_2)) &to 8 &tog_on 9>;
             label = "TO_RU_WIN";
         };
+
+        en: en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "EN";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         M_En {
-            display-name = "MacBaseEn";
+            display-name = "M_En";
             bindings = <
 &kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                         &kp Y  &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
 &kp ESC    &hrm_l LEFT_CONTROL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l LEFT_SHIFT F  &kp G                         &kp H  &hrm_r LEFT_SHIFT J  &hrm_r LEFT_COMMAND K  &hrm_r LEFT_ALT L  &hrm_r LEFT_CONTROL SEMICOLON  &kp SQT
@@ -402,7 +423,7 @@
         };
 
         M_Ru {
-            display-name = "MacBaseRu";
+            display-name = "M_Ru";
             bindings = <
 &kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE              &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
 &kp ESCAPE  &hrm_l LEFT_CONTROL RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_COMMAND RU_CYRILLIC_VE  &hrm_l LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &hrm_r LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_COMMAND RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_CONTROL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
@@ -412,7 +433,7 @@
         };
 
         M_Mods {
-            display-name = "MacMods";
+            display-name = "M_Mods";
             bindings = <
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans  &trans  &trans
@@ -429,11 +450,11 @@
                       &none   &none   &trans  &trans     &trans    &trans  &mo 13  &trans          &none             &none
             >;
 
-            display-name = "MacNumSymEn";
+            display-name = "M_NumEn";
         };
 
         M_NumRu {
-            display-name = "MacNumSymRu";
+            display-name = "M_NumRu";
             bindings = <
 &kp LEFT_BRACKET  &kp DOT    &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET                    &none   &none           &none             &none         &none             &none
 &kp SEMICOLON     &kp N0     &kp N4  &kp N5  &kp N6  &kp EQUAL                            &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
@@ -450,11 +471,11 @@
                          &none         &none             &trans          &mo 13  &trans    &trans  &trans          &trans          &to_en_mac    &to_ru_mac
             >;
 
-            display-name = "MacNavigation";
+            display-name = "M_Nav";
         };
 
         M_Adj {
-            display-name = "MacAdjust";
+            display-name = "M_Adj";
             bindings = <
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN                    &out OUT_BLE     &out OUT_USB                     &none                            &none                   &none                        &bootloader
 &none  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK                     &kp C_PREVIOUS   &hrm_r LEFT_SHIFT C_VOLUME_DOWN  &hrm_r LEFT_COMMAND C_VOLUME_UP  &hrm_r LEFT_ALT C_NEXT  &hrm_r LEFT_CONTROL C_PAUSE  &studio_unlock
@@ -464,7 +485,7 @@
         };
 
         W_En {
-            display-name = "WinBaseEn";
+            display-name = "W_En";
             bindings = <
 &kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                          &kp Y   &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
 &kp ESC    &hrm_l LEFT_COMMAND A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G                          &kp H   &hrm_r LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &kp SQT
@@ -474,7 +495,7 @@
         };
 
         W_Ru {
-            display-name = "WinBaseRu";
+            display-name = "W_Ru";
             bindings = <
 &kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE              &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
 &kp ESCAPE  &hrm_l LEFT_COMMAND RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_CONTROL RU_CYRILLIC_VE  &hrm_l LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &hrm_r LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_CONTROL RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_COMMAND RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
@@ -484,7 +505,7 @@
         };
 
         W_Mods {
-            display-name = "WinMods";
+            display-name = "W_Mods";
             bindings = <
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans  &trans  &trans
@@ -494,7 +515,7 @@
         };
 
         W_NumEn {
-            display-name = "WinNumSymEn";
+            display-name = "W_NumEn";
             bindings = <
 &kp LBKT   &kp DOT    &kp N7  &kp N8  &kp N9  &kp RBKT                     &none   &none           &none             &none         &none             &none
 &kp SEMI   &kp N0     &kp N4  &kp N5  &kp N6  &kp EQUAL                    &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
@@ -504,7 +525,7 @@
         };
 
         W_NumRu {
-            display-name = "WinNumSymRu";
+            display-name = "W_NumRu";
             bindings = <
 &kp LBKT   &kp DOT    &kp N7  &kp N8  &kp N9  &kp RBKT                     &none   &none           &none             &none         &none             &none
 &kp SEMI   &kp N0     &kp N4  &kp N5  &kp N6  &kp EQUAL                    &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
@@ -514,7 +535,7 @@
         };
 
         W_Nav {
-            display-name = "WinNavigation";
+            display-name = "W_Nav";
             bindings = <
 &trans  &trans            &trans        &trans            &trans          &trans                    &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)        &kp LC(LS(Z))  &trans
 &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &trans
@@ -531,7 +552,7 @@
                 &none   &none   &trans  &none            &trans    &trans  &none            &trans                           &none                            &none
             >;
 
-            display-name = "WinAdjust";
+            display-name = "W_Adj";
         };
 
         Mouse {
