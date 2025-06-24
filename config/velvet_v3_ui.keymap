@@ -287,6 +287,36 @@
             timeout-ms = <35>;
             layers = <0 7>;
         };
+
+        rt {
+            bindings = <&none>;
+            key-positions = <5 4>;
+        };
+
+        fg {
+            bindings = <&none>;
+            key-positions = <17 16>;
+        };
+
+        cv {
+            bindings = <&none>;
+            key-positions = <29 28>;
+        };
+
+        yu {
+            bindings = <&none>;
+            key-positions = <6 7>;
+        };
+
+        hj {
+            bindings = <&none>;
+            key-positions = <19 18>;
+        };
+
+        nm {
+            bindings = <&none>;
+            key-positions = <31 30>;
+        };
     };
 
     macros {
