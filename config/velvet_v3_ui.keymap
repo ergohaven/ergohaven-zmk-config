@@ -137,66 +137,92 @@
         we-less {
             bindings = <&kp LT>;
             key-positions = <2 3>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         sd-grave {
             bindings = <&kp GRAVE>;
             key-positions = <14 15>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         xc-pipe {
             bindings = <&kp PIPE>;
             key-positions = <26 27>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         er-bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <4 3>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         df-bracket {
             bindings = <&kp RU_LEFT_PARENTHESIS>;
             key-positions = <16 15>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         cv-bracket {
             bindings = <&kp LBRC>;
             key-positions = <27 28>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         ll-slash {
             bindings = <&kp BACKSLASH>;
             key-positions = <22 21>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         io-greater {
             bindings = <&kp GT>;
             key-positions = <9 8>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         kl-semi {
             bindings = <&kp COLON>;
             key-positions = <21 20>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         dotdot-semi {
             bindings = <&kp COLON>;
             key-positions = <33 32>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         ui-bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <8 7>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         jk-braket {
             bindings = <&kp RU_RIGHT_PARENTHESIS>;
             key-positions = <20 19>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         mcomma-bracket {
             bindings = <&kp RBRC>;
             key-positions = <32 31>;
+            timeout-ms = <25>;
+            layers = <0 7>;
         };
 
         ie-6 {
@@ -209,41 +235,57 @@
         kd-dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <20 15>;
+            timeout-ms = <35>;
+            layers = <0 7>;
         };
 
         ccomma-ex {
             bindings = <&kp EXCLAMATION>;
             key-positions = <32 27>;
+            timeout-ms = <35>;
+            layers = <0 7>;
         };
 
         ur-plus {
             bindings = <&kp PLUS>;
             key-positions = <7 4>;
+            timeout-ms = <35>;
+            layers = <0 7>;
         };
 
         jf-equals {
             bindings = <&kp EQUAL>;
             key-positions = <19 16>;
+            timeout-ms = <35>;
+            layers = <0 7>;
         };
 
         mv-minus {
             bindings = <&kp MINUS>;
             key-positions = <31 28>;
+            timeout-ms = <35>;
+            layers = <0 7>;
         };
 
         yt-null {
             bindings = <&kp AT>;
             key-positions = <6 5>;
+            timeout-ms = <35>;
+            layers = <0 7>;
         };
 
         hg-and {
             bindings = <&kp AMPS>;
             key-positions = <18 17>;
+            timeout-ms = <35>;
+            layers = <0 7>;
         };
 
         nb-under {
             bindings = <&kp UNDER>;
             key-positions = <30 29>;
+            timeout-ms = <35>;
+            layers = <0 7>;
         };
     };
 
@@ -488,7 +530,7 @@
     input-processors = <&zip_xy_scaler 9 20>;
 
     scroller {
-        layers = <14>;
+        layers = <15>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_scaler 1 32>,
@@ -496,7 +538,7 @@
     };
 
     sniper {
-        layers = <15>;
+        layers = <16>;
         input-processors = <&zip_xy_scaler 1 4>;
     };
 };
