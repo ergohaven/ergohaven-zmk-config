@@ -391,7 +391,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        MacBaseEn {
+        M_En {
             display-name = "MacBaseEn";
             bindings = <
 &kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                         &kp Y  &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
@@ -401,7 +401,7 @@
             >;
         };
 
-        MacBaseRu {
+        M_Ru {
             display-name = "MacBaseRu";
             bindings = <
 &kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE              &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
@@ -411,7 +411,7 @@
             >;
         };
 
-        MacMods {
+        M_Mods {
             display-name = "MacMods";
             bindings = <
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans  &trans  &trans
@@ -421,7 +421,7 @@
             >;
         };
 
-        MacNumSymEn {
+        M_NumEn {
             bindings = <
 &kp LBKT   &kp DOT    &kp N7  &kp N8  &kp N9  &kp RBKT                     &none   &none           &none             &none         &none             &none
 &kp SEMI   &kp N0     &kp N4  &kp N5  &kp N6  &kp EQUAL                    &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
@@ -432,7 +432,7 @@
             display-name = "MacNumSymEn";
         };
 
-        MacNumSymRu {
+        M_NumRu {
             display-name = "MacNumSymRu";
             bindings = <
 &kp LEFT_BRACKET  &kp DOT    &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET                    &none   &none           &none             &none         &none             &none
@@ -442,7 +442,7 @@
             >;
         };
 
-        MacNavigation {
+        M_Nav {
             bindings = <
 &none  &none             &none         &none             &none           &none                     &kp LG(V)       &kp LG(C)       &kp LG(X)     &kp LG(Z)        &kp LG(LS(Z))  &none
 &none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &none                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &none
@@ -453,7 +453,7 @@
             display-name = "MacNavigation";
         };
 
-        MacAjust {
+        M_Adj {
             display-name = "MacAdjust";
             bindings = <
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN                    &out OUT_BLE     &out OUT_USB                     &none                            &none                   &none                        &bootloader
@@ -463,7 +463,7 @@
             >;
         };
 
-        WinBaseEn {
+        W_En {
             display-name = "WinBaseEn";
             bindings = <
 &kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                          &kp Y   &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
@@ -473,7 +473,7 @@
             >;
         };
 
-        WinBaseRu {
+        W_Ru {
             display-name = "WinBaseRu";
             bindings = <
 &kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE              &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
@@ -483,8 +483,8 @@
             >;
         };
 
-        WinMod {
-            display-name = "WinMod";
+        W_Mods {
+            display-name = "WinMods";
             bindings = <
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans  &trans  &trans
@@ -493,7 +493,7 @@
             >;
         };
 
-        WinNumSymEn {
+        W_NumEn {
             display-name = "WinNumSymEn";
             bindings = <
 &kp LBKT   &kp DOT    &kp N7  &kp N8  &kp N9  &kp RBKT                     &none   &none           &none             &none         &none             &none
@@ -503,7 +503,7 @@
             >;
         };
 
-        WinNumSymRu {
+        W_NumRu {
             display-name = "WinNumSymRu";
             bindings = <
 &kp LBKT   &kp DOT    &kp N7  &kp N8  &kp N9  &kp RBKT                     &none   &none           &none             &none         &none             &none
@@ -513,7 +513,7 @@
             >;
         };
 
-        WinNavigation {
+        W_Nav {
             display-name = "WinNavigation";
             bindings = <
 &trans  &trans            &trans        &trans            &trans          &trans                    &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)        &kp LC(LS(Z))  &trans
@@ -523,7 +523,7 @@
             >;
         };
 
-        WinAdjust {
+        W_Adj {
             bindings = <
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN                    &out OUT_BLE     &out OUT_USB                     &none                            &none                   &none                        &bootloader
 &none  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK                     &kp C_PREVIOUS   &hrm_r LEFT_SHIFT C_VOLUME_DOWN  &hrm_r LEFT_CONTROL C_VOLUME_UP  &hrm_r LEFT_ALT C_NEXT  &hrm_r LEFT_COMMAND C_PAUSE  &studio_unlock
