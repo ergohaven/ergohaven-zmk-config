@@ -202,6 +202,8 @@
         ie-6 {
             bindings = <&kp ASTERISK>;
             key-positions = <8 3>;
+            timeout-ms = <35>;
+            layers = <0 7>;
         };
 
         kd-dollar {
