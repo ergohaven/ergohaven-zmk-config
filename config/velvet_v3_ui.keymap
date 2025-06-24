@@ -240,6 +240,21 @@
             layers = <0 7>;
         };
 
+                yu {
+            bindings = <&none>;
+            key-positions = <6 7>;
+        };
+
+        hj {
+            bindings = <&none>;
+            key-positions = <19 18>;
+        };
+
+        nm {
+            bindings = <&none>;
+            key-positions = <31 30>;
+        };
+
         ie {
             bindings = <&kp ASTERISK>;
             key-positions = <8 3>;
@@ -301,23 +316,6 @@
             key-positions = <30 29>;
             timeout-ms = <35>;
             layers = <0 7>;
-        };
-
-
-
-        yu {
-            bindings = <&none>;
-            key-positions = <6 7>;
-        };
-
-        hj {
-            bindings = <&none>;
-            key-positions = <19 18>;
-        };
-
-        nm {
-            bindings = <&none>;
-            key-positions = <31 30>;
         };
     };
 
