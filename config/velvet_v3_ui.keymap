@@ -317,6 +317,26 @@
             timeout-ms = <35>;
             layers = <0 7>;
         };
+
+        zx {
+            bindings = <&none>;
+            key-positions = <25 26>;
+        };
+
+        dotslash {
+            bindings = <&none>;
+            key-positions = <33 34>;
+        };
+
+        qw {
+            bindings = <&none>;
+            key-positions = <1 2>;
+        };
+
+        op {
+            bindings = <&none>;
+            key-positions = <10 9>;
+        };
     };
 
     macros {
