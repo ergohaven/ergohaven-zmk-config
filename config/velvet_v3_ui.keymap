@@ -107,58 +107,64 @@
             bindings = <&to_en_mac>;
             key-positions = <44 42>;
             layers = <0 1 2 3 5 4 6>;
+            timeout-ms = <45>;
         };
 
         to-ru-mac {
             bindings = <&to_ru_mac>;
             key-positions = <45 42>;
             layers = <0 1 2 3 5 4 6>;
+            timeout-ms = <45>;
         };
 
         to-en-win {
             bindings = <&to_en_win>;
             key-positions = <44 42>;
             layers = <7 8 9 10 11 13 12>;
+            timeout-ms = <45>;
         };
 
         to-ru-win {
             bindings = <&to_ru_win>;
             key-positions = <42 45>;
             layers = <7 8 9 10 11 12 13>;
+            timeout-ms = <45>;
         };
 
         qw {
             bindings = <&none>;
             key-positions = <1 2>;
+            timeout-ms = <45>;
         };
 
         as {
-            bindings = <&kp TILDE>;
+            bindings = <&kp GRAVE>;
             key-positions = <13 14>;
-            timeout-ms = <25>;
+            timeout-ms = <45>;
         };
 
         zx {
             bindings = <&none>;
             key-positions = <25 26>;
+            timeout-ms = <45>;
         };
 
         we {
-            bindings = <&kp LT>;
+            bindings = <&kp HASH>;
             key-positions = <2 3>;
-            timeout-ms = <25>;
+            timeout-ms = <35>;
         };
 
         sd {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp LT>;
             key-positions = <14 15>;
-            timeout-ms = <25>;
+            timeout-ms = <35>;
         };
 
         xc {
-            bindings = <&kp PIPE>;
+            bindings = <&kp DQT>;
             key-positions = <26 27>;
-            timeout-ms = <25>;
+            timeout-ms = <35>;
         };
 
         er {
@@ -180,52 +186,57 @@
         };
 
         rt {
-            bindings = <&none>;
+            bindings = <&kp FSLH>;
             key-positions = <5 4>;
+            timeout-ms = <25>;
         };
 
         fg {
-            bindings = <&none>;
+            bindings = <&kp MINUS>;
             key-positions = <17 16>;
+            timeout-ms = <25>;
         };
 
         vb {
-            bindings = <&none>;
+            bindings = <&kp STAR>;
             key-positions = <29 28>;
+            timeout-ms = <25>;
         };
 
         op {
             bindings = <&none>;
             key-positions = <10 9>;
+            timeout-ms = <45>;
         };
 
         ll {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&kp TILDE>;
             key-positions = <22 21>;
-            timeout-ms = <25>;
+            timeout-ms = <45>;
         };
 
         dotslash {
-            bindings = <&none>;
+            bindings = <&kp CARET>;
             key-positions = <33 34>;
+            timeout-ms = <45>;
         };
 
         io {
-            bindings = <&kp GT>;
+            bindings = <&kp DLLR>;
             key-positions = <9 8>;
-            timeout-ms = <25>;
+            timeout-ms = <35>;
         };
 
         kl {
-            bindings = <&kp COLON>;
+            bindings = <&kp GT>;
             key-positions = <21 20>;
-            timeout-ms = <25>;
+            timeout-ms = <35>;
         };
 
         dotdot {
-            bindings = <&kp COLON>;
+            bindings = <&kp SQT>;
             key-positions = <33 32>;
-            timeout-ms = <25>;
+            timeout-ms = <35>;
         };
 
         ui {
@@ -247,40 +258,43 @@
         };
 
         yu {
-            bindings = <&none>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <6 7>;
+            timeout-ms = <25>;
         };
 
         hj {
-            bindings = <&none>;
+            bindings = <&kp UNDER>;
             key-positions = <19 18>;
+            timeout-ms = <25>;
         };
 
         nm {
-            bindings = <&none>;
+            bindings = <&kp QMARK>;
             key-positions = <31 30>;
+            timeout-ms = <25>;
         };
 
         ie {
-            bindings = <&kp ASTERISK>;
+            bindings = <&kp EXCL>;
             key-positions = <8 3>;
             timeout-ms = <35>;
         };
 
         kd {
-            bindings = <&kp DOLLAR>;
+            bindings = <&kp PRCNT>;
             key-positions = <20 15>;
             timeout-ms = <35>;
         };
 
         ccomma {
-            bindings = <&kp EXCLAMATION>;
+            bindings = <&kp AT>;
             key-positions = <32 27>;
             timeout-ms = <35>;
         };
 
         ur {
-            bindings = <&kp PLUS>;
+            bindings = <&kp AMPS>;
             key-positions = <7 4>;
             timeout-ms = <35>;
         };
@@ -292,29 +306,28 @@
         };
 
         mv {
-            bindings = <&kp MINUS>;
+            bindings = <&kp SEMI>;
             key-positions = <31 28>;
             timeout-ms = <35>;
         };
 
         yt {
-            bindings = <&kp AT>;
+            bindings = <&kp PIPE>;
             key-positions = <6 5>;
             timeout-ms = <35>;
         };
 
         hg {
-            bindings = <&kp AMPS>;
+            bindings = <&kp PLUS>;
             key-positions = <18 17>;
             timeout-ms = <35>;
         };
 
         nb {
-            bindings = <&kp UNDER>;
+            bindings = <&kp COLON>;
             key-positions = <30 29>;
             timeout-ms = <35>;
         };
-       
     };
 
     macros {
