@@ -118,7 +118,7 @@
         to-en-win {
             bindings = <&to_en_win>;
             key-positions = <39 28>;
-            layers = <5 6 10 8>;
+            layers = <6 7 5 9>;
         };
 
         to-ru-win {
@@ -241,7 +241,7 @@
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 5 &tog_on 7>;
+            bindings = <&bt BT_SEL 1 &to 6 &tog_on 8>;
             label = "BT_WIN";
         };
 
@@ -255,7 +255,7 @@
         mod_win: mod_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 5 &tog_on 7>;
+            bindings = <&to 6 &tog_on 8>;
             label = "MOD_WIN";
         };
 
@@ -276,14 +276,14 @@
         to_en_win: to_en_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(NUMBER_1)) &to 5 &tog_on 7>;
+            bindings = <&kp LC(LS(NUMBER_1)) &to 6 &tog_on 8>;
             label = "TO_EN_WIN";
         };
 
         to_ru_win: to_ru_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(NUMBER_2)) &to 6 &tog_on 7>;
+            bindings = <&kp LS(LC(NUMBER_2)) &to 7 &tog_on 8>;
             label = "TO_RU_WIN";
         };
     };
@@ -294,10 +294,10 @@
         BaseEnMac {
             display-name = "BaseEnMac";
             bindings = <
-&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                         &kp Y   &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
-&kp ESC    &hrm_l LEFT_CONTROL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l LEFT_SHIFT F  &kp G                         &kp H   &hrm_r LEFT_SHIFT J  &hrm_r LEFT_COMMAND K  &hrm_r LEFT_ALT L  &hrm_r LEFT_CONTROL SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                &kp B                         &kp N   &kp M                &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
-                                  &kp GRAVE          &none                  &none                &ltc 3 SPACE  &none    &none  &mo 10  &mo 12               &kp BACKSLASH          &none
+&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                         &kp Y  &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
+&kp ESC    &hrm_l LEFT_CONTROL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l LEFT_SHIFT F  &kp G                         &kp H  &hrm_r LEFT_SHIFT J  &hrm_r LEFT_COMMAND K  &hrm_r LEFT_ALT L  &hrm_r LEFT_CONTROL SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                &kp B                         &kp N  &kp M                &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
+                                  &kp GRAVE          &none                  &none                &ltc 3 SPACE  &none    &none  &mo 5  &mo 13               &kp BACKSLASH          &none
             >;
         };
 
@@ -307,17 +307,17 @@
 &kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE              &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
 &kp ESCAPE  &hrm_l LEFT_CONTROL RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_COMMAND RU_CYRILLIC_VE  &hrm_l LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &hrm_r LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_COMMAND RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_CONTROL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM               &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN        &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &mac_ru_dotcomma                     &kp RU_CYRILLIC_HARD_SIGN
-                                                &kp RU_BACKSLASH                  &none                               &none                            &ltc 4 SPACE        &none    &none  &mo 10              &mo 12                           &kp RU_CYRILLIC_IO                  &none
+                                                &kp RU_BACKSLASH                  &none                               &none                            &ltc 4 SPACE        &none    &none  &mo 5               &mo 13                           &kp RU_CYRILLIC_IO                  &none
             >;
         };
 
         ModsMac {
             display-name = "ModsMac";
             bindings = <
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-                &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &kp LEFT_COMMAND    &kp BACKSPACE  &ltc 10 ENTER  &mo 12  &trans  &kp ENTER
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans     &trans  &trans
+                &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &kp LEFT_COMMAND    &kp BACKSPACE  &ltc 5 ENTER  &mo 13  &trans  &kp ENTER
             >;
         };
 
@@ -326,7 +326,7 @@
 &trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp NUMBER_5                    &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans           &trans       &trans    &to_en_mac  &to_ru_mac                      &trans     &trans         &kp COMMA     &kp DOT               &kp QUESTION           &trans
-                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 11     &trans         &trans        &trans
+                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 12     &trans         &trans        &trans
             >;
 
             display-name = "NumSymEnMac";
@@ -338,8 +338,19 @@
 &trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp NUMBER_5                    &kp N6     &kp N7         &kp N8            &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans           &trans       &trans    &to_en_mac  &to_ru_mac                      &trans     &trans         &kp LS(NUMBER_6)  &kp LS(NUMBER_7)      &kp QUESTION           &trans
-                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 11     &trans         &trans            &trans
+                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 12     &trans         &trans            &trans
             >;
+        };
+
+        NavigationMac {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
+                &trans  &trans  &trans  &mo 12  &trans    &trans  &trans          &trans          &trans        &trans
+            >;
+
+            display-name = "NavigationMac";
         };
 
         BaseEnWin {
@@ -348,7 +359,7 @@
 &kp TAB    &kp Q                  &kp W              &kp E                  &kp R                &kp T                         &kp Y   &kp U                &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
 &kp ESC    &hrm_l LEFT_COMMAND A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G                         &kp H   &hrm_r LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                &kp B                         &kp N   &kp M                &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
-                                  &kp GRAVE          &none                  &none                &ltc 8 SPACE  &none    &none  &mo 10  &mo 12               &kp BACKSLASH          &none
+                                  &kp GRAVE          &none                  &none                &ltc 9 SPACE  &none    &none  &mo 11  &mo 13               &kp BACKSLASH          &none
             >;
         };
 
@@ -358,7 +369,7 @@
 &kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE              &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
 &kp ESCAPE  &hrm_l LEFT_COMMAND RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_CONTROL RU_CYRILLIC_VE  &hrm_l LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &hrm_r LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_CONTROL RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_COMMAND RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM               &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN        &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &kp SLASH                            &kp RU_CYRILLIC_HARD_SIGN
-                                                &kp RU_CYRILLIC_IO                &none                               &none                            &ltc 9 SPACE        &none    &none  &mo 10              &mo 12                           &kp RU_BACKSLASH                    &none
+                                                &kp RU_CYRILLIC_IO                &none                               &none                            &ltc 10 SPACE       &none    &none  &mo 11              &mo 13                           &kp RU_BACKSLASH                    &none
             >;
         };
 
@@ -368,7 +379,7 @@
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-                &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 10 ENTER  &mo 12  &trans  &kp ENTER
+                &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 11 ENTER  &mo 13  &trans  &kp ENTER
             >;
         };
 
@@ -378,7 +389,7 @@
 &trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp NUMBER_5                    &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans           &trans       &trans    &to_en_win  &to_ru_win                      &trans     &trans         &kp COMMA     &kp DOT               &kp QUESTION           &trans
-                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 11     &trans         &trans        &trans
+                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 12     &trans         &trans        &trans
             >;
         };
 
@@ -388,19 +399,18 @@
 &trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp NUMBER_5                    &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans           &trans       &trans    &to_en_win  &to_ru_win                      &trans     &trans         &kp RU_COMMA  &kp RU_DOT            &kp RU_QUESTION        &trans
-                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 11     &trans         &trans        &trans
+                         &trans       &trans    &trans      &trans        &trans    &trans  &mo 12     &trans         &trans        &trans
             >;
         };
 
-        Navigation {
+        NavigationWin {
+            display-name = "NavigationWin";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                     &kp DELETE          &kp END         &kp HOME      &kp INSERT           &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &trans  &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                    &kp LC(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LC(RIGHT_ARROW)  &trans  &trans
-                 &trans   &trans   &trans   &mo 11   &trans    &trans  &trans              &trans          &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp C_AC_PASTE  &kp K_COPY      &kp K_CUT     &kp K_UNDO           &kp K_REDO    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp CAPSLOCK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp C_AC_HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp LC(RIGHT_ARROW)  &kp INSERT    &trans
+                &trans  &trans  &trans  &mo 12  &trans    &trans  &trans          &trans          &trans        &trans
             >;
-
-            display-name = "Navigation";
         };
 
         Adjust {
@@ -417,7 +427,7 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 13  &mo 14
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 14  &mo 15
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
