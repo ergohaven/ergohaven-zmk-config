@@ -403,10 +403,10 @@
         MacMods {
             display-name = "MacMods";
             bindings = <
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans     &trans  &trans
-                &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &kp LEFT_COMMAND    &kp BACKSPACE  &ltc 5 ENTER  &mo 14  &trans  &kp ENTER
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans        &trans  &trans  &trans  &trans  &trans
+                &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &kp LEFT_COMMAND    &kp BACKSPACE  &ltc 5 ENTER  &mo 14  &trans  &trans
             >;
         };
 
@@ -475,10 +475,10 @@
         WinMod {
             display-name = "WinMod";
             bindings = <
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans     &trans  &trans
-                &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 12 ENTER  &mo 14  &trans  &kp ENTER
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans        &trans                                     &trans         &trans  &trans  &trans  &trans  &trans
+                &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &trans  &kp LEFT_CONTROL    &kp BACKSPACE  &ltc 12 ENTER  &mo 14  &trans  &trans
             >;
         };
 
