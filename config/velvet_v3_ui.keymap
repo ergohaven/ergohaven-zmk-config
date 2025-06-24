@@ -105,19 +105,19 @@
 
         to-en-mac {
             bindings = <&to_en_mac>;
-            key-positions = <43 44>;
+            key-positions = <44 42>;
             layers = <0 1 2 3 5 4 6>;
         };
 
         to-ru-mac {
             bindings = <&to_ru_mac>;
-            key-positions = <43 45>;
+            key-positions = <45 42>;
             layers = <0 1 2 3 5 4 6>;
         };
 
         to-en-win {
             bindings = <&to_en_win>;
-            key-positions = <43 44>;
+            key-positions = <44 42>;
             layers = <7 8 9 10 11 13 12>;
         };
 
@@ -240,7 +240,7 @@
             layers = <0 7>;
         };
 
-                yu {
+        yu {
             bindings = <&none>;
             key-positions = <6 7>;
         };
