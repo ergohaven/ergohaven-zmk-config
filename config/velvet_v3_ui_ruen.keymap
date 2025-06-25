@@ -51,6 +51,13 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40>;
         };
+
+        search_key: search_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SEARCH_KEY";
+            #binding-cells = <0>;
+            bindings = <&kp LC(F)>, <&kp LC(LS(F))>;
+        };
     };
 
     combos {
@@ -223,10 +230,10 @@
 
         cursor {
             bindings = <
-&trans     &trans        &trans     &trans     &kp LC(F)  &kp LC(F5)                     &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp PRINTSCREEN
-&kp LC(A)  &kp LG(LGUI)  &kp LALT   &kp LCTRL  &kp LSHFT  &trans                         &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
-&trans     &kp LC(Z)     &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans                         &trans  &trans    &trans    &trans     &trans     &trans
-                         &trans     &kp LC(D)  &trans     &trans      &trans    &kp RET  &trans  &trans    &trans    &trans
+&none      &none      &none      &none      &search_key  &kp LC(F5)                    &kp PRINTSCREEN  &kp HOME     &kp UP    &kp END        &none  &none
+&kp LC(A)  &kp LC(A)  &kp LALT   &kp LCTRL  &kp LSHFT    &none                         &none            &kp LEFT     &kp DOWN  &kp RIGHT      &none  &none
+&none      &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)    &none                         &none            &kp PAGE_UP  &none     &kp PAGE_DOWN  &none  &none
+                      &none      &kp LC(D)  &none        &none       &none    &kp RET  &none            &none        &none     &none
             >;
         };
 
