@@ -191,10 +191,10 @@
 
         sym {
             bindings = <
-&trans  &kp HASH   &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
-&trans  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
-&trans  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &kp DLLR                     &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &trans
-                   &trans    &trans     &trans    &mo 5      &trans    &trans  &trans     &trans    &kp LBKT   &kp RBKT
+&trans  &kp HASH   &kp LT    &kp EQUAL  &kp GT     &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
+&trans  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR   &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
+&trans  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH   &kp DLLR                     &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &trans
+                   &trans    &trans     &kp LCTRL  &mo 5      &trans    &trans  &trans     &trans    &kp LBKT   &kp RBKT
             >;
 
             display-name = "sym";
@@ -206,7 +206,7 @@
 &kp RU_CYRILLIC_IO  &en HASH          &en LT    &kp EQUAL     &en GT       &en GRAVE                    &en CARET  &kp RU_DQT  &kp UNDER    &en SQT   &trans      &trans
 &kp RU_NUMERO       &kp RU_BACKSLASH  &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                     &kp PRCNT  &en LBRC    &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QMARK
 &trans              &kp RU_COMMA      &kp STAR  &kp RU_COLON  &kp RU_FSLH  &en DLLR                     &en AT     &en PIPE    &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                                      &trans    &trans        &trans       &mo 5      &trans    &trans  &trans     &trans      &en LBKT     &en RBKT
+                                      &trans    &trans        &kp LCTRL    &mo 5      &trans    &trans  &trans     &trans      &en LBKT     &en RBKT
             >;
         };
 
