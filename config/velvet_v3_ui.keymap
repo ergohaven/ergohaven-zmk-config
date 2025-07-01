@@ -131,7 +131,7 @@
             timeout-ms = <45>;
         };
 
-        qw {
+        qw-mac-en {
             bindings = <&none>;
             key-positions = <1 2>;
             timeout-ms = <45>;
@@ -329,18 +329,36 @@
             timeout-ms = <35>;
         };
 
-        nm-m-ru {
+        nm-mac-ru {
             bindings = <&kp QMARK>;
             key-positions = <31 30>;
             timeout-ms = <25>;
             layers = <1 4>;
         };
 
-        nm-w-ru {
+        nm-win-ru {
             bindings = <&kp QMARK>;
             key-positions = <31 30>;
             timeout-ms = <25>;
             layers = <8 11>;
+        };
+
+        qw-mac-ru {
+            bindings = <&none>;
+            key-positions = <1 2>;
+            timeout-ms = <45>;
+        };
+
+        qw-win-en {
+            bindings = <&none>;
+            key-positions = <1 2>;
+            timeout-ms = <45>;
+        };
+
+        qw-win-ru {
+            bindings = <&none>;
+            key-positions = <1 2>;
+            timeout-ms = <45>;
         };
     };
 
