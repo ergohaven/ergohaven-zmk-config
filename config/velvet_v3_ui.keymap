@@ -137,6 +137,24 @@
             timeout-ms = <45>;
         };
 
+        qw-mac-ru {
+            bindings = <&none>;
+            key-positions = <1 2>;
+            timeout-ms = <45>;
+        };
+
+        qw-win-en {
+            bindings = <&none>;
+            key-positions = <1 2>;
+            timeout-ms = <45>;
+        };
+
+        qw-win-ru {
+            bindings = <&none>;
+            key-positions = <1 2>;
+            timeout-ms = <45>;
+        };
+
         as {
             bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <13 14>;
@@ -274,6 +292,20 @@
             key-positions = <31 30>;
             timeout-ms = <25>;
         };
+        
+        nm-mac-ru {
+            bindings = <&kp QMARK>;
+            key-positions = <31 30>;
+            timeout-ms = <25>;
+            layers = <1 4>;
+        };
+
+        nm-win-ru {
+            bindings = <&kp QMARK>;
+            key-positions = <31 30>;
+            timeout-ms = <25>;
+            layers = <8 11>;
+        };
 
         ie {
             bindings = <&kp EXCL>;
@@ -327,38 +359,6 @@
             bindings = <&kp COLON>;
             key-positions = <30 29>;
             timeout-ms = <35>;
-        };
-
-        nm-mac-ru {
-            bindings = <&kp QMARK>;
-            key-positions = <31 30>;
-            timeout-ms = <25>;
-            layers = <1 4>;
-        };
-
-        nm-win-ru {
-            bindings = <&kp QMARK>;
-            key-positions = <31 30>;
-            timeout-ms = <25>;
-            layers = <8 11>;
-        };
-
-        qw-mac-ru {
-            bindings = <&none>;
-            key-positions = <1 2>;
-            timeout-ms = <45>;
-        };
-
-        qw-win-en {
-            bindings = <&none>;
-            key-positions = <1 2>;
-            timeout-ms = <45>;
-        };
-
-        qw-win-ru {
-            bindings = <&none>;
-            key-positions = <1 2>;
-            timeout-ms = <45>;
         };
     };
 
@@ -419,10 +419,29 @@
             label = "TO_RU_WIN";
         };
 
-        en: en {
+        to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LS(LC(N2))>;
+            label = "TO_RU";
+        };
+
+        to_en: to_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(N1))>;
+            label = "TO_EN";
+        };
+
+        en: en {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_wait_time 10>,
+                <&to_ru>,
+                <&macro_wait_time 10>;
+
             label = "EN";
         };
     };
