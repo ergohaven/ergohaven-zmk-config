@@ -104,16 +104,15 @@
             bindings = <&en NON_US_BACKSLASH>;
             key-positions = <13 14>;
             timeout-ms = <45>;
-            layers = <0>;
+            layers = <1>;
         };
 
         as-win-ru {
             bindings = <&en GRAVE>;
             key-positions = <13 14>;
             timeout-ms = <45>;
-            layers = <6>;
+            layers = <7>;
         };
-
 
         zx-none {
             bindings = <&none>;
@@ -132,9 +131,8 @@
             bindings = <&en HASH>;
             key-positions = <2 3>;
             timeout-ms = <35>;
-            layers = <0 6>;
+            layers = <1 7>;
         };
-
 
         sd-macwin-en {
             bindings = <&kp LT>;
@@ -147,7 +145,7 @@
             bindings = <&en LT>;
             key-positions = <14 15>;
             timeout-ms = <35>;
-            layers = <0 6>;
+            layers = <1 7>;
         };
 
         xc-macwin-en {
@@ -161,7 +159,7 @@
             bindings = <&en SINGLE_QUOTE>;
             key-positions = <26 27>;
             timeout-ms = <35>;
-            layers = <0 6>;
+            layers = <1 7>;
         };
 
         er-macwin-en {
@@ -175,7 +173,7 @@
             bindings = <&en LEFT_BRACKET>;
             key-positions = <4 3>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <1 7>;
         };
 
         df-macwin-ruen {
@@ -196,28 +194,28 @@
             bindings = <&en LBRC>;
             key-positions = <27 28>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <1 7>;
         };
 
         rt-mac-ruen {
             bindings = <&kp FSLH>;
             key-positions = <5 4>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
 
         rt-win-en {
             bindings = <&kp FSLH>;
             key-positions = <5 4>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <6>;
         };
 
         rt-win-ru {
             bindings = <&kp PIPE>;
             key-positions = <5 4>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <1>;
         };
 
         fg-macwin-ruen {
@@ -238,7 +236,7 @@
             bindings = <&kp STAR>;
             key-positions = <29 28>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <1 7>;
         };
 
         op-none {
@@ -406,6 +404,41 @@
             key-positions = <30 29>;
             timeout-ms = <35>;
             layers = <0 6>;
+        };
+
+        lsemi-mac-ru {
+            bindings = <&en LS(NON_US_BACKSLASH)>;
+            key-positions = <22 21>;
+            timeout-ms = <45>;
+            layers = <1>;
+        };
+
+        lsemi-win-ru {
+            bindings = <&en TILDE>;
+            key-positions = <22 21>;
+            timeout-ms = <45>;
+            layers = <7>;
+        };
+
+        dotslash-macwin-ru {
+            bindings = <&kp CARET>;
+            key-positions = <33 34>;
+            timeout-ms = <45>;
+            layers = <1 7>;
+        };
+
+        io-macwin-ru {
+            bindings = <&en DLLR>;
+            key-positions = <9 8>;
+            timeout-ms = <35>;
+            layers = <1 7>;
+        };
+
+        kl-macwin-ru {
+            bindings = <&en GT>;
+            key-positions = <21 20>;
+            timeout-ms = <35>;
+            layers = <1 7>;
         };
     };
 
