@@ -344,6 +344,20 @@
             timeout-ms = <35>;
             layers = <0 7>;
         };
+
+        as-mac-ru {
+            bindings = <&en NON_US_BACKSLASH>;
+            key-positions = <13 14>;
+            timeout-ms = <45>;
+            layers = <0>;
+        };
+
+        as-win-ru {
+            bindings = <&en GRAVE>;
+            key-positions = <13 14>;
+            timeout-ms = <45>;
+            layers = <7>;
+        };
     };
 
     macros {
