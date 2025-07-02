@@ -10,16 +10,6 @@
 
 / {
     behaviors {
-        cap_sen: cap_sen {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CAP_SEN";
-            bindings = <&mo>, <&mo>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <10>;
-            hold-while-undecided;
-        };
-
         ltc: ltc {
             compatible = "zmk,behavior-hold-tap";
             label = "LTC";
@@ -27,19 +17,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
-        };
-
-        tog_on: tog_on {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOG_ON";
-            #binding-cells = <1>;
-        };
-
-        tog_off: tog_off {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOG_OFF";
-            #binding-cells = <1>;
-            toggle-mode = "off";
         };
 
         bt_mac_mod: bt_mac_mod {
@@ -364,14 +341,14 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &mod_mac>;
+            bindings = <&bt BT_SEL 0 &to 0>;
             label = "BT_MAC";
         };
 
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &mod_win>;
+            bindings = <&bt BT_SEL 1 &to 6>;
             label = "BT_WIN";
         };
 
@@ -392,28 +369,28 @@
         to_en_mac: to_en_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_en &mod_mac>;
+            bindings = <&kp LC(LS(N1)) &to 0>;
             label = "TO_EN";
         };
 
         to_ru_mac: to_ru_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_ru &to 1>;
+            bindings = <&kp LC(LS(N2)) &to 1>;
             label = "LAYER_RU";
         };
 
         to_en_win: to_en_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_en &to 6>;
+            bindings = <&kp LC(LS(N1)) &to 6>;
             label = "TO_EN_WIN";
         };
 
         to_ru_win: to_ru_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_ru &to 7>;
+            bindings = <&kp LC(LS(N2)) &to 7>;
             label = "TO_RU_WIN";
         };
 
@@ -435,9 +412,9 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&kp LC(LS(N1)) &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_wait_time 10>,
-                <&to_ru>,
+                <&kp LC(LS(NUMBER_2))>,
                 <&macro_wait_time 10>;
 
             label = "EN";
