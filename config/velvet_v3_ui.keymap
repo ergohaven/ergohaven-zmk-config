@@ -352,20 +352,6 @@
             label = "BT_WIN";
         };
 
-        mod_mac: mod_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0>;
-            label = "MOD_MAC";
-        };
-
-        mod_win: mod_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 6>;
-            label = "MOD_WIN";
-        };
-
         to_en_mac: to_en_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
