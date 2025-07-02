@@ -116,6 +116,13 @@
             layers = <0>;
         };
 
+        as-win-en {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 14>;
+            timeout-ms = <45>;
+            layers = <7>;
+        };
+
         zx-none {
             bindings = <&none>;
             key-positions = <25 26>;
@@ -196,6 +203,13 @@
             key-positions = <22 21>;
             timeout-ms = <45>;
             layers = <0>;
+        };
+
+        lsemi-win-en {
+            bindings = <&kp TILDE>;
+            key-positions = <22 21>;
+            timeout-ms = <45>;
+            layers = <7>;
         };
 
         dotslash-macwin-en {
@@ -329,20 +343,6 @@
             key-positions = <30 29>;
             timeout-ms = <35>;
             layers = <0 7>;
-        };
-
-        as-win-en {
-            bindings = <&kp GRAVE>;
-            key-positions = <13 14>;
-            timeout-ms = <45>;
-            layers = <7>;
-        };
-
-        lsemi-win-en {
-            bindings = <&kp TILDE>;
-            key-positions = <22 21>;
-            timeout-ms = <45>;
-            layers = <7>;
         };
     };
 
