@@ -246,11 +246,11 @@
             layers = <0 6>;
         };
 
-        vb-macwin-ru {
+        vb-win-ru {
             bindings = <&kp STAR>;
             key-positions = <29 28>;
             timeout-ms = <25>;
-            layers = <1 7>;
+            layers = <7>;
         };
 
         op-none {
@@ -295,7 +295,7 @@
         };
 
         dotslash-macwin-ru {
-            bindings = <&kp CARET>;
+            bindings = <&en CARET>;
             key-positions = <33 34>;
             timeout-ms = <45>;
             layers = <1 7>;
@@ -565,6 +565,13 @@
             key-positions = <30 29>;
             timeout-ms = <35>;
             layers = <7>;
+        };
+
+        vb-mac-ru {
+            bindings = <&kp LS(N8)>;
+            key-positions = <29 28>;
+            timeout-ms = <25>;
+            layers = <1>;
         };
     };
 
