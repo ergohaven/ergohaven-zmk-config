@@ -110,52 +110,13 @@
             timeout-ms = <45>;
         };
 
-        to-ru-mac {
-            bindings = <&to_ru_mac>;
-            key-positions = <45 42>;
-            layers = <0 1 2 3 5 4 6>;
-            timeout-ms = <45>;
-        };
-
-        to-en-win {
-            bindings = <&to_en_win>;
-            key-positions = <44 42>;
-            layers = <7 8 9 10 11 13 12>;
-            timeout-ms = <45>;
-        };
-
-        to-ru-win {
-            bindings = <&to_ru_win>;
-            key-positions = <42 45>;
-            layers = <7 8 9 10 11 12 13>;
-            timeout-ms = <45>;
-        };
-
-        qw-mac-en {
+        qw-mac {
             bindings = <&none>;
             key-positions = <1 2>;
             timeout-ms = <45>;
         };
 
-        qw-mac-ru {
-            bindings = <&none>;
-            key-positions = <1 2>;
-            timeout-ms = <45>;
-        };
-
-        qw-win-en {
-            bindings = <&none>;
-            key-positions = <1 2>;
-            timeout-ms = <45>;
-        };
-
-        qw-win-ru {
-            bindings = <&none>;
-            key-positions = <1 2>;
-            timeout-ms = <45>;
-        };
-
-        as {
+        as-mac-en {
             bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <13 14>;
             timeout-ms = <45>;
@@ -180,7 +141,7 @@
         };
 
         xc {
-            bindings = <&kp DQT>;
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <26 27>;
             timeout-ms = <35>;
         };
@@ -228,7 +189,7 @@
         };
 
         ll {
-            bindings = <&kp NON_US_BACKSLASH>;
+            bindings = <&kp LS(NON_US_BACKSLASH)>;
             key-positions = <22 21>;
             timeout-ms = <45>;
         };
@@ -252,7 +213,7 @@
         };
 
         dotdot {
-            bindings = <&kp SQT>;
+            bindings = <&kp DQT>;
             key-positions = <33 32>;
             timeout-ms = <35>;
         };
@@ -292,7 +253,7 @@
             key-positions = <31 30>;
             timeout-ms = <25>;
         };
-        
+
         nm-mac-ru {
             bindings = <&kp QMARK>;
             key-positions = <31 30>;
@@ -360,6 +321,18 @@
             key-positions = <30 29>;
             timeout-ms = <35>;
         };
+
+        as-win-en {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 14>;
+            timeout-ms = <45>;
+        };
+
+        ll-win-en {
+            bindings = <&kp TILDE>;
+            key-positions = <22 21>;
+            timeout-ms = <45>;
+        };
     };
 
     macros {
@@ -391,31 +364,31 @@
             label = "MOD_WIN";
         };
 
-        to_en_mac: to_en {
+        to_en_mac: to_en_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(NUMBER_1)) &to 0 &tog_on 2>;
+            bindings = <&to_en &to 0 &tog_on 2>;
             label = "TO_EN";
         };
 
-        to_ru_mac: layer_ru {
+        to_ru_mac: to_ru_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(NUMBER_2)) &to 1 &tog_on 2>;
+            bindings = <&to_ru &to 1 &tog_on 2>;
             label = "LAYER_RU";
         };
 
         to_en_win: to_en_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(NUMBER_1)) &to 7 &tog_on 9>;
+            bindings = <&to_en &to 7 &tog_on 9>;
             label = "TO_EN_WIN";
         };
 
         to_ru_win: to_ru_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(NUMBER_2)) &to 8 &tog_on 9>;
+            bindings = <&to_ru &to 8 &tog_on 9>;
             label = "TO_RU_WIN";
         };
 
