@@ -22,7 +22,7 @@
         bt_mac_mod: bt_mac_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "BT_MAC_MOD";
-            bindings = <&mod_mac>, <&bt_mac>;
+            bindings = <&to>, <&bt_mac>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -32,7 +32,7 @@
         bt_win_mod: bt_win_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "BT_WIN_MOD";
-            bindings = <&mod_win>, <&bt_win>;
+            bindings = <&to>, <&bt_win>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -481,7 +481,7 @@
             bindings = <
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN                    &out OUT_BLE     &out OUT_USB                     &none                            &none                   &none                        &bootloader
 &none  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK                     &kp C_PREVIOUS   &hrm_r LEFT_SHIFT C_VOLUME_DOWN  &hrm_r LEFT_COMMAND C_VOLUME_UP  &hrm_r LEFT_ALT C_NEXT  &hrm_r LEFT_CONTROL C_PAUSE  &studio_unlock
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 0 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 6 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
                 &none   &none   &trans  &none            &trans    &trans  &none            &trans                           &none                            &none
             >;
         };
@@ -540,7 +540,7 @@
             bindings = <
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN                    &out OUT_BLE     &out OUT_USB                     &none                            &none                   &none                        &bootloader
 &none  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK                     &kp C_PREVIOUS   &hrm_r LEFT_SHIFT C_VOLUME_DOWN  &hrm_r LEFT_CONTROL C_VOLUME_UP  &hrm_r LEFT_ALT C_NEXT  &hrm_r LEFT_COMMAND C_PAUSE  &studio_unlock
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 0 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 6 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
                 &none   &none   &trans  &none            &trans    &trans  &none            &trans                           &none                            &none
             >;
 
