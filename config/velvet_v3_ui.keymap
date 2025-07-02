@@ -141,7 +141,7 @@
             layers = <0 6>;
         };
 
-        sd-macwin-ru {
+        sd-win-ru {
             bindings = <&en LT>;
             key-positions = <14 15>;
             timeout-ms = <35>;
@@ -169,7 +169,7 @@
             layers = <0 6>;
         };
 
-        er-macwin-ru {
+        er-win-ru {
             bindings = <&en LEFT_BRACKET>;
             key-positions = <4 3>;
             timeout-ms = <25>;
@@ -308,7 +308,7 @@
             layers = <0 6>;
         };
 
-        kl-macwin-ru {
+        kl-win-ru {
             bindings = <&en GT>;
             key-positions = <21 20>;
             timeout-ms = <35>;
@@ -385,7 +385,7 @@
             layers = <0 1 6 7>;
         };
 
-        kd-macwin-ruen {
+        kd-win-ruen {
             bindings = <&kp PRCNT>;
             key-positions = <20 15>;
             timeout-ms = <35>;
@@ -437,6 +437,132 @@
         nb-macwin-en {
             bindings = <&kp COLON>;
             key-positions = <30 29>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        sd-mac-ru {
+            bindings = <&kp LS(GRAVE)>;
+            key-positions = <14 15>;
+            timeout-ms = <35>;
+            layers = <1 7>;
+        };
+
+        kl-mac-ru {
+            bindings = <&kp GRAVE>;
+            key-positions = <21 20>;
+            timeout-ms = <35>;
+            layers = <1 7>;
+        };
+
+        er-mac-ru {
+            bindings = <&kp LS(NON_US_BSLH)>;
+            key-positions = <4 3>;
+            timeout-ms = <25>;
+            layers = <1 7>;
+        };
+
+        ui-mac-ru {
+            bindings = <&kp NON_US_BSLH>;
+            key-positions = <8 7>;
+            timeout-ms = <25>;
+            layers = <0 6>;
+        };
+
+        dotcoma-macwin-ru {
+            bindings = <&kp LS(N2)>;
+            key-positions = <33 32>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        ui-win-ru {
+            bindings = <&en RIGHT_BRACKET>;
+            key-positions = <8 7>;
+            timeout-ms = <25>;
+            layers = <0 6>;
+        };
+
+        mcomma-macwin-ru {
+            bindings = <&en RBRC>;
+            key-positions = <32 31>;
+            timeout-ms = <25>;
+            layers = <0 6>;
+        };
+
+        yu-mac-ru {
+            bindings = <&en BACKSLASH>;
+            key-positions = <6 7>;
+            timeout-ms = <25>;
+            layers = <0 6>;
+        };
+
+        yu-win-ru {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <6 7>;
+            timeout-ms = <25>;
+            layers = <0 6>;
+        };
+
+        kd-mac-en {
+            bindings = <&kp PRCNT>;
+            key-positions = <20 15>;
+            timeout-ms = <35>;
+            layers = <0 1 6 7>;
+        };
+
+        kd-mac-ru {
+            bindings = <&kp LS(N4)>;
+            key-positions = <20 15>;
+            timeout-ms = <35>;
+            layers = <0 1 6 7>;
+        };
+
+        ccoma-macwin-ru {
+            bindings = <&en AT>;
+            key-positions = <32 27>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        ur-macwin-ru {
+            bindings = <&en AMPS>;
+            key-positions = <7 4>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        yt-macwin-ru {
+            bindings = <&en PIPE>;
+            key-positions = <6 5>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        nb-mac-ru {
+            bindings = <&kp LS(N5)>;
+            key-positions = <30 29>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        nb-win-ru {
+            bindings = <&kp LS(N6)>;
+            key-positions = <30 29>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        mv-mac-ru {
+            bindings = <&kp LS(N8)>;
+            key-positions = <31 28>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        mv-win-ru {
+            bindings = <&kp LS(N4)>;
+            key-positions = <31 28>;
             timeout-ms = <35>;
             layers = <0 6>;
         };
