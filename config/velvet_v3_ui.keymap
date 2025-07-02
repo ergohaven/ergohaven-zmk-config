@@ -259,11 +259,32 @@
             layers = <6>;
         };
 
+        lsemi-mac-ru {
+            bindings = <&en LS(NON_US_BACKSLASH)>;
+            key-positions = <22 21>;
+            timeout-ms = <45>;
+            layers = <1>;
+        };
+
+        lsemi-win-ru {
+            bindings = <&en TILDE>;
+            key-positions = <22 21>;
+            timeout-ms = <45>;
+            layers = <7>;
+        };
+
         dotslash-macwin-en {
             bindings = <&kp CARET>;
             key-positions = <33 34>;
             timeout-ms = <45>;
             layers = <0 6>;
+        };
+
+        dotslash-macwin-ru {
+            bindings = <&kp CARET>;
+            key-positions = <33 34>;
+            timeout-ms = <45>;
+            layers = <1 7>;
         };
 
         io-macwin-en {
@@ -273,11 +294,25 @@
             layers = <0 6>;
         };
 
+        io-macwin-ru {
+            bindings = <&en DLLR>;
+            key-positions = <9 8>;
+            timeout-ms = <35>;
+            layers = <1 7>;
+        };
+
         kl-macwin-en {
             bindings = <&kp GT>;
             key-positions = <21 20>;
             timeout-ms = <35>;
             layers = <0 6>;
+        };
+
+        kl-macwin-ru {
+            bindings = <&en GT>;
+            key-positions = <21 20>;
+            timeout-ms = <35>;
+            layers = <1 7>;
         };
 
         dotcoma-macwin-en {
@@ -404,41 +439,6 @@
             key-positions = <30 29>;
             timeout-ms = <35>;
             layers = <0 6>;
-        };
-
-        lsemi-mac-ru {
-            bindings = <&en LS(NON_US_BACKSLASH)>;
-            key-positions = <22 21>;
-            timeout-ms = <45>;
-            layers = <1>;
-        };
-
-        lsemi-win-ru {
-            bindings = <&en TILDE>;
-            key-positions = <22 21>;
-            timeout-ms = <45>;
-            layers = <7>;
-        };
-
-        dotslash-macwin-ru {
-            bindings = <&kp CARET>;
-            key-positions = <33 34>;
-            timeout-ms = <45>;
-            layers = <1 7>;
-        };
-
-        io-macwin-ru {
-            bindings = <&en DLLR>;
-            key-positions = <9 8>;
-            timeout-ms = <35>;
-            layers = <1 7>;
-        };
-
-        kl-macwin-ru {
-            bindings = <&en GT>;
-            key-positions = <21 20>;
-            timeout-ms = <35>;
-            layers = <1 7>;
         };
     };
 
