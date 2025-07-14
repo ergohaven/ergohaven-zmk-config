@@ -99,7 +99,25 @@
 
         mb3 {
             bindings = <&mkp MB3>;
-            key-positions = <30 41>;
+            key-positions = <30 44>;
+            layers = <0 1>;
+        };
+
+        mb1-left {
+            bindings = <&mkp MB1>;
+            key-positions = <16 15>;
+            layers = <0 1>;
+        };
+
+        mb2-left {
+            bindings = <&mkp MB2>;
+            key-positions = <14 15>;
+            layers = <0 1>;
+        };
+
+        mb3-left {
+            bindings = <&mkp MB3>;
+            key-positions = <14 16>;
             layers = <0 1>;
         };
     };
