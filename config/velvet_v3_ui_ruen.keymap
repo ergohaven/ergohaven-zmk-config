@@ -87,19 +87,19 @@
 
         mb1 {
             bindings = <&mkp MB1>;
-            key-positions = <19 20>;
+            key-positions = <30 31>;
             layers = <0 1>;
         };
 
         mb2 {
             bindings = <&mkp MB2>;
-            key-positions = <20 21>;
+            key-positions = <44 31>;
             layers = <0 1>;
         };
 
         mb3 {
             bindings = <&mkp MB3>;
-            key-positions = <19 21>;
+            key-positions = <30 44>;
             layers = <0 1>;
         };
     };
