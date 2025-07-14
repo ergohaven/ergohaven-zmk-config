@@ -166,7 +166,7 @@
 &kp TAB         &kp RU_CYRILLIC_SHORT_I       &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA            &kp RU_CYRILLIC_IE                             &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE            &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA         &kp RU_CYRILLIC_ZE             &mt RU_BACKSLASH RU_SLASH
 &kp LEFT_SHIFT  &hml LEFT_WIN RU_CYRILLIC_EF  &hml LEFT_ALT RU_CYRILLIC_YERU  &hml LCTRL RU_CYRILLIC_VE  &mt LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                             &kp RU_CYRILLIC_ER  &hmr LEFT_SHIFT RU_CYRILLIC_O  &hmr LCTRL RU_CYRILLIC_EL  &hmr LEFT_ALT RU_CYRILLIC_DE  &hmr LEFT_WIN RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &sk LEFT_SHIFT  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM            &kp RU_CYRILLIC_I                              &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN      &lt 7 RU_CYRILLIC_BE       &kp RU_CYRILLIC_YU            &kp RU_COMMA                   &kp RU_DOT
-                                              &caps_word                      &layer_en                  &lt 9 BACKSPACE               &lt 10 DEL          &lt 11 ESC    &lt 8 ENTER  &lt 4 SPACE         &mo 6                          &kp RU_CYRILLIC_HA         &kp RU_CYRILLIC_HARD_SIGN
+                                              &caps_word                      &layer_en                  &lt 9 BACKSPACE               &lt 10 DEL          &lt 11 ESC    &lt 7 ENTER  &lt 4 SPACE         &mo 6                          &kp RU_CYRILLIC_HA         &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
