@@ -162,7 +162,7 @@
 &kp TILDE      &kp Q             &kp W             &kp E          &kp R               &kp T                                     &kp Y          &kp U                &kp I          &kp O             &kp P                &kp BSPC
 &mt LCTRL ESC  &hrml LEFT_GUI A  &hrml LEFT_ALT S  &hrml LCTRL D  &hrml LEFT_SHIFT F  &kp G                                     &kp H          &hrmr RIGHT_SHIFT J  &hrmr RCTRL K  &hrmr LEFT_ALT L  &hrmr LEFT_GUI SEMI  &lt 7 DOT
 &kp KP_ENTER   &kp Z             &kp X             &kp C          &kp V               &kp B                                     &kp N          &kp M                &kp COMMA      &kp DOT           &kp SQT              &kp COMMA
-                                 &kp LALT          &kp LGUI       &lt 6 TAB           &lt 2 BACKSPACE  &lt 9 SPACE    &mkp MB1  &MBL_LT 3 MB2  &none                &kp LBKT       &kp RBKT
+                                 &kp LALT          &kp LGUI       &lt 6 TAB           &lt 2 BACKSPACE  &lt 9 SPACE    &mkp MB2  &MBL_LT 3 MB1  &none                &kp LBKT       &kp RBKT
             >;
 
             display-name = "en";
