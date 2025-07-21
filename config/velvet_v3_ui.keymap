@@ -482,18 +482,21 @@
             bindings = <&kp DOT>;
             key-positions = <20 15>;
             timeout-ms = <25>;
+            layers = <0 6>;
         };
 
         kd-mac-ru {
             bindings = <&kp LS(N7)>;
             key-positions = <20 15>;
             timeout-ms = <25>;
+            layers = <1>;
         };
 
         kd-win-ru {
             bindings = <&kp SLASH>;
             key-positions = <20 15>;
             timeout-ms = <25>;
+            layers = <7>;
         };
 
         ccoma-macwin-en {
@@ -507,14 +510,14 @@
             bindings = <&kp LS(N6)>;
             key-positions = <32 27>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <1>;
         };
 
         ccoma-win-ru {
             bindings = <&kp LS(SLASH)>;
             key-positions = <32 27>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <7>;
         };
 
         ur-macwin-en {
