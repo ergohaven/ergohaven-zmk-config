@@ -239,18 +239,18 @@
             layers = <0 1 6 7>;
         };
 
-        vb-macwin-en {
+        vb-win-ruen {
             bindings = <&kp STAR>;
             key-positions = <29 28>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <6 7>;
         };
 
         vb-mac-ru {
             bindings = <&en STAR>;
             key-positions = <29 28>;
             timeout-ms = <25>;
-            layers = <7>;
+            layers = <1>;
         };
 
         op-none {
@@ -567,18 +567,11 @@
             layers = <7>;
         };
 
-        vb-mac-ru {
-            bindings = <&kp LS(N8)>;
-            key-positions = <29 28>;
-            timeout-ms = <25>;
-            layers = <1>;
-        };
-
         vb-mac-en {
             bindings = <&kp STAR>;
             key-positions = <29 28>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <0>;
         };
     };
 
