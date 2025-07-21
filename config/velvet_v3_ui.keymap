@@ -261,10 +261,25 @@
             layers = <0 1 6 7>;
         };
 
-        op-none {
-            bindings = <&none>;
+        op-win-ruen {
+            bindings = <&kp PRCNT>;
             key-positions = <10 9>;
             timeout-ms = <45>;
+            layers = <6 7>;
+        };
+
+        op-mac-en {
+            bindings = <&kp PRCNT>;
+            key-positions = <10 9>;
+            timeout-ms = <45>;
+            layers = <0>;
+        };
+
+        op-mac-ru {
+            bindings = <&kp LS(N4)>;
+            key-positions = <10 9>;
+            timeout-ms = <45>;
+            layers = <1>;
         };
 
         lsemi-mac-en {
@@ -463,26 +478,13 @@
             layers = <1 7>;
         };
 
-        op-win-ruen {
-            bindings = <&kp PRCNT>;
-            key-positions = <10 9>;
+
+        kd-none {
+            bindings = <&none>;
+            key-positions = <20 15>;
             timeout-ms = <35>;
-            layers = <6 7>;
         };
 
-        op-mac-en {
-            bindings = <&kp PRCNT>;
-            key-positions = <10 9>;
-            timeout-ms = <35>;
-            layers = <0>;
-        };
-
-        op-mac-ru {
-            bindings = <&kp LS(N4)>;
-            key-positions = <10 9>;
-            timeout-ms = <35>;
-            layers = <1>;
-        };
 
         ccoma-none {
             bindings = <&none>;
@@ -575,11 +577,6 @@
             layers = <7>;
         };
 
-        kd-none {
-            bindings = <&none>;
-            key-positions = <20 15>;
-            timeout-ms = <35>;
-        };
     };
 
     macros {
