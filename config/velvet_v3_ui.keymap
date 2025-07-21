@@ -484,8 +484,34 @@
             timeout-ms = <35>;
         };
 
+        kd-mac-ru {
+            bindings = <&kp LS(N7)>;
+            key-positions = <20 15>;
+            timeout-ms = <35>;
+        };
+
+        kd-win-ru {
+            bindings = <&kp SLASH>;
+            key-positions = <20 15>;
+            timeout-ms = <35>;
+        };
+
         ccoma-macwin-en {
             bindings = <&kp COMMA>;
+            key-positions = <32 27>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        ccoma-mac-ru {
+            bindings = <&kp LS(N6)>;
+            key-positions = <32 27>;
+            timeout-ms = <35>;
+            layers = <0 6>;
+        };
+
+        ccoma-win-ru {
+            bindings = <&kp LS(SLASH)>;
             key-positions = <32 27>;
             timeout-ms = <35>;
             layers = <0 6>;
@@ -573,32 +599,6 @@
             key-positions = <30 29>;
             timeout-ms = <35>;
             layers = <7>;
-        };
-
-        kd-mac-ru {
-            bindings = <&kp LS(N7)>;
-            key-positions = <20 15>;
-            timeout-ms = <35>;
-        };
-
-        ccoma-mac-ru {
-            bindings = <&kp LS(N6)>;
-            key-positions = <32 27>;
-            timeout-ms = <35>;
-            layers = <0 6>;
-        };
-
-        kd-win-ru {
-            bindings = <&kp SLASH>;
-            key-positions = <20 15>;
-            timeout-ms = <35>;
-        };
-
-        ccoma-win-ru {
-            bindings = <&kp LS(SLASH)>;
-            key-positions = <32 27>;
-            timeout-ms = <35>;
-            layers = <0 6>;
         };
     };
 
