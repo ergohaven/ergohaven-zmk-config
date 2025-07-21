@@ -246,8 +246,8 @@
             layers = <0 6>;
         };
 
-        vb-win-ru {
-            bindings = <&kp STAR>;
+        vb-mac-ru {
+            bindings = <&en STAR>;
             key-positions = <29 28>;
             timeout-ms = <25>;
             layers = <7>;
@@ -572,6 +572,13 @@
             key-positions = <29 28>;
             timeout-ms = <25>;
             layers = <1>;
+        };
+
+        vb-mac-en {
+            bindings = <&kp STAR>;
+            key-positions = <29 28>;
+            timeout-ms = <25>;
+            layers = <0 6>;
         };
     };
 
