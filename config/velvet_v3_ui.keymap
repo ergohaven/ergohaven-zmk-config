@@ -114,10 +114,25 @@
             layers = <7>;
         };
 
-        zx-none {
-            bindings = <&none>;
+        zx-win-ruen {
+            bindings = <&kp STAR>;
             key-positions = <25 26>;
             timeout-ms = <45>;
+            layers = <6 7>;
+        };
+
+        zx-mac-en {
+            bindings = <&kp STAR>;
+            key-positions = <25 26>;
+            timeout-ms = <45>;
+            layers = <0>;
+        };
+
+        zx-mac-ru {
+            bindings = <&en STAR>;
+            key-positions = <25 26>;
+            timeout-ms = <45>;
+            layers = <1>;
         };
 
         we-macwin-en {
@@ -239,18 +254,11 @@
             layers = <0 1 6 7>;
         };
 
-        vb-win-ruen {
-            bindings = <&kp STAR>;
+        vb-macwin-ruen {
+            bindings = <&kp EXCL>;
             key-positions = <29 28>;
             timeout-ms = <25>;
-            layers = <6 7>;
-        };
-
-        vb-mac-ru {
-            bindings = <&en STAR>;
-            key-positions = <29 28>;
-            timeout-ms = <25>;
-            layers = <1>;
+            layers = <0 1 6 7>;
         };
 
         op-none {
@@ -441,11 +449,18 @@
             layers = <7>;
         };
 
-        ie-macwin-ruen {
-            bindings = <&kp EXCL>;
+        ie-macwin-en {
+            bindings = <&kp AT>;
             key-positions = <8 3>;
             timeout-ms = <35>;
-            layers = <0 1 6 7>;
+            layers = <0 6>;
+        };
+
+        ie-macwin-ru {
+            bindings = <&en AT>;
+            key-positions = <8 3>;
+            timeout-ms = <35>;
+            layers = <1 7>;
         };
 
         kd-win-ruen {
@@ -567,12 +582,6 @@
             layers = <7>;
         };
 
-        vb-mac-en {
-            bindings = <&kp STAR>;
-            key-positions = <29 28>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
     };
 
     macros {
