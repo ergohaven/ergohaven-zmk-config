@@ -16,7 +16,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
 
         bt_mac_mod: bt_mac_mod {
