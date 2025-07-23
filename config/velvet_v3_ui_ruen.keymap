@@ -111,7 +111,7 @@
             layers = <0>;
         };
 
-        MB3 {
+        MB3_combo {
             bindings = <&mkp MB3>;
             key-positions = <44 45>;
             layers = <0 1>;
