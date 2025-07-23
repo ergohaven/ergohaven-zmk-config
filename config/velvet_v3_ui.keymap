@@ -82,7 +82,7 @@
             label = "HRM_R_SHIFT";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <90>;
+            require-prior-idle-ms = <75>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             hold-trigger-on-release;
@@ -96,7 +96,7 @@
             label = "HRM_L_SHIFT";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <90>;
+            require-prior-idle-ms = <75>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             hold-trigger-on-release;
