@@ -119,13 +119,13 @@
 
         SemiEN {
             bindings = <&kp SEMI>;
-            key-positions = <42 43>;
+            key-positions = <42 41>;
             layers = <0>;
         };
 
         SemiRU {
             bindings = <&kp RU_SEMI>;
-            key-positions = <42 43>;
+            key-positions = <42 41>;
             layers = <1>;
         };
     };
