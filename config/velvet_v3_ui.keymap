@@ -563,7 +563,7 @@
         };
 
         jf-macwin-ruen {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp PLUS>;
             key-positions = <19 16>;
             timeout-ms = <25>;
             layers = <0 1 6 7>;
@@ -605,7 +605,7 @@
         };
 
         hg-macwin-ruen {
-            bindings = <&kp PLUS>;
+            bindings = <&kp EQUAL>;
             key-positions = <18 17>;
             timeout-ms = <25>;
             layers = <0 1 6 7>;
