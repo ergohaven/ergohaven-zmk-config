@@ -260,19 +260,19 @@
 
         cursor {
             bindings = <
-&none  &none      &none      &none      &search_key  &kp LC(F5)                    &kp PAGE_UP    &kp HOME            &kp UP    &kp END              &none  &none
-&none  &kp LC(A)  &kp LALT   &kp LCTRL  &kp LSHFT    &none                         &kp PAGE_DOWN  &kp LEFT            &kp DOWN  &kp RIGHT            &none  &kp PRINTSCREEN
-&none  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)    &none                         &kp INS        &kp LC(LEFT_ARROW)  &none     &kp LC(RIGHT_ARROW)  &none  &none
-                  &none      &kp LC(D)  &none        &none       &none    &kp RET  &none          &none               &none     &none
+&none  &none      &none      &none      &search_key    &kp LC(F5)                    &kp PAGE_UP    &kp HOME            &kp UP    &kp END              &none  &none
+&none  &kp LC(A)  &kp LALT   &kp LCTRL  &kp LSHFT      &none                         &kp PAGE_DOWN  &kp LEFT            &kp DOWN  &kp RIGHT            &none  &kp PRINTSCREEN
+&none  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)      &none                         &kp INS        &kp LC(LEFT_ARROW)  &none     &kp LC(RIGHT_ARROW)  &none  &none
+                  &none      &kp LC(D)  &kp BACKSPACE  &none       &none    &kp RET  &none          &none               &none     &none
             >;
         };
 
         number {
             bindings = <
-&trans  &trans        &trans    &trans     &trans     &trans                   &trans        &kp N7  &kp N8                &kp N9                 &trans   &trans
-&trans  &kp LG(LGUI)  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                   &trans        &kp N4  &kp N5                &kp N6                 &trans   &trans
-&trans  &trans        &trans    &trans     &trans     &trans                   &trans        &kp N1  &kp N2                &kp N3                 &kp DOT  &kp COMMA
-                      &trans    &trans     &trans     &trans  &trans    &none  &kp NUMBER_0  &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans        &trans    &trans     &trans     &trans                       &trans        &kp N7  &kp N8                &kp N9                 &trans   &trans
+&trans  &kp LG(LGUI)  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                       &trans        &kp N4  &kp N5                &kp N6                 &trans   &trans
+&trans  &trans        &trans    &trans     &trans     &trans                       &trans        &kp N1  &kp N2                &kp N3                 &kp DOT  &kp COMMA
+                      &trans    &trans     &trans     &kp DELETE  &trans    &none  &kp NUMBER_0  &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
         };
 
