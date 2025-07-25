@@ -87,37 +87,37 @@
 
         mb1 {
             bindings = <&mkp MB1>;
-            key-positions = <30 31>;
+            key-positions = <33 32>;
             layers = <0 1>;
         };
 
         mb2 {
             bindings = <&mkp MB2>;
-            key-positions = <44 31>;
+            key-positions = <44 45>;
             layers = <0 1>;
         };
 
         mb3-right {
             bindings = <&mkp MB3>;
-            key-positions = <30 44>;
+            key-positions = <33 31>;
             layers = <0 1>;
         };
 
         mb1-left {
             bindings = <&mkp MB1>;
-            key-positions = <16 15>;
+            key-positions = <28 27>;
             layers = <0 1>;
         };
 
         mb2-left {
             bindings = <&mkp MB2>;
-            key-positions = <14 15>;
+            key-positions = <26 27>;
             layers = <0 1>;
         };
 
         mb3-left {
             bindings = <&mkp MB3>;
-            key-positions = <14 16>;
+            key-positions = <26 28>;
             layers = <0 1>;
         };
     };
