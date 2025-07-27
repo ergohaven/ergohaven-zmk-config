@@ -39,8 +39,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <175>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
@@ -52,8 +52,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <175>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
@@ -143,10 +143,10 @@
 
         en {
             bindings = <
-  &kp F        &kp D        &kp L                  &kp B                  &kp V                          &kp J  &kp G                   &kp O                   &kp U        &kp COMMA
-  &hml LGUI S  &hml LALT T  &hmr_150_left LSHFT R  &hmr_150_left LCTRL N  &kp K                          &kp Y  &hmr_150_right RCTRL M  &hmr_150_right RSHFT A  &hmr LALT E  &hmr RGUI I
-  &kp Z        &kp Q        &kp X                  &kp H                  &kp P                          &kp W  &kp C                   &kp SQT                 &kp SEMI     &kp DOT
-                                                   &kp BACKSPACE          &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp ESC
+  &kp F        &kp D        &kp L                  &kp B          &kp V                          &kp J  &kp G         &kp O                   &kp U        &kp COMMA
+  &hml LGUI S  &hml LALT T  &hmr_150_left LSHFT R  &hml LCTRL N   &kp K                          &kp Y  &hmr RCTRL M  &hmr_150_right RSHFT A  &hmr LALT E  &hmr RGUI I
+  &kp Z        &kp Q        &kp X                  &kp H          &kp P                          &kp W  &kp C         &kp SQT                 &kp SEMI     &kp DOT
+                                                   &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp ESC
             >;
         };
 
