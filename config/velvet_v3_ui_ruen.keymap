@@ -207,10 +207,10 @@
 
         nav {
             bindings = <
-&trans  &kp N1              &kp N2     &kp N3     &kp N4   &kp N5                     &kp N6        &kp N7         &kp N8            &kp N9             &kp N0             &trans
-&trans  &trans              &trans     &trans     &trans   &kp RET                    &kp LEFT      &kp DOWN       &kp UP            &kp RIGHT          &kp LC(BACKSPACE)  &kp LC(DEL)
-&trans  &kp K_CONTEXT_MENU  &kp HOME   &kp INS    &kp END  &kp DEL                    &kp LC(LEFT)  &kp PAGE_DOWN  &kp PG_UP         &kp LC(RIGHT)      &kp PAUSE_BREAK    &kp PRINTSCREEN
-                            &kp LC(C)  &kp LC(V)  &trans   &trans   &trans    &trans  &mo 5         &trans         &kp LC(LG(LEFT))  &kp LG(LC(RIGHT))
+&trans  &kp N1     &kp N2     &kp N3     &kp N4  &kp N5                     &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8      &kp N9             &kp N0             &trans
+&trans  &trans     &trans     &trans     &trans  &kp RET                    &kp LEFT      &kp DOWN       &kp UP            &kp RIGHT          &kp LC(BACKSPACE)  &kp LC(DEL)
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V   &kp DEL                    &kp HOME      &kp PAGE_DOWN  &kp PG_UP         &kp LC(END)        &kp PAUSE_BREAK    &kp PRINTSCREEN
+                   &kp LC(C)  &kp LC(V)  &trans  &trans   &trans    &trans  &mo 5         &trans         &kp LC(LG(LEFT))  &kp LG(LC(RIGHT))
             >;
 
             display-name = "nav";
@@ -239,10 +239,10 @@
 
         adj {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE            &kp C_VOL_UP          &none         &studio_unlock
-&tog 11      &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE      &kp K_NEXT            &none         &none
-                    &none   &none    &none    &none    &none    &none  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&bootloader  &kp F1  &kp F2   &kp F3   &kp F4   &none                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4  &bt BT_CLR
+&none        &kp F5  &kp F6   &kp F7   &kp F8   &none                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE            &kp C_VOL_UP          &none         &studio_unlock
+&tog 11      &kp F9  &kp F10  &kp F11  &kp F12  &none                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE      &kp K_NEXT            &none         &none
+                     &none    &none    &none    &none  &none    &none  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
             >;
 
             display-name = "adj";
