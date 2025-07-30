@@ -74,11 +74,11 @@
                   &kp GRAVE  &kp LGUI  &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 3  &kp LALT  &kp LBKT   &kp RBKT
             >;
 
-            display-name = "en";
+            display-name = "Base";
         };
 
         ru {
-            display-name = "ru";
+            display-name = "Ru";
             bindings = <
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &kp BSLH
@@ -96,9 +96,10 @@
             >;
 
             display-name = "nav";
+            label = "Navigation";
         };
 
-        sym {
+        sym_en {
             bindings = <
 &trans  &kp HASH   &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
 &trans  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
@@ -106,11 +107,11 @@
                    &trans    &trans     &trans    &mo 5      &trans    &trans  &trans     &trans    &kp LBKT   &kp RBKT
             >;
 
-            display-name = "sym";
+            display-name = "Symbols";
         };
 
         sym_ru {
-            display-name = "sym_ru";
+            display-name = "Sym ru";
             bindings = <
 &trans         &en HASH          &en LT    &kp EQUAL     &en GT       &en GRAVE                    &en CARET  &kp RU_DQT  &kp UNDER    &en SQT   &trans      &trans
 &kp RU_NUMERO  &kp RU_BACKSLASH  &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                     &kp PRCNT  &en LBRC    &kp RU_SEMI  &kp RBRC  &kp EXCL    &kp RU_QMARK
@@ -127,7 +128,7 @@
                     &none   &none    &none    &none    &none    &none  &none         &none         &none             &none
             >;
 
-            display-name = "adj";
+            display-name = "Adjust";
         };
     };
 };

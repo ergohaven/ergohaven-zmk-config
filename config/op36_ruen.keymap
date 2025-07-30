@@ -120,6 +120,8 @@
   &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
                                           &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
             >;
+
+            display-name = "Base";
         };
 
         ru {
@@ -129,6 +131,8 @@
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
                                                                                    &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp TAB
             >;
+
+            display-name = "Ru";
         };
 
         sym_en {
@@ -138,6 +142,8 @@
   &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                     &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK
                                                     &trans           &mo 5      &trans    &trans  &none      &trans
             >;
+
+            display-name = "Symbols";
         };
 
         sym_ru {
@@ -147,6 +153,8 @@
   &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                     &en AT     &en PIPE  &kp RU_COMMA        &kp RU_DOT  &kp RU_QMARK
                                                             &trans           &mo 5      &trans    &trans  &none      &trans
             >;
+
+            display-name = "Symbols";
         };
 
         nav {
@@ -156,6 +164,8 @@
   &layer_en      &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &layer_ru
                                       &trans     &none       &trans    &trans  &mo 5            &trans
             >;
+
+            display-name = "Navigation";
         };
 
         adj {
@@ -165,6 +175,8 @@
   &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_PREV           &kp C_PP           &kp C_NEXT          &studio_unlock
                                             &trans         &trans   &trans    &trans  &trans        &trans
             >;
+
+            display-name = "Adjust";
         };
     };
 };
