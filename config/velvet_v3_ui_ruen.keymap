@@ -207,10 +207,10 @@
 
         nav {
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3     &kp N4  &kp N5                     &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8      &kp N9             &kp N0             &trans
-&trans  &trans     &trans     &trans     &trans  &kp RET                    &kp LEFT      &kp DOWN       &kp UP            &kp RIGHT          &kp LC(BACKSPACE)  &kp LC(DEL)
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V   &kp DEL                    &kp HOME      &kp PAGE_DOWN  &kp PG_UP         &kp LC(END)        &kp PAUSE_BREAK    &kp PRINTSCREEN
-                   &kp LC(C)  &kp LC(V)  &trans  &trans   &trans    &trans  &mo 5         &trans         &kp LC(LG(LEFT))  &kp LG(LC(RIGHT))
+&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                     &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8      &kp N9             &kp N0             &trans
+&trans  &trans     &trans     &trans     &trans     &kp RET                    &kp LEFT      &kp DOWN       &kp UP            &kp RIGHT          &kp LC(BACKSPACE)  &kp LC(DEL)
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp DEL                    &kp HOME      &kp PAGE_DOWN  &kp PG_UP         &kp LC(END)        &kp PAUSE_BREAK    &kp PRINTSCREEN
+                   &kp LC(C)  &kp LC(V)  &trans     &trans   &trans    &trans  &mo 5         &trans         &kp LC(LG(LEFT))  &kp LG(LC(RIGHT))
             >;
 
             display-name = "nav";
