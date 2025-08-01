@@ -1,4 +1,5 @@
 #include "keys_ru.h"
+#include "keys_ru.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -148,6 +149,8 @@
   &kp Z        &kp Q        &kp X                  &kp H          &kp P                          &kp W  &kp C         &kp SQT                 &kp SEMI     &kp DOT
                                                    &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp ESC
             >;
+
+            display-name = "Base";
         };
 
         ru {
@@ -157,6 +160,8 @@
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM                 &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN           &kp RU_CYRILLIC_BE                   &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
                                                                                             &kp BACKSPACE                      &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp ESC
             >;
+
+            display-name = "Ru";
         };
 
         sym_en {
@@ -166,6 +171,8 @@
   &kp HASH        &kp STAR        &kp GRAVE                  &kp FSLH                  &kp AMPS                           &kp AT      &kp PIPE                   &kp DOUBLE_QUOTES              &kp SEMI        &kp DOT
                                                              &trans                    &mo 4            &trans    &trans  &none       &trans
             >;
+
+            display-name = "Symbols";
         };
 
         sym_ru {
@@ -175,6 +182,8 @@
   &kp HASH                &kp STAR        &kp GRAVE                  &kp RU_FSLH               &kp AMPS                           &kp AT      &kp PIPE                   &kp RU_DOUBLE_QUOTES              &kp RU_SEMI              &kp RU_DOT
                                                                      &trans                    &mo 4            &trans    &trans  &none       &trans
             >;
+
+            display-name = "Symbols";
         };
 
         nav {
@@ -184,6 +193,8 @@
   &none     &kp HOME  &kp INS    &bt BT_CLR_ALL  &kp CAPS                           &kp DELETE  &kp TAB          &kp PG_DN        &kp PG_UP     &none
                                  &trans          &none     &trans    &kp LS(ENTER)  &mo 2       &trans
             >;
+
+            display-name = "Adjust";
         };
     };
 };

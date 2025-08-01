@@ -1,3 +1,4 @@
+#include "keys_ru.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -72,6 +73,8 @@
   &kp Z        &kp Q        &kp X         &kp H          &kp P                              &kp W  &kp C         &kp SQT       &kp SEMICOLON  &kp PERIOD
                                           &kp BACKSPACE  &lt 1 ESC  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
             >;
+
+            display-name = "Base";
         };
 
         nav {
@@ -81,6 +84,8 @@
   &none          &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &none
                                       &trans     &trans      &trans    &trans  &mo 3            &trans
             >;
+
+            display-name = "Navigation";
         };
 
         sym {
@@ -90,6 +95,8 @@
   &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &none                        &none      &kp PIPE         &kp TILDE        &kp AMPS        &kp DLLR
                                                     &trans           &mo 3      &trans    &trans  &trans     &trans
             >;
+
+            display-name = "Symbols";
         };
 
         adj {
@@ -99,6 +106,8 @@
   &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_PREV           &kp C_PP           &kp C_NEXT          &studio_unlock
                                             &trans         &trans   &trans    &trans  &trans        &trans
             >;
+
+            display-name = "Adjust";
         };
     };
 };
