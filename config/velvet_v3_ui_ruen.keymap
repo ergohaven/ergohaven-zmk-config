@@ -164,7 +164,7 @@
             #binding-cells = <1>;
             bindings =
                 <&kp LG(SPACE)>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 10>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp LG(SPACE)>;
 
             label = "EN";
