@@ -163,9 +163,9 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&kp LG(SPACE)>,
+                <&kp LG(SPACE) &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_wait_time 10>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp LG(SPACE)>;
+                <&kp LG(SPACE)>;
 
             label = "EN";
             wait-ms = <0>;
