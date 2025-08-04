@@ -162,10 +162,14 @@
         en: en {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&kp LG(SPACE) &macro_param_1to1 &kp MACRO_PLACEHOLDER &kp LG(SPACE)>;
+            bindings =
+                <&kp LG(SPACE)>,
+                <&macro_wait_time 5>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp LG(SPACE)>;
+
             label = "EN";
             wait-ms = <0>;
-            tap-ms = <130>;
+            tap-ms = <30>;
         };
 
         en_b: en_b {
