@@ -82,6 +82,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&mo 3>,
+                <&macro_wait_time 10>,
                 <&kp GRAVE &kp GRAVE &kp GRAVE>,
                 <&macro_wait_time 10>,
                 <&kp ENTER &kp ENTER>,
@@ -96,7 +98,12 @@
         md_code_line: md_code_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE>, <&macro_wait_time 10>, <&kp LEFT>;
+            bindings =
+                <&mo 3>,
+                <&macro_wait_time 10>,
+                <&kp GRAVE &kp GRAVE>,
+                <&macro_wait_time 10>,
+                <&kp LEFT>;
 
             label = "MD_CODE_LINE";
         };
