@@ -496,140 +496,140 @@
         ie-macwin-en {
             bindings = <&kp AT>;
             key-positions = <8 3>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 6>;
         };
 
         ie-macwin-ru {
             bindings = <&en AT>;
             key-positions = <8 3>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <1 7>;
         };
 
         kd-macwin-en {
             bindings = <&kp DOT>;
             key-positions = <20 15>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 6>;
         };
 
         kd-mac-ru {
             bindings = <&kp LS(N7)>;
             key-positions = <20 15>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <1>;
         };
 
         kd-win-ru {
             bindings = <&kp SLASH>;
             key-positions = <20 15>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <7>;
         };
 
         ccoma-macwin-en {
             bindings = <&kp COMMA>;
             key-positions = <32 27>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 6>;
         };
 
         ccoma-mac-ru {
             bindings = <&kp LS(N6)>;
             key-positions = <32 27>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <1>;
         };
 
         ccoma-win-ru {
             bindings = <&kp LS(SLASH)>;
             key-positions = <32 27>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <7>;
         };
 
         ur-macwin-en {
             bindings = <&kp AMPS>;
             key-positions = <7 4>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 6>;
         };
 
         ur-macwin-ru {
             bindings = <&en AMPS>;
             key-positions = <7 4>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <1 7>;
         };
 
         jf-macwin-ruen {
             bindings = <&kp PLUS>;
             key-positions = <19 16>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 1 6 7>;
         };
 
         mv-macwin-en {
             bindings = <&kp SEMI>;
             key-positions = <31 28>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 6>;
         };
 
         mv-mac-ru {
             bindings = <&kp LS(N8)>;
             key-positions = <31 28>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <1>;
         };
 
         mv-win-ru {
             bindings = <&kp LS(N4)>;
             key-positions = <31 28>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <7>;
         };
 
         yt-macwin-en {
             bindings = <&kp PIPE>;
             key-positions = <6 5>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 6>;
         };
 
         yt-macwin-ru {
             bindings = <&en PIPE>;
             key-positions = <6 5>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <1 7>;
         };
 
         hg-macwin-ruen {
             bindings = <&kp EQUAL>;
             key-positions = <18 17>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 1 6 7>;
         };
 
         nb-macwin-en {
             bindings = <&kp COLON>;
             key-positions = <30 29>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 6>;
         };
 
         nb-mac-ru {
             bindings = <&kp LS(N5)>;
             key-positions = <30 29>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <1>;
         };
 
         nb-win-ru {
             bindings = <&kp LS(N6)>;
             key-positions = <30 29>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <7>;
         };
     };
@@ -729,10 +729,10 @@
 
         M_NumEn {
             bindings = <
-&kp LBKT         &kp DOT    &kp N7      &kp N8      &kp N9  &kp RBKT                     &none   &none           &none             &none         &none             &none
-&kp SEMI         &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                    &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&kp NON_US_BSLH  &kp MINUS  &kp N1      &kp N2      &kp N3  &kp BSLH                     &none   &none           &none             &none         &none             &none
-                            &to_ru_mac  &to_en_mac  &trans  &trans     &trans    &trans  &mo 11  &trans          &to_en_mac        &to_ru_mac
+&kp LBKT         &kp DOT    &kp N7      &kp N8      &kp N9  &kp RBKT                         &none   &none           &none             &none         &none             &none
+&kp SEMI         &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                        &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
+&kp NON_US_BSLH  &kp MINUS  &kp N1      &kp N2      &kp N3  &kp BSLH                         &none   &none           &none             &none         &none             &none
+                            &to_ru_mac  &to_en_mac  &trans  &trans     &trans    &kp DELETE  &mo 11  &trans          &to_en_mac        &to_ru_mac
             >;
 
             display-name = "M_NumEn";
@@ -741,10 +741,10 @@
         M_NumRu {
             display-name = "M_NumRu";
             bindings = <
-&en LEFT_BRACKET  &en DOT    &kp N7      &kp N8      &kp N9  &en RIGHT_BRACKET                    &none   &none           &none             &none         &none             &none
-&en SEMICOLON     &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                            &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&en GRAVE         &kp MINUS  &kp N1      &kp N2      &kp N3  &en BSLH                             &none   &none           &none             &none         &none             &none
-                             &to_ru_mac  &to_en_mac  &trans  &trans             &trans    &trans  &mo 11  &trans          &to_en_mac        &to_ru_mac
+&en LEFT_BRACKET  &en DOT    &kp N7      &kp N8      &kp N9  &en RIGHT_BRACKET                        &none   &none           &none             &none         &none             &none
+&en SEMICOLON     &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                                &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
+&en GRAVE         &kp MINUS  &kp N1      &kp N2      &kp N3  &en BSLH                                 &none   &none           &none             &none         &none             &none
+                             &to_ru_mac  &to_en_mac  &trans  &trans             &trans    &kp DELETE  &mo 11  &trans          &to_en_mac        &to_ru_mac
             >;
         };
 
@@ -792,20 +792,20 @@
         W_NumEn {
             display-name = "W_NumEn";
             bindings = <
-&kp LBKT   &kp DOT    &kp N7      &kp N8      &kp N9  &kp RBKT                     &none   &none           &none             &none         &none             &none
-&kp SEMI   &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                    &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&kp GRAVE  &kp MINUS  &kp N1      &kp N2      &kp N3  &kp BSLH                     &none   &none           &none             &none         &none             &none
-                      &to_ru_win  &to_en_win  &trans  &trans     &trans    &trans  &mo 11  &trans          &to_en_win        &to_ru_win
+&kp LBKT   &kp DOT    &kp N7      &kp N8      &kp N9  &kp RBKT                         &none   &none           &none             &none         &none             &none
+&kp SEMI   &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                        &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
+&kp GRAVE  &kp MINUS  &kp N1      &kp N2      &kp N3  &kp BSLH                         &none   &none           &none             &none         &none             &none
+                      &to_ru_win  &to_en_win  &trans  &trans     &trans    &kp DELETE  &mo 11  &trans          &to_en_win        &to_ru_win
             >;
         };
 
         W_NumRu {
             display-name = "W_NumRu";
             bindings = <
-&en LBKT   &en DOT    &kp N7      &kp N8      &kp N9  &en RBKT                     &none   &none           &none             &none         &none             &none
-&en SEMI   &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                    &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&en GRAVE  &kp MINUS  &kp N1      &kp N2      &kp N3  &en BSLH                     &none   &none           &none             &none         &none             &none
-                      &to_ru_win  &to_en_win  &trans  &trans     &trans    &trans  &mo 11  &trans          &to_en_win        &to_ru_win
+&en LBKT   &en DOT    &kp N7      &kp N8      &kp N9  &en RBKT                         &none   &none           &none             &none         &none             &none
+&en SEMI   &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                        &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
+&en GRAVE  &kp MINUS  &kp N1      &kp N2      &kp N3  &en BSLH                         &none   &none           &none             &none         &none             &none
+                      &to_ru_win  &to_en_win  &trans  &trans     &trans    &kp DELETE  &mo 11  &trans          &to_en_win        &to_ru_win
             >;
         };
 
@@ -832,10 +832,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 13  &mo 14
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans            &trans        &trans            &trans     &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 13  &mo 14
+&trans  &trans            &trans        &trans            &trans     &trans                    &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans
+                          &trans        &trans            &trans     &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
         };
 
