@@ -86,7 +86,7 @@
                 <&macro_wait_time 10>,
                 <&kp GRAVE &kp GRAVE &kp GRAVE>,
                 <&macro_wait_time 10>,
-                <&kp ENTER &kp ENTER>,
+                <&kp LS(ENTER) &kp LS(ENTER)>,
                 <&macro_wait_time 10>,
                 <&kp GRAVE &kp GRAVE &kp GRAVE>,
                 <&macro_wait_time 10>,
