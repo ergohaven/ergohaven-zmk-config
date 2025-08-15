@@ -167,10 +167,10 @@
 
         adj {
             bindings = <
-&bootloader  &none  &kp F1         &kp F2            &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &kp F5         &kp F6            &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
-&none        &none  &kp F9         &kp F10           &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
-                    &md_code_line  &md_code_snippet  &none    &none    &none    &none  &none         &none         &none             &none
+&bootloader  &none    &kp F1         &kp F2            &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&kp F23      &kp F24  &kp F5         &kp F6            &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
+&none        &none    &kp F9         &kp F10           &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
+                      &md_code_line  &md_code_snippet  &none    &none    &none    &none  &none         &none         &none             &none
             >;
 
             display-name = "Adjust";
