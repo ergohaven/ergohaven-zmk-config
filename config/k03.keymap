@@ -149,13 +149,7 @@
             >;
 
             display-name = "Base";
-            sensor-bindings =
-                <&enc_up_down>,
-                <&enc_left_right>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
+            sensor-bindings = <&enc_up_down>, <&enc_left_right>;
         };
 
         nav {
@@ -225,6 +219,8 @@
 &trans  &trans  &trans     &trans  &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &kp LCTRL  &trans  &kp LCMD  &mo 1   &trans    &trans  &mo 2   &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&enc_up_down>, <&enc_left_right>;
         };
     };
 };
