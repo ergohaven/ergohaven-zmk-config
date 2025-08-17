@@ -31,14 +31,14 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "SWITCH_WINDOW";
             #sensor-binding-cells = <0>;
-            bindings = <&next_window LA(TAB)>, <&kp LS(LA(TAB))>;
+            bindings = <&kp LA(TAB)>, <&kp LS(LA(TAB))>;
         };
 
         switch_tab: switch_tab {
             compatible = "zmk,behavior-sensor-rotate";
             label = "SWITCH_TAB";
             #sensor-binding-cells = <0>;
-            bindings = <&next_window LC(TAB)>, <&next_window RA(LS(TAB))>;
+            bindings = <&kp LC(TAB)>, <&kp LC(LS(TAB))>;
         };
 
         game_g_h: game_g_h {
@@ -59,7 +59,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MAC_SWITCH_WINDOW";
             #sensor-binding-cells = <0>;
-            bindings = <&next_window LG(TAB)>, <&kp LG(LS(TAB))>;
+            bindings = <&kp LG(TAB)>, <&kp LG(LS(TAB))>;
         };
     };
 
@@ -86,16 +86,6 @@
             #binding-cells = <0>;
             bindings = <&kp RU_DOT &kp RU_SLASH>;
             label = "DOT_SLASH";
-        };
-
-        next_window: next_window {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-
-            label = "NEXT_WINDOW";
         };
 
         public_compleate: public_compleate {
@@ -150,11 +140,25 @@
 &kp BACKSLASH  &kp Q   &kp W     &kp E     &kp R      &kp T                                  &kp Y   &kp U      &kp I      &kp O         &kp P              &kp LEFT_BRACKET
 &kp TAB        &kp A   &kp S     &kp D     &kp F      &kp G                                  &kp H   &kp J      &kp K      &kp L         &kp SEMI           &kp SQT
 &sk LSHFT      &kp Z   &kp X     &kp C     &kp V      &kp B   &kp ENTER    &kp K_PLAY_PAUSE  &kp N   &kp M      &kp COMMA  &kp DOT       &kp RIGHT_BRACKET  &kp GRAVE
-                       &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE    &kp ENTER         &mo 2   &kp RCTRL  &kp RALT   &change_lang
+                       &kp LGUI  &kp LALT  &kp LCTRL  &mo 2   &kp SPACE    &kp ENTER         &mo 3   &kp RCTRL  &kp RALT   &change_lang
             >;
 
             display-name = "Base";
             sensor-bindings = <&enc_up_down>, <&enc_left_right>;
+        };
+
+        mac_os_base {
+            bindings = <
+&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &kp LCTRL  &trans  &kp LCMD  &mo 2   &trans    &trans  &mo 7   &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&enc_up_down>, <&enc_left_right>;
+
+            label = "mac_os_base";
         };
 
         nav {
@@ -163,7 +167,7 @@
 &trans  &trans  &kp HOME      &kp UP    &kp END        &kp INS                    &kp PG_UP        &kp N7  &kp N8  &kp N9   &trans   &trans
 &trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &kp PG_DN        &kp N4  &kp N5  &kp N6   &trans   &trans
 &trans  &trans  &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans   &trans
-                &trans        &trans    &trans         &trans   &trans    &trans  &mo 3            &trans  &kp N0  &trans
+                &trans        &trans    &trans         &trans   &trans    &trans  &mo 4            &trans  &kp N0  &trans
             >;
 
             display-name = "Navigation";
@@ -175,7 +179,7 @@
 &trans          &kp RU_QMARK        &kp RU_DQT  &kp EQUAL          &kp RU_SLASH      &kp TILDE                        &trans     &kp LEFT_BRACE    &kp UNDER    &kp RIGHT_BRACE    &trans    &trans
 &trans          &kp BSLH            &kp PIPE    &kp RU_UNDERSCORE  &kp SINGLE_QUOTE  &kp CARET                        &kp PRCNT  &kp LEFT_BRACKET  &kp RU_PLUS  &kp RIGHT_BRACKET  &kp EXCL  &trans
 &trans          &kp RU_EXCLAMATION  &kp DOLLAR  &kp HASH           &kp AT_SIGN       &kp AMPERSAND  &trans    &trans  &trans     &kp LESS_THAN     &kp TILDE    &kp GREATER_THAN   &trans    &trans
-                                    &trans      &trans             &trans            &mo 3          &trans    &trans  &trans     &trans            &trans       &trans
+                                    &trans      &trans             &trans            &mo 4          &trans    &trans  &trans     &trans            &trans       &trans
             >;
 
             display-name = "Symbols";
@@ -184,7 +188,7 @@
 
         adj {
             bindings = <
-&bootloader        &tog 4           &tog 6  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
+&bootloader        &tog 5           &tog 1  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
 &public_compleate  &import_cmlp     &trans  &trans  &trans  &trans                    &trans        &trans        &trans            &trans        &trans        &studio_unlock
 &private_cmpl      &ternary_cmpl    &trans  &trans  &trans  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &trans        &trans
 &static_cmpl       &in_string_cmpl  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &trans        &trans
@@ -200,7 +204,7 @@
 &kp TAB       &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp NUMBER_2  &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT     &trans  &trans  &trans  &trans  &trans  &kp H           &trans  &kp X   &trans  &trans  &trans  &trans  &trans
-                      &trans  &trans  &trans  &mo 5   &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans
+                      &trans  &trans  &trans  &mo 6   &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&game_g_h>, <&game_e_x>;
@@ -210,7 +214,7 @@
 
         ext_games {
             bindings = <
-&tog 4     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                       &trans  &trans  &trans  &trans  &trans  &trans
+&tog 5     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp N1     &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -220,20 +224,6 @@
             label = "ext_gayms";
         };
 
-        mac_os_base {
-            bindings = <
-&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &kp LCTRL  &trans  &kp LCMD  &mo 1   &trans    &trans  &mo 7   &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&enc_up_down>, <&enc_left_right>;
-
-            label = "mac_os_base";
-        };
-
         sim_mac {
             display-name = "Symbols_mac";
             bindings = <
@@ -241,7 +231,7 @@
 &trans          &kp RU_QMARK        &kp RU_DQT  &kp EQUAL          &kp RU_SLASH      &kp TILDE                        &trans     &kp LEFT_BRACE    &kp UNDER    &kp RIGHT_BRACE    &trans    &trans
 &trans          &kp BSLH            &kp PIPE    &kp RU_UNDERSCORE  &kp SINGLE_QUOTE  &kp CARET                        &kp PRCNT  &kp LEFT_BRACKET  &kp RU_PLUS  &kp RIGHT_BRACKET  &kp EXCL  &trans
 &trans          &kp RU_EXCLAMATION  &kp DOLLAR  &kp HASH           &kp AT_SIGN       &kp AMPERSAND  &trans    &trans  &trans     &kp LESS_THAN     &kp TILDE    &kp GREATER_THAN   &trans    &trans
-                                    &trans      &trans             &trans            &mo 3          &trans    &trans  &trans     &trans            &trans       &trans
+                                    &trans      &trans             &trans            &mo 4          &trans    &trans  &trans     &trans            &trans       &trans
             >;
 
             sensor-bindings = <&mac_switch_window>, <&switch_tab>;
