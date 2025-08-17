@@ -24,23 +24,21 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENC_LEFT_RIGHT";
             #sensor-binding-cells = <0>;
-            bindings = <&kp LEFT_ARROW>, <&kp RIGHT_ARROW>;
+            bindings = <&kp RIGHT>, <&kp LEFT>;
         };
 
         switch_window: switch_window {
             compatible = "zmk,behavior-sensor-rotate";
             label = "SWITCH_WINDOW";
             #sensor-binding-cells = <0>;
-            bindings =
-                <&next_window LEFT_ALT TAB>,
-                <&next_window LEFT_ALT LS(TAB)>;
+            bindings = <&next_window LA(TAB)>, <&kp LS(LA(TAB))>;
         };
 
         switch_tab: switch_tab {
             compatible = "zmk,behavior-sensor-rotate";
             label = "SWITCH_TAB";
             #sensor-binding-cells = <0>;
-            bindings = <&next_window LCTRL TAB>, <&next_window LCTRL LS(TAB)>;
+            bindings = <&next_window LC(TAB)>, <&next_window RA(LS(TAB))>;
         };
 
         game_g_h: game_g_h {
@@ -55,6 +53,13 @@
             label = "GAME_E_X";
             #sensor-binding-cells = <0>;
             bindings = <&kp E>, <&kp X>;
+        };
+
+        mac_switch_window: mac_switch_window {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MAC_SWITCH_WINDOW";
+            #sensor-binding-cells = <0>;
+            bindings = <&next_window LG(TAB)>, <&kp LG(LS(TAB))>;
         };
     };
 
@@ -72,7 +77,7 @@
         change_lang: change_lang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCMD &kp SPACE>;
+            bindings = <&kp LG(SPACE)>;
             label = "CHANGE_LANG";
         };
 
@@ -84,11 +89,11 @@
         };
 
         next_window: next_window {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
 
             label = "NEXT_WINDOW";
         };
@@ -189,7 +194,7 @@
             display-name = "Adjust";
         };
 
-        gayms {
+        games {
             bindings = <
 &kp ESC       &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB       &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
@@ -199,9 +204,11 @@
             >;
 
             sensor-bindings = <&game_g_h>, <&game_e_x>;
+
+            label = "Gayms";
         };
 
-        ext_gayms {
+        ext_games {
             bindings = <
 &tog 4     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
@@ -209,6 +216,8 @@
 &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
                    &trans  &trans  &trans  &trans  &kp SPACE    &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "ext_gayms";
         };
 
         mac_os_base {
@@ -217,10 +226,25 @@
 &trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans  &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &kp LCTRL  &trans  &kp LCMD  &mo 1   &trans    &trans  &mo 2   &trans  &trans  &trans
+                &kp LCTRL  &trans  &kp LCMD  &mo 1   &trans    &trans  &mo 7   &trans  &trans  &trans
             >;
 
             sensor-bindings = <&enc_up_down>, <&enc_left_right>;
+
+            label = "mac_os_base";
+        };
+
+        sim_mac {
+            display-name = "Symbols_mac";
+            bindings = <
+&kp APOSTROPHE  &kp RU_MINUS        &kp RU_DOT  &kp RU_COMMA       &kp RU_SEMI       &kp RU_COLON                     &kp EXCL   &trans            &kp CARET    &trans             &trans    &trans
+&trans          &kp RU_QMARK        &kp RU_DQT  &kp EQUAL          &kp RU_SLASH      &kp TILDE                        &trans     &kp LEFT_BRACE    &kp UNDER    &kp RIGHT_BRACE    &trans    &trans
+&trans          &kp BSLH            &kp PIPE    &kp RU_UNDERSCORE  &kp SINGLE_QUOTE  &kp CARET                        &kp PRCNT  &kp LEFT_BRACKET  &kp RU_PLUS  &kp RIGHT_BRACKET  &kp EXCL  &trans
+&trans          &kp RU_EXCLAMATION  &kp DOLLAR  &kp HASH           &kp AT_SIGN       &kp AMPERSAND  &trans    &trans  &trans     &kp LESS_THAN     &kp TILDE    &kp GREATER_THAN   &trans    &trans
+                                    &trans      &trans             &trans            &mo 3          &trans    &trans  &trans     &trans            &trans       &trans
+            >;
+
+            sensor-bindings = <&mac_switch_window>, <&switch_tab>;
         };
     };
 };
