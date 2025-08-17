@@ -212,7 +212,7 @@
         };
 
         en_sym {
-            display-name = "Symbols";
+            display-name = "ES";
             bindings = <
 &kp APOSTROPHE  &kp MINUS  &kp DOT     &kp COMMA          &kp SEMI          &kp COLON                        &kp EXCL   &trans            &kp CARET    &trans             &trans    &trans
 &trans          &kp QMARK  &kp DQT     &kp EQUAL          &kp FSLH          &kp TILDE                        &trans     &kp LEFT_BRACE    &kp UNDER    &kp RIGHT_BRACE    &trans    &trans
@@ -223,7 +223,7 @@
 
             sensor-bindings = <&switch_window>, <&switch_tab>;
 
-            label = "en_sym";
+            label = "ESYM";
         };
 
         mac_en_sym {
@@ -238,7 +238,7 @@
 
             sensor-bindings = <&mac_switch_window>, <&switch_tab>;
 
-            label = "mac_en_sym";
+            label = "ESMC";
         };
 
         adj {
