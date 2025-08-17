@@ -74,13 +74,13 @@
 
         en_lay {
             bindings = <&mo 5>;
-            key-positions = <57 45>;
+            key-positions = <57 56>;
             layers = <0>;
         };
 
         en_mac {
             bindings = <&mo 6>;
-            key-positions = <57 45>;
+            key-positions = <57 56>;
             layers = <1>;
         };
     };
