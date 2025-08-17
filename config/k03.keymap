@@ -69,7 +69,19 @@
         dot_slash {
             bindings = <&dot_slash>;
             key-positions = <2 3>;
+            layers = <0 1>;
+        };
+
+        en_lay {
+            bindings = <&mo 5>;
+            key-positions = <57 56>;
             layers = <0>;
+        };
+
+        en_mac {
+            bindings = <&mo 6>;
+            key-positions = <57 56>;
+            layers = <1>;
         };
     };
 
@@ -168,7 +180,7 @@
 &trans          &kp RU_QMARK        &kp RU_DQT  &kp EQUAL          &kp RU_SLASH      &kp TILDE                        &trans     &kp LEFT_BRACE    &kp UNDER    &kp RIGHT_BRACE    &trans    &trans
 &trans          &kp BSLH            &kp PIPE    &kp RU_UNDERSCORE  &kp SINGLE_QUOTE  &kp CARET                        &kp PRCNT  &kp LEFT_BRACKET  &kp RU_PLUS  &kp RIGHT_BRACKET  &kp EXCL  &trans
 &trans          &kp RU_EXCLAMATION  &kp DOLLAR  &kp HASH           &kp AT_SIGN       &kp AMPERSAND  &trans    &trans  &trans     &kp LESS_THAN     &kp TILDE    &kp GREATER_THAN   &trans    &trans
-                                    &trans      &trans             &trans            &mo 5          &trans    &trans  &trans     &trans            &trans       &trans
+                                    &trans      &trans             &trans            &mo 8          &trans    &trans  &trans     &trans            &trans       &trans
             >;
 
             sensor-bindings = <&mac_switch_window>, <&switch_tab>;
@@ -180,7 +192,7 @@
 &trans  &trans  &kp HOME      &kp UP    &kp END        &kp INS                    &kp PG_UP        &kp N7  &kp N8  &kp N9   &trans   &trans
 &trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &kp PG_DN        &kp N4  &kp N5  &kp N6   &trans   &trans
 &trans  &trans  &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans   &trans
-                &trans        &trans    &trans         &trans   &trans    &trans  &mo 5            &trans  &kp N0  &trans
+                &trans        &trans    &trans         &trans   &trans    &trans  &mo 8            &trans  &kp N0  &trans
             >;
 
             display-name = "Navigation";
@@ -192,16 +204,46 @@
 &trans          &kp RU_QMARK        &kp RU_DQT  &kp EQUAL          &kp RU_SLASH      &kp TILDE                        &trans     &kp LEFT_BRACE    &kp UNDER    &kp RIGHT_BRACE    &trans    &trans
 &trans          &kp BSLH            &kp PIPE    &kp RU_UNDERSCORE  &kp SINGLE_QUOTE  &kp CARET                        &kp PRCNT  &kp LEFT_BRACKET  &kp RU_PLUS  &kp RIGHT_BRACKET  &kp EXCL  &trans
 &trans          &kp RU_EXCLAMATION  &kp DOLLAR  &kp HASH           &kp AT_SIGN       &kp AMPERSAND  &trans    &trans  &trans     &kp LESS_THAN     &kp TILDE    &kp GREATER_THAN   &trans    &trans
-                                    &trans      &trans             &trans            &mo 5          &trans    &trans  &trans     &trans            &trans       &trans
+                                    &trans      &trans             &trans            &mo 8          &trans    &trans  &trans     &trans            &trans       &trans
             >;
 
             display-name = "Symbols";
             sensor-bindings = <&switch_window>, <&switch_tab>;
         };
 
+        en_sym {
+            display-name = "Symbols";
+            bindings = <
+&kp APOSTROPHE  &kp MINUS  &kp DOT     &kp COMMA          &kp SEMI          &kp COLON                        &kp EXCL   &trans            &kp CARET    &trans             &trans    &trans
+&trans          &kp QMARK  &kp DQT     &kp EQUAL          &kp FSLH          &kp TILDE                        &trans     &kp LEFT_BRACE    &kp UNDER    &kp RIGHT_BRACE    &trans    &trans
+&trans          &kp BSLH   &kp PIPE    &kp RU_UNDERSCORE  &kp SINGLE_QUOTE  &kp CARET                        &kp PRCNT  &kp LEFT_BRACKET  &kp RU_PLUS  &kp RIGHT_BRACKET  &kp EXCL  &trans
+&trans          &kp EXCL   &kp DOLLAR  &kp HASH           &kp AT_SIGN       &kp AMPERSAND  &trans    &trans  &trans     &kp LESS_THAN     &kp TILDE    &kp GREATER_THAN   &trans    &trans
+                           &trans      &trans             &trans            &mo 8          &trans    &trans  &trans     &trans            &trans       &trans
+            >;
+
+            sensor-bindings = <&switch_window>, <&switch_tab>;
+
+            label = "en_sym";
+        };
+
+        mac_en_sym {
+            display-name = "Symbols";
+            bindings = <
+&kp APOSTROPHE  &kp MINUS  &kp DOT     &kp COMMA          &kp SEMI          &kp COLON                        &kp EXCL   &trans            &kp CARET    &trans             &trans    &trans
+&trans          &kp QMARK  &kp DQT     &kp EQUAL          &kp FSLH          &kp TILDE                        &trans     &kp LEFT_BRACE    &kp UNDER    &kp RIGHT_BRACE    &trans    &trans
+&trans          &kp BSLH   &kp PIPE    &kp RU_UNDERSCORE  &kp SINGLE_QUOTE  &kp CARET                        &kp PRCNT  &kp LEFT_BRACKET  &kp RU_PLUS  &kp RIGHT_BRACKET  &kp EXCL  &trans
+&trans          &kp EXCL   &kp DOLLAR  &kp HASH           &kp AT_SIGN       &kp AMPERSAND  &trans    &trans  &trans     &kp LESS_THAN     &kp TILDE    &kp GREATER_THAN   &trans    &trans
+                           &trans      &trans             &trans            &mo 8          &trans    &trans  &trans     &trans            &trans       &trans
+            >;
+
+            sensor-bindings = <&mac_switch_window>, <&switch_tab>;
+
+            label = "mac_en_sym";
+        };
+
         adj {
             bindings = <
-&bootloader        &tog 6           &tog 1  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
+&bootloader        &tog 8           &tog 1  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
 &public_compleate  &import_cmlp     &trans  &trans  &trans  &trans                    &trans        &trans        &trans            &trans        &trans        &studio_unlock
 &private_cmpl      &ternary_cmpl    &trans  &trans  &trans  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &trans        &trans
 &static_cmpl       &in_string_cmpl  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &trans        &trans
@@ -217,7 +259,7 @@
 &kp TAB       &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp NUMBER_2  &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT     &trans  &trans  &trans  &trans  &trans  &kp H           &trans  &kp X   &trans  &trans  &trans  &trans  &kp TILDE
-                      &trans  &trans  &trans  &mo 7   &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans
+                      &trans  &trans  &trans  &mo 9   &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&game_g_h>, <&game_e_x>;
@@ -227,7 +269,7 @@
 
         ext_games {
             bindings = <
-&tog 6     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                       &trans  &trans  &trans  &trans  &trans  &trans
+&tog 8     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp N1     &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
