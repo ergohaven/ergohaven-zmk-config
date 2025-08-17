@@ -216,7 +216,7 @@
 &kp ESC       &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB       &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp NUMBER_2  &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT     &trans  &trans  &trans  &trans  &trans  &kp H           &trans  &kp X   &trans  &trans  &trans  &trans  &trans
+&kp LSHFT     &trans  &trans  &trans  &trans  &trans  &kp H           &trans  &kp X   &trans  &trans  &trans  &trans  &kp TILDE
                       &trans  &trans  &trans  &mo 7   &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans
             >;
 
