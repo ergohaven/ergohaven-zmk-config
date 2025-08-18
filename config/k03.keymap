@@ -141,6 +141,13 @@
             bindings = <&kp BSLH &kp LPAR &kp RPAR &kp LEFT>;
             label = "IN_STRING_CMPL";
         };
+
+        change_lang_mac: change_lang_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "CHANGE_LANG_MAC";
+        };
     };
 
     keymap {
@@ -161,11 +168,11 @@
 
         mac_os_base {
             bindings = <
-&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &kp LCTRL  &trans  &kp LCMD  &mo 3   &trans    &trans  &mo 2   &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans            &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans            &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans            &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans            &trans  &trans
+                &kp LCTRL  &trans  &kp LCMD  &mo 3   &trans    &trans  &mo 2   &trans  &trans  &change_lang_mac
             >;
 
             sensor-bindings = <&enc_up_down>, <&enc_left_right>;
