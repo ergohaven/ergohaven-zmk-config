@@ -270,7 +270,7 @@
         ext_games {
             bindings = <
 &tog 8     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp Z   &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp M      &kp Z   &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp N1     &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
                    &trans  &trans  &trans  &trans  &kp SPACE    &trans  &trans  &trans  &trans  &trans
