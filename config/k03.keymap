@@ -199,7 +199,7 @@
 &trans  &trans  &kp HOME      &kp UP    &kp END        &kp INS                    &kp PG_UP        &kp N7  &kp N8  &kp N9   &trans   &trans
 &trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &kp PG_DN        &kp N4  &kp N5  &kp N6   &trans   &trans
 &trans  &trans  &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans   &trans
-                &trans        &trans    &trans         &trans   &trans    &trans  &mo 7            &trans  &kp N0  &trans
+                &kp LCMD      &trans    &kp LCTRL      &trans   &trans    &trans  &mo 7            &trans  &kp N0  &trans
             >;
 
             display-name = "Navigation";
