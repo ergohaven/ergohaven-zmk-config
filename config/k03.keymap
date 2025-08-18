@@ -74,13 +74,13 @@
 
         en_lay {
             bindings = <&mo 5>;
-            key-positions = <57 56>;
+            key-positions = <56 44>;
             layers = <0>;
         };
 
         en_mac {
             bindings = <&mo 6>;
-            key-positions = <57 56>;
+            key-positions = <56 44>;
             layers = <1>;
         };
     };
@@ -168,11 +168,11 @@
 
         mac_os_base {
             bindings = <
-&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans            &trans  &trans
-&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans            &trans  &trans
-&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans  &trans  &trans            &trans  &trans
-&trans  &trans  &trans     &trans  &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans            &trans  &trans
-                &kp LCTRL  &trans  &kp LCMD  &mo 3   &trans    &trans  &mo 2   &trans  &trans  &change_lang_mac
+&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans    &trans  &trans            &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans    &trans  &trans            &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans                    &trans  &trans    &trans  &trans            &trans  &trans
+&trans  &trans  &trans     &trans  &trans    &trans  &trans    &trans  &trans  &trans    &trans  &trans            &trans  &trans
+                &kp LCTRL  &trans  &kp LCMD  &mo 3   &trans    &trans  &mo 2   &kp RCMD  &trans  &change_lang_mac
             >;
 
             sensor-bindings = <&enc_up_down>, <&enc_left_right>;
@@ -187,7 +187,7 @@
 &trans          &kp RU_QMARK        &kp RU_DQT  &kp EQUAL          &kp RU_SLASH      &kp TILDE                        &trans     &kp LEFT_BRACE    &kp UNDER    &kp RIGHT_BRACE    &trans    &trans
 &trans          &kp BSLH            &kp PIPE    &kp RU_UNDERSCORE  &kp SINGLE_QUOTE  &kp CARET                        &kp PRCNT  &kp LEFT_BRACKET  &kp RU_PLUS  &kp RIGHT_BRACKET  &kp EXCL  &trans
 &trans          &kp RU_EXCLAMATION  &kp DOLLAR  &kp HASH           &kp AT_SIGN       &kp AMPERSAND  &trans    &trans  &trans     &kp LESS_THAN     &kp TILDE    &kp GREATER_THAN   &trans    &trans
-                                    &trans      &trans             &trans            &mo 7          &trans    &trans  &trans     &trans            &trans       &trans
+                                    &kp LCMD    &trans             &kp LCTRL         &mo 7          &trans    &trans  &trans     &trans            &trans       &trans
             >;
 
             sensor-bindings = <&mac_switch_window>, <&switch_tab>;
