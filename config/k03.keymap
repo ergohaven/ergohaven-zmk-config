@@ -61,6 +61,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp LG(TAB)>, <&kp LG(LS(TAB))>;
         };
+
+        enc_tabbing: enc_tabbing {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENC_TABBING";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp TAB>, <&kp LS(TAB)>;
+        };
     };
 
     combos {
@@ -203,6 +210,7 @@
             >;
 
             display-name = "Navigation";
+            sensor-bindings = <&enc_vol>, <&enc_tabbing>;
         };
 
         sym {
