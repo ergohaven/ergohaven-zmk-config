@@ -183,14 +183,6 @@
 
             label = "EN_B";
         };
-
-        script_flash: script_flash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LC(F))>, <&macro_wait_time 10>, <&bootloader>;
-
-            label = "SCRIPT_FLASH";
-        };
     };
 
     keymap {
@@ -253,7 +245,7 @@
             bindings = <
 &tog 11      &kp F1  &kp F2   &kp F3   &kp F4   &none                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4  &bt BT_CLR
 &none        &kp F5  &kp F6   &kp F7   &kp F8   &none                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE            &kp C_VOL_UP          &none         &studio_unlock
-&bootloader  &kp F9  &kp F10  &kp F11  &kp F12  &none                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE      &kp K_NEXT            &none         &script_flash
+&bootloader  &kp F9  &kp F10  &kp F11  &kp F12  &none                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE      &kp K_NEXT            &none         &bootloader
                      &none    &none    &none    &none  &none    &none  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
             >;
 
