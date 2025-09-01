@@ -68,6 +68,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp TAB>, <&kp LS(TAB)>;
         };
+
+        shift_tap_danse: shift_tap_danse {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFT_TAP_DANSE";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT>, <&sk LEFT_SHIFT>;
+        };
     };
 
     combos {
@@ -162,11 +169,11 @@
 
         base {
             bindings = <
-&kp ESC        &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6  &kp N7     &kp N8     &kp N9        &kp N0             &kp BSPC
-&kp BACKSLASH  &kp Q   &kp W     &kp E     &kp R      &kp T                                  &kp Y   &kp U      &kp I      &kp O         &kp P              &kp LEFT_BRACKET
-&kp TAB        &kp A   &kp S     &kp D     &kp F      &kp G                                  &kp H   &kp J      &kp K      &kp L         &kp SEMI           &kp SQT
-&sk LSHFT      &kp Z   &kp X     &kp C     &kp V      &kp B   &kp ENTER    &kp K_PLAY_PAUSE  &kp N   &kp M      &kp COMMA  &kp DOT       &kp RIGHT_BRACKET  &kp GRAVE
-                       &kp LGUI  &kp LALT  &kp LCTRL  &mo 3   &kp SPACE    &kp ENTER         &mo 4   &kp RCTRL  &kp RALT   &change_lang
+&kp ESC           &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6  &kp N7     &kp N8     &kp N9        &kp N0             &kp BSPC
+&kp BACKSLASH     &kp Q   &kp W     &kp E     &kp R      &kp T                                  &kp Y   &kp U      &kp I      &kp O         &kp P              &kp LEFT_BRACKET
+&kp TAB           &kp A   &kp S     &kp D     &kp F      &kp G                                  &kp H   &kp J      &kp K      &kp L         &kp SEMI           &kp SQT
+&shift_tap_danse  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp ENTER    &kp K_PLAY_PAUSE  &kp N   &kp M      &kp COMMA  &kp DOT       &kp RIGHT_BRACKET  &kp GRAVE
+                          &kp LGUI  &kp LALT  &kp LCTRL  &mo 3   &kp SPACE    &kp ENTER         &mo 4   &kp RCTRL  &kp RALT   &change_lang
             >;
 
             display-name = "Base";
