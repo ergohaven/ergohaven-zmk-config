@@ -73,7 +73,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_TAP_DANSE";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&sk LEFT_SHIFT>;
+            bindings = <&sk LSHFT>, <&kp LEFT_SHIFT>;
         };
     };
 
