@@ -100,6 +100,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             hold-trigger-key-positions = <39>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
         };
     };
 
