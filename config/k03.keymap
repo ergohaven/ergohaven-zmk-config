@@ -306,7 +306,7 @@
             label = "Sifu_ext";
             bindings = <
 &tog 10    &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp M      &kp LCTRL  &kp LC(W)  &trans     &trans     &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp M      &kp LCTRL  &kp LC(W)  &kp LC(S)  &trans     &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp N1     &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LCTRL  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &trans     &trans     &trans     &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
                       &trans     &trans     &trans     &trans  &kp SPACE    &trans  &trans  &trans  &trans  &trans
