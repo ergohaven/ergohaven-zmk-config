@@ -265,7 +265,7 @@
         adj {
             bindings = <
 &tog 11      &kp F1  &kp F2   &kp F3   &kp F4   &none                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4  &bt BT_CLR
-&none        &kp F5  &kp F6   &kp F7   &kp F8   &none                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE            &kp C_VOL_UP          &none         &studio_unlock
+&tog 13      &kp F5  &kp F6   &kp F7   &kp F8   &none                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE            &kp C_VOL_UP          &none         &studio_unlock
 &bootloader  &kp F9  &kp F10  &kp F11  &kp F12  &none                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE      &kp K_NEXT            &none         &bootloader
                      &none    &none    &none    &none  &none    &none  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
             >;
@@ -333,6 +333,24 @@
 &kp LC(LS(I))  &kp LS(LC(A))       &kp LC(A)   &kp LC(PG_UP)  &kp LA(H)  &kp LA(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &kp LC(LS(DELETE))  &kp DELETE  &kp LC(PG_DN)  &kp LS(H)  &kp LC(N)                      &trans  &trans  &trans  &trans  &trans  &trans
                                    &kp LC(C)   &kp LC(V)      &trans     &trans       &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        GameBase {
+            bindings = <
+&kp ESC    &kp GRAVE  &kp Q  &kp W  &kp E   &kp R                         &trans     &trans    &kp UP    &trans     &trans  &trans
+&kp RCTRL  &kp RSHFT  &kp A  &kp S  &kp D   &kp F                         &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&kp LALT   &kp Z      &kp X  &kp C  &kp V   &kp B                         &trans     &trans    &trans    &trans     &trans  &trans
+                      &kp I  &kp M  &trans  &kp SPACE  &trans    &tog 13  &kp SPACE  &trans    &trans    &trans
+            >;
+        };
+
+        GameFunc {
+            bindings = <
+&trans  &kp N1  &kp N2   &kp N3   &kp N4  &kp N5                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N6  &kp N7   &kp N8   &kp N9  &kp N0                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp G   &kp J    &kp I    &kp M   &kp T                     &trans  &trans  &trans  &trans  &trans  &trans
+                &kp ESC  &kp RET  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
