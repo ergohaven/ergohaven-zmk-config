@@ -16,7 +16,7 @@
             bindings = <&mo>, <&none>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <0>;
+            tapping-term-ms = <1>;
             hold-while-undecided;
         };
     };
