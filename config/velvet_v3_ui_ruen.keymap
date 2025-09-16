@@ -13,10 +13,10 @@
         cap_sen: cap_sen {
             compatible = "zmk,behavior-hold-tap";
             label = "CAP_SEN";
-            bindings = <&mo>, <&mkp>;
+            bindings = <&mo>, <&none>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <0>;
             hold-while-undecided;
         };
     };
