@@ -20,22 +20,22 @@
             hold-while-undecided;
         };
 
-        en_rshift: en_rshift {
+        en_space: en_space {
             compatible = "zmk,behavior-mod-morph";
-            label = "EN_RSHIFT";
-            bindings = <&kp RSHFT>, <&layer_en>;
+            label = "EN_SPACE";
+            bindings = <&kp SPACE>, <&layer_en>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
-        ru_rshift: ru_rshift {
+        ru_space: ru_space {
             compatible = "zmk,behavior-mod-morph";
-            label = "RU_RSHIFT";
-            bindings = <&kp RSHFT>, <&layer_ru>;
+            label = "RU_SPACE";
+            bindings = <&kp SPACE>, <&layer_ru>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
@@ -45,7 +45,7 @@
         cmben {
             bindings = <&layer_en>;
             key-positions = <3 4>;
-            layers = <1>;
+            layers = <2>;
         };
 
         cmbru {
@@ -59,7 +59,7 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RSHIFT>;
+            bindings = <&kp LC(SPACE)>;
             label = "TO_RU";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -68,7 +68,7 @@
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RSHFT>;
+            bindings = <&kp LC(SPACE)>;
             label = "TO_EN";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -86,7 +86,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_ru>;
+            bindings = <&to 2 &to_ru>;
             label = "LAYER_RU";
             tap-ms = <30>;
             wait-ms = <0>;
@@ -113,7 +113,7 @@
         lg_tog: lg_tog {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RSHFT &tog 1>;
+            bindings = <&kp LC(SPACE) &tog 2>;
             label = "LG_TOG";
         };
     };
@@ -125,8 +125,8 @@
             bindings = <
 &kp ESC    &kp Q  &kp W     &kp E     &kp R      &kp T                        &kp Y  &kp U           &kp I      &kp O     &kp P     &kp BSPC
 &kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G                        &kp H  &kp J           &kp K      &kp L     &kp SEMI  &kp BSLH
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B                        &kp N  &kp M           &kp COMMA  &kp DOT   &kp SQT   &ru_rshift
-                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 3  &cap_sen 6 MB1  &kp LBKT   &kp RBKT
+&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B                        &kp N  &kp M           &kp COMMA  &kp DOT   &kp SQT   &kp RSHFT
+                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 3  &ru_space    &kp RET  &mo 3  &cap_sen 6 MB1  &kp LBKT   &kp RBKT
             >;
 
             display-name = "Base";
@@ -137,8 +137,8 @@
             bindings = <
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &kp BSLH
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &en_rshift
-                                    &kp LALT              &kp LGUI            &kp LCTRL           &mo 2               &kp SPACE    &kp RET  &mo 4               &cap_sen 6 MB1             &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
+&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp RSHFT
+                                    &kp LALT              &kp LGUI            &kp LCTRL           &mo 3               &en_space    &kp RET  &mo 4               &cap_sen 6 MB1             &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
