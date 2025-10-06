@@ -292,11 +292,11 @@
         Sifu {
             label = "Sifu";
             bindings = <
-&kp ESC       &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB       &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp NUMBER_2  &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT     &trans  &trans  &trans  &trans  &trans  &kp H           &trans  &kp X   &trans  &trans  &trans  &trans  &kp TILDE
-                      &trans  &trans  &trans  &mo 11  &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans
+&kp ESC       &kp LCTRL  &kp LC(W)  &kp LC(S)  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB       &trans     &trans     &trans     &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_2  &trans     &trans     &trans     &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT     &trans     &trans     &trans     &trans  &trans  &kp H           &trans  &kp X   &trans  &trans  &trans  &trans  &kp TILDE
+                         &trans     &trans     &trans  &mo 11  &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&game_g_h>, <&game_e_x>;
@@ -305,11 +305,11 @@
         Sifu_ext {
             label = "Sifu_ext";
             bindings = <
-&tog 10    &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp M      &kp LCTRL  &kp LC(W)  &kp LC(S)  &trans     &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp N1     &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LCTRL  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &trans     &trans     &trans     &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans     &trans     &trans     &trans  &kp SPACE    &trans  &trans  &trans  &trans  &trans
+&tog 10    &kp F1     &kp F2        &kp F3        &kp F4     &kp F5                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp M      &kp N1     &kp NUMBER_2  &kp NUMBER_3  &trans     &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp N1     &kp LC(A)  &kp LC(S)     &kp LC(D)     &kp LCTRL  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &trans     &trans        &trans        &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans        &trans        &trans     &trans  &kp SPACE    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
