@@ -25,7 +25,7 @@
             label = "MOUSE_LAYER";
             bindings = <&mo>;
             #binding-cells = <1>;
-            release-after-ms = <200>;
+            release-after-ms = <150>;
         };
 
         /omit-if-no-ref/
@@ -49,7 +49,7 @@
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <3 4>;
+            key-positions = <7 8>;
             layers = <0>;
         };
     };
