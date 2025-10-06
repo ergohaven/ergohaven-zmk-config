@@ -121,7 +121,7 @@
                   &kp LALT  &kp LGUI  &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 3  &none  &kp LBKT   &kp RBKT
             >;
 
-            display-name = "Base";
+            display-name = "En";
         };
 
         ru {
