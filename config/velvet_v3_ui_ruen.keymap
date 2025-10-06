@@ -44,13 +44,11 @@
         cmben {
             bindings = <&layer_en>;
             key-positions = <3 4>;
-            layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <7 8>;
-            layers = <0>;
         };
     };
 
