@@ -95,10 +95,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W     &kp E     &kp R      &kp T                          &kp Y  &kp U  &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G                          &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp BSLH
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B                          &kp N  &kp M  &kp COMMA  &kp DOT   &kp SQT   &kp RSHFT
-                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 2  &lt 6 SPACE    &kp RET  &mo 3  &none  &kp LBKT   &kp RBKT
+&kp ESC    &kp Q  &kp W     &kp E     &kp R      &kp T                                &kp Y        &kp U  &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G                                &kp H        &kp J  &kp K      &kp L     &kp SEMI  &kp BSLH
+&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B                                &kp N        &kp M  &kp COMMA  &kp DOT   &kp SQT   &kp RSHFT
+                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 2  &lt 6 SPACE    &kp BACKSPACE  &lt 3 ENTER  &none  &kp LBKT   &kp RBKT
             >;
 
             display-name = "En";
