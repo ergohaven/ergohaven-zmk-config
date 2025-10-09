@@ -51,6 +51,16 @@
             bindings = <&kp RBKT>;
             key-positions = <7 8>;
         };
+
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <10 22>;
+        };
+
+        paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <10 23>;
+        };
     };
 
     keymap {
