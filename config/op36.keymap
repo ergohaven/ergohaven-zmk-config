@@ -58,10 +58,10 @@
 
         base {
             bindings = <
-  &kp Q        &kp W        &kp E         &kp R          &kp T                          &kp Y  &kp U         &kp I         &kp O        &kp P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                          &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
+  &kp Q        &kp W        &kp E         &kp R         &kp T                              &kp Y  &kp U         &kp I         &kp O        &kp P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                              &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
+  &kp Z        &kp X        &kp C         &kp V         &kp BACKSPACE                      &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
+                                          &kp ENTER     &mo 1          &kp SPACE    &kp B  &mo 2  &kp TAB
             >;
 
             display-name = "Base";
@@ -80,10 +80,10 @@
 
         sym {
             bindings = <
-  &none           &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &none
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &none                        &none      &kp PIPE         &kp TILDE        &kp AMPS        &kp DLLR
-                                                    &trans           &mo 3      &trans    &trans  &trans     &trans
+  &none           &kp HASH        &kp EQUAL        &kp DOLLAR       &kp GRAVE                           &kp CARET  &kp LBKT         &kp UNDER         &kp RBKT        &none
+  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT PLUS  &hml LCTRL RPAR  &kp PLUS                            &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT MINUS  &hmr LALT RBRC  &hmr RGUI EXCL
+  &kp HASH        &kp STAR        &kp COLON        &kp RU_SLASH     &kp RU_BACKSLASH                    &none      &kp PIPE         &kp TILDE         &kp AMPS        &kp DLLR
+                                                   &trans           &mo 3             &trans    &trans  &trans     &trans
             >;
 
             display-name = "Symbols";
