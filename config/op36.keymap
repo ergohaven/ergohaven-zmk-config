@@ -82,7 +82,7 @@
             bindings = <
   &none           &kp HASH        &kp RU_EQUAL        &kp DOLLAR       &kp GRAVE                           &kp CARET  &kp LBKT         &kp RU_UNDERSCORE    &kp RBKT        &none
   &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT RU_PLUS  &hml LCTRL RPAR  &kp PLUS                            &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT RU_MINUS  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON           &kp RU_SLASH     &kp RU_BACKSLASH                    &none      &kp PIPE         &kp TILDE            &kp AMPS        &kp DLLR
+  &kp HASH        &kp STAR        &kp COLON           &kp KP_SLASH     &kp RU_BACKSLASH                    &none      &kp PIPE         &kp TILDE            &kp AMPS        &kp DLLR
                                                       &trans           &mo 3             &trans    &trans  &trans     &trans
             >;
 
