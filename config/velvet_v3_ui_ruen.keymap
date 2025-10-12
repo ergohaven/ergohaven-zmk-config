@@ -338,10 +338,10 @@
 
         GameBase {
             bindings = <
-&kp ESC    &kp GRAVE  &kp Q  &kp W  &kp E   &kp R                         &trans     &trans    &kp UP    &trans     &trans  &trans
-&kp RCTRL  &kp RSHFT  &kp A  &kp S  &kp D   &kp F                         &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&kp LALT   &kp Z      &kp X  &kp C  &kp V   &kp B                         &trans     &trans    &trans    &trans     &trans  &trans
-                      &kp I  &kp M  &trans  &kp SPACE  &trans    &tog 13  &kp SPACE  &trans    &trans    &trans
+&kp ESC    &kp GRAVE       &kp Q  &kp W  &kp E   &kp R                         &trans     &trans    &kp UP    &trans     &trans  &trans
+&kp RCTRL  &kp LEFT_SHIFT  &kp A  &kp S  &kp D   &kp F                         &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&kp LALT   &kp Z           &kp X  &kp C  &kp V   &kp B                         &trans     &trans    &trans    &trans     &trans  &trans
+                           &kp I  &kp M  &trans  &kp SPACE  &mo 14    &tog 13  &kp SPACE  &trans    &trans    &trans
             >;
         };
 
