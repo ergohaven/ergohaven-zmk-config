@@ -292,11 +292,11 @@
         Sifu {
             label = "Sifu";
             bindings = <
-&kp ESC       &kp LCTRL  &kp LC(W)  &kp LC(S)  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB       &trans     &trans     &trans     &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp NUMBER_2  &trans     &trans     &trans     &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT     &trans     &trans     &trans     &trans  &trans  &kp H           &trans  &kp X   &trans  &trans  &trans  &trans  &kp TILDE
-                         &trans     &trans     &trans  &mo 11  &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans
+&kp ESC       &kp LCTRL  &kp LC(W)  &kp LC(S)  &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB       &trans     &trans     &trans     &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_2  &trans     &trans     &trans     &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT     &trans     &trans     &trans     &trans  &trans  &kp H           &trans     &kp X   &trans  &trans  &trans  &trans  &kp TILDE
+                         &trans     &trans     &trans  &mo 11  &kp NUMBER_1    &kp ENTER  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&game_g_h>, <&game_e_x>;
