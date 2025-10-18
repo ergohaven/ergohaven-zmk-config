@@ -284,6 +284,15 @@
                       &trans    &trans     &trans     &trans          &trans    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans
             >;
         };
+
+        sunaku_sym_ru {
+            bindings = <
+&kp LS(TILDE)  &kp LS(LBRC)  &kp LS(DQT)   &kp SQT        &kp LS(RBRC)  &kp GRAVE                          &kp LS(AT)     &trans     &trans     &trans    &trans     &trans
+&kp LS(POUND)  &kp LS(LPAR)  &kp EQUAL     &kp LS(UNDER)  &kp LS(RPAR)  &kp LS(STAR)                       &kp LS(DLLR)   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI   &trans
+&kp LS(EXCL)   &kp LS(LT)    &kp LS(PIPE)  &kp MINUS      &kp LS(GT)    &kp LS(QMARK)                      &kp LS(PRCNT)  &trans     &trans     &trans    &kp COMMA  &kp DOT
+                             &kp LS(AMPS)  &kp LS(PLUS)   &kp BSLH      &kp LS(COLON)  &kp FSLH    &trans  &trans         &trans     &kp LBKT   &kp RBKT
+            >;
+        };
     };
 };
 
