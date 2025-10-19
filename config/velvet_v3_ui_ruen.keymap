@@ -287,10 +287,10 @@
 
         sunaku_sym_ru {
             bindings = <
-&kp LS(TILDE)  &kp LS(LBRC)  &kp LS(DQT)   &kp SQT        &kp LS(RBRC)  &kp GRAVE                          &kp LS(AT)     &trans     &trans     &trans    &trans     &trans
-&kp LS(POUND)  &kp LS(LPAR)  &kp EQUAL     &kp LS(UNDER)  &kp LS(RPAR)  &kp LS(STAR)                       &kp LS(DLLR)   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI   &trans
-&kp LS(EXCL)   &kp LS(LT)    &kp LS(PIPE)  &kp MINUS      &kp LS(GT)    &kp LS(QMARK)                      &kp LS(PRCNT)  &trans     &trans     &trans    &kp COMMA  &kp DOT
-                             &kp LS(AMPS)  &kp LS(PLUS)   &kp BSLH      &kp LS(COLON)  &kp FSLH    &trans  &trans         &trans     &kp LBKT   &kp RBKT
+&en TILDE    &kp LEFT_PARENTHESIS  &kp RU_DQT  &en SQT         &kp RIGHT_PARENTHESIS  &en GRAVE                          &trans  &en LEFT_BRACE  &trans       &trans    &en RIGHT_BRACE  &trans
+&en HASH     &en CARET             &kp EQUAL   &kp UNDERSCORE  &en DOLLAR             &kp STAR                           &trans  &kp LSHFT       &kp LCTRL    &kp LALT  &kp LGUI         &kp RU_QMARK
+&kp RU_EXCL  &en LESS_THAN         &en PIPE    &kp MINUS       &en GREATER_THAN       &kp RU_FSLH                        &trans  &trans          &kp RU_SEMI  &trans    &kp COMMA        &kp DOT
+                                   &en AMPS    &kp PLUS        &kp RU_BACKSLASH       &kp RU_COLON  &kp PRCNT    &trans  &trans  &trans          &kp LBKT     &kp RBKT
             >;
         };
     };
