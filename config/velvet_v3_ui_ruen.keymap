@@ -106,19 +106,19 @@
         mb1-left {
             bindings = <&mkp MB1>;
             key-positions = <28 27>;
-            layers = <0 1>;
+            layers = <0 1 6 12 13>;
         };
 
         mb2-left {
             bindings = <&mkp MB2>;
             key-positions = <26 27>;
-            layers = <0 1>;
+            layers = <0 1 12 13 6>;
         };
 
         mb3-left {
             bindings = <&mkp MB3>;
             key-positions = <26 28>;
-            layers = <0 1>;
+            layers = <0 1 12 13 6>;
         };
     };
 
