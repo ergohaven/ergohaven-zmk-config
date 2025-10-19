@@ -290,7 +290,7 @@
 &en TILDE    &kp LEFT_PARENTHESIS  &kp RU_DQT  &en SQT         &kp RIGHT_PARENTHESIS  &en GRAVE                          &none   &en LEFT_BRACE  &none        &none     &en RIGHT_BRACE  &trans
 &en HASH     &en CARET             &kp EQUAL   &kp UNDERSCORE  &en DOLLAR             &kp STAR                           &none   &kp LSHFT       &kp LCTRL    &kp LALT  &kp LGUI         &kp RU_QMARK
 &kp RU_EXCL  &en LESS_THAN         &en PIPE    &kp MINUS       &en GREATER_THAN       &kp RU_FSLH                        &none   &none           &kp RU_SEMI  &none     &trans           &trans
-                                   &en AMPS    &kp PLUS        &kp RU_BACKSLASH       &kp RU_COLON  &kp PRCNT    &trans  &trans  &trans          &kp LBKT     &kp RBKT
+                                   &en AMPS    &kp PLUS        &kp RU_BACKSLASH       &kp RU_COLON  &kp PRCNT    &trans  &trans  &trans          &en LBKT     &en RBKT
             >;
         };
 
