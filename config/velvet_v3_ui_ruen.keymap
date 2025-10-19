@@ -293,6 +293,15 @@
                                    &en AMPS    &kp PLUS        &kp RU_BACKSLASH       &kp RU_COLON  &kp PRCNT    &trans  &trans  &trans          &kp LBKT     &kp RBKT
             >;
         };
+
+        sunaku_sym_en {
+            bindings = <
+&kp TILDE  &kp LEFT_PARENTHESIS  &kp DQT    &kp SQT         &kp RIGHT_PARENTHESIS  &kp GRAVE                       &none   &kp LEFT_BRACE  &none      &none     &kp RIGHT_BRACE  &trans
+&kp HASH   &kp CARET             &kp EQUAL  &kp UNDERSCORE  &kp DOLLAR             &kp STAR                        &none   &kp LSHFT       &kp LCTRL  &kp LALT  &kp LGUI         &kp QMARK
+&kp EXCL   &kp LESS_THAN         &kp PIPE   &kp MINUS       &kp GREATER_THAN       &kp FSLH                        &none   &none           &kp SEMI   &none     &trans           &trans
+                                 &kp AMPS   &kp PLUS        &kp BSLH               &kp COLON  &kp PRCNT    &trans  &trans  &trans          &kp LBKT   &kp RBKT
+            >;
+        };
     };
 };
 
