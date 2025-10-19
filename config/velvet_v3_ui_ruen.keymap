@@ -242,10 +242,10 @@
 
         scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans                        &trans  &trans            &kp ESC           &trans            &trans            &trans
+&trans  &trans  &trans  &trans  &trans         &trans                        &trans  &kp LA(LEFT)      &kp LA(F12)       &kp LA(RIGHT)     &trans            &trans
+&trans  &trans  &trans  &trans  &trans         &trans                        &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &trans
+                &trans  &trans  &kp BACKSPACE  &kp DELETE  &trans    &trans  &trans  &trans            &trans            &trans
             >;
         };
 
