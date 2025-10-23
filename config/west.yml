@@ -1,31 +1,11 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
     - name: ergohaven
       url-base: https://github.com/ergohaven
-    - name: badjeff
-      url-base: https://github.com/badjeff
-    - name: carrefinho
-      url-base: https://github.com/carrefinho
-    - name: janpfischer
-      url-base: https://github.com/janpfischer
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
     - name: ergohaven-zmk
       remote: ergohaven
       revision: main
-    - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
-    - name: prospector-zmk-module
-      remote: carrefinho
-      revision: main
-    - name: zmk-dongle-screen
-      remote: janpfischer
-      revision: main
+      import: config/west.yml
   self:
     path: config
