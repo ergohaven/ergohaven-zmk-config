@@ -126,7 +126,7 @@
             bindings = <&kp GRAVE>;
             key-positions = <13 14>;
             timeout-ms = <35>;
-            layers = <6>;
+            layers = <5>;
         };
 
         as-mac-ru {
@@ -140,14 +140,14 @@
             bindings = <&en GRAVE>;
             key-positions = <13 14>;
             timeout-ms = <35>;
-            layers = <7>;
+            layers = <6>;
         };
 
         zx-win-ruen {
             bindings = <&kp STAR>;
             key-positions = <25 26>;
             timeout-ms = <35>;
-            layers = <6 7>;
+            layers = <5 6>;
         };
 
         zx-mac-en {
@@ -168,28 +168,28 @@
             bindings = <&kp HASH>;
             key-positions = <2 3>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         we-macwin-ru {
             bindings = <&en HASH>;
             key-positions = <2 3>;
             timeout-ms = <25>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         sd-macwin-en {
             bindings = <&kp LT>;
             key-positions = <14 15>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         sd-win-ru {
             bindings = <&en LT>;
             key-positions = <14 15>;
             timeout-ms = <25>;
-            layers = <7>;
+            layers = <6>;
         };
 
         sd-mac-ru {
@@ -203,28 +203,28 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <26 27>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         xc-macwin-ru {
             bindings = <&en SINGLE_QUOTE>;
             key-positions = <26 27>;
             timeout-ms = <25>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         er-macwin-en {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <4 3>;
             timeout-ms = <15>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         er-win-ru {
             bindings = <&en LEFT_BRACKET>;
             key-positions = <4 3>;
             timeout-ms = <15>;
-            layers = <7>;
+            layers = <6>;
         };
 
         er-mac-ru {
@@ -238,21 +238,21 @@
             bindings = <&kp RU_LEFT_PARENTHESIS>;
             key-positions = <16 15>;
             timeout-ms = <15>;
-            layers = <0 1 6 7>;
+            layers = <0 1 5 6>;
         };
 
         cv-macwin-en {
             bindings = <&kp LBRC>;
             key-positions = <27 28>;
             timeout-ms = <15>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         cv-macwin-ru {
             bindings = <&en LBRC>;
             key-positions = <27 28>;
             timeout-ms = <15>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         rt-mac-ruen {
@@ -266,28 +266,28 @@
             bindings = <&kp FSLH>;
             key-positions = <5 4>;
             timeout-ms = <15>;
-            layers = <6>;
+            layers = <5>;
         };
 
         rt-win-ru {
             bindings = <&kp PIPE>;
             key-positions = <5 4>;
             timeout-ms = <15>;
-            layers = <7>;
+            layers = <6>;
         };
 
         fg-macwin-ruen {
             bindings = <&kp MINUS>;
             key-positions = <17 16>;
             timeout-ms = <15>;
-            layers = <0 1 6 7>;
+            layers = <0 1 5 6>;
         };
 
         vb-macwin-en {
             bindings = <&kp COMMA>;
             key-positions = <29 28>;
             timeout-ms = <15>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         vb-mac-ru {
@@ -301,14 +301,14 @@
             bindings = <&kp LS(SLASH)>;
             key-positions = <29 28>;
             timeout-ms = <15>;
-            layers = <7>;
+            layers = <6>;
         };
 
         op-win-ruen {
             bindings = <&kp PRCNT>;
             key-positions = <10 9>;
             timeout-ms = <35>;
-            layers = <6 7>;
+            layers = <5 6>;
         };
 
         op-mac-en {
@@ -336,7 +336,7 @@
             bindings = <&kp TILDE>;
             key-positions = <22 21>;
             timeout-ms = <35>;
-            layers = <6>;
+            layers = <5>;
         };
 
         lsemi-mac-ru {
@@ -350,49 +350,49 @@
             bindings = <&en TILDE>;
             key-positions = <22 21>;
             timeout-ms = <35>;
-            layers = <7>;
+            layers = <6>;
         };
 
         dotslash-macwin-en {
             bindings = <&kp CARET>;
             key-positions = <33 34>;
             timeout-ms = <35>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         dotslash-macwin-ru {
             bindings = <&en CARET>;
             key-positions = <33 34>;
             timeout-ms = <35>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         io-macwin-en {
             bindings = <&kp DLLR>;
             key-positions = <9 8>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         io-macwin-ru {
             bindings = <&en DLLR>;
             key-positions = <9 8>;
             timeout-ms = <25>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         kl-macwin-en {
             bindings = <&kp GT>;
             key-positions = <21 20>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         kl-win-ru {
             bindings = <&en GT>;
             key-positions = <21 20>;
             timeout-ms = <25>;
-            layers = <7>;
+            layers = <6>;
         };
 
         kl-mac-ru {
@@ -406,28 +406,28 @@
             bindings = <&kp DQT>;
             key-positions = <33 32>;
             timeout-ms = <25>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         dotcoma-macwin-ru {
             bindings = <&kp LS(N2)>;
             key-positions = <33 32>;
             timeout-ms = <25>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         ui-macwin-en {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <8 7>;
             timeout-ms = <15>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         ui-win-ru {
             bindings = <&en RIGHT_BRACKET>;
             key-positions = <8 7>;
             timeout-ms = <15>;
-            layers = <7>;
+            layers = <6>;
         };
 
         ui-mac-ru {
@@ -441,28 +441,28 @@
             bindings = <&kp RU_RIGHT_PARENTHESIS>;
             key-positions = <20 19>;
             timeout-ms = <15>;
-            layers = <0 1 6 7>;
+            layers = <0 1 5 6>;
         };
 
         mcomma-macwin-en {
             bindings = <&kp RBRC>;
             key-positions = <32 31>;
             timeout-ms = <15>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         mcomma-macwin-ru {
             bindings = <&en RBRC>;
             key-positions = <32 31>;
             timeout-ms = <15>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         yu-macwin-en {
             bindings = <&kp BACKSLASH>;
             key-positions = <6 7>;
             timeout-ms = <15>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         yu-mac-ru {
@@ -476,21 +476,21 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <6 7>;
             timeout-ms = <15>;
-            layers = <7>;
+            layers = <6>;
         };
 
         hj-macwin-ruen {
             bindings = <&kp UNDER>;
             key-positions = <19 18>;
             timeout-ms = <15>;
-            layers = <0 6 1 7>;
+            layers = <0 5 1 6>;
         };
 
         nm-macwin-en {
             bindings = <&kp DOT>;
             key-positions = <31 30>;
             timeout-ms = <15>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         nm-mac-ru {
@@ -504,21 +504,21 @@
             bindings = <&kp SLASH>;
             key-positions = <31 30>;
             timeout-ms = <15>;
-            layers = <7>;
+            layers = <6>;
         };
 
         ie-macwin-en {
             bindings = <&kp AT>;
             key-positions = <8 3>;
             timeout-ms = <30>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         ie-macwin-ru {
             bindings = <&en AT>;
             key-positions = <8 3>;
             timeout-ms = <30>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         kd-mac-ruen {
@@ -532,49 +532,49 @@
             bindings = <&kp QMARK>;
             key-positions = <20 15>;
             timeout-ms = <30>;
-            layers = <6>;
+            layers = <5>;
         };
 
         kd-win-ru {
             bindings = <&kp LS(N7)>;
             key-positions = <20 15>;
             timeout-ms = <30>;
-            layers = <7>;
+            layers = <6>;
         };
 
         ccoma-macwin-ruen {
             bindings = <&kp EXCL>;
             key-positions = <32 27>;
             timeout-ms = <30>;
-            layers = <0 1 6 7>;
+            layers = <0 1 5 6>;
         };
 
         ur-macwin-en {
             bindings = <&kp AMPS>;
             key-positions = <7 4>;
             timeout-ms = <30>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         ur-macwin-ru {
             bindings = <&en AMPS>;
             key-positions = <7 4>;
             timeout-ms = <30>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         jf-macwin-ruen {
             bindings = <&kp PLUS>;
             key-positions = <19 16>;
             timeout-ms = <30>;
-            layers = <0 1 6 7>;
+            layers = <0 1 5 6>;
         };
 
         mv-macwin-en {
             bindings = <&kp SEMI>;
             key-positions = <31 28>;
             timeout-ms = <30>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         mv-mac-ru {
@@ -588,35 +588,35 @@
             bindings = <&kp LS(N4)>;
             key-positions = <31 28>;
             timeout-ms = <30>;
-            layers = <7>;
+            layers = <6>;
         };
 
         yt-macwin-en {
             bindings = <&kp PIPE>;
             key-positions = <6 5>;
             timeout-ms = <30>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         yt-macwin-ru {
             bindings = <&en PIPE>;
             key-positions = <6 5>;
             timeout-ms = <30>;
-            layers = <1 7>;
+            layers = <1 6>;
         };
 
         hg-macwin-ruen {
             bindings = <&kp EQUAL>;
             key-positions = <18 17>;
             timeout-ms = <30>;
-            layers = <0 1 6 7>;
+            layers = <0 1 5 6>;
         };
 
         nb-macwin-en {
             bindings = <&kp COLON>;
             key-positions = <30 29>;
             timeout-ms = <30>;
-            layers = <0 6>;
+            layers = <0 5>;
         };
 
         nb-mac-ru {
@@ -630,7 +630,7 @@
             bindings = <&kp LS(N6)>;
             key-positions = <30 29>;
             timeout-ms = <30>;
-            layers = <7>;
+            layers = <6>;
         };
     };
 
@@ -645,7 +645,7 @@
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 6>;
+            bindings = <&bt BT_SEL 1 &to 5>;
             label = "BT_WIN";
         };
 
@@ -666,14 +666,14 @@
         to_en_win: to_en_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(N1)) &to 6>;
+            bindings = <&kp LC(LS(N1)) &to 5>;
             label = "TO_EN_WIN";
         };
 
         to_ru_win: to_ru_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(N2)) &to 7>;
+            bindings = <&kp LC(LS(N2)) &to 6>;
             label = "TO_RU_WIN";
         };
 
@@ -713,7 +713,7 @@
 &kp TAB    &kp Q                  &kp W              &kp E                  &kp R                      &kp T                                 &kp Y         &kp U                      &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
 &kp ESC    &hrm_l LEFT_CONTROL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l_shift LEFT_SHIFT F  &kp G                                 &kp H         &hrm_r_shift LEFT_SHIFT J  &hrm_r LEFT_COMMAND K  &hrm_r LEFT_ALT L  &hrm_r LEFT_CONTROL SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                      &kp B                                 &kp N         &kp M                      &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
-                                  &kp NON_US_BSLH    &none                  &none                      &ltc 2 SPACE  &none    &kp BACKSPACE  &ltc 4 ENTER  &mo 12                     &kp BACKSLASH          &none
+                                  &kp NON_US_BSLH    &none                  &none                      &ltc 3 SPACE  &none    &kp BACKSPACE  &ltc 2 ENTER  &mo 10                     &kp BACKSLASH          &none
             >;
         };
 
@@ -723,37 +723,28 @@
 &kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA                     &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                    &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
 &kp ESCAPE  &hrm_l LEFT_CONTROL RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_COMMAND RU_CYRILLIC_VE  &hrm_l_shift LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hrm_r_shift LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_COMMAND RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_CONTROL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM                     &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN              &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &mac_ru_dotcomma                     &kp RU_CYRILLIC_HARD_SIGN
-                                                &kp RU_BACKSLASH                  &none                               &none                                  &ltc 3 SPACE        &none    &kp BACKSPACE  &ltc 4 ENTER        &mo 12                                 &kp RU_BACKSLASH                    &none
+                                                &kp RU_BACKSLASH                  &none                               &none                                  &ltc 3 SPACE        &none    &kp BACKSPACE  &ltc 2 ENTER        &mo 10                                 &kp RU_BACKSLASH                    &none
             >;
         };
 
-        M_NumEn {
+        M_Num {
             bindings = <
-&kp LBKT         &kp DOT    &kp N7      &kp N8      &kp N9  &kp RBKT                         &none   &none           &none             &none         &none             &none
-&kp SEMI         &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                        &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&kp NON_US_BSLH  &kp MINUS  &kp N1      &kp N2      &kp N3  &kp BSLH                         &none   &none           &none             &none         &none             &none
-                            &to_ru_mac  &to_en_mac  &trans  &trans     &trans    &kp DELETE  &mo 11  &trans          &to_en_mac        &to_ru_mac
+&none  &none   &kp N7      &kp N8      &kp N9  &none                         &none  &none           &none             &none         &none             &none
+&none  &kp N0  &kp N4      &kp N5      &kp N6  &none                         &none  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
+&none  &none   &kp N1      &kp N2      &kp N3  &none                         &none  &none           &none             &none         &none             &none
+               &to_ru_mac  &to_en_mac  &trans  &trans  &trans    &kp DELETE  &mo 9  &trans          &to_en_mac        &to_ru_mac
             >;
 
             display-name = "M_NumEn";
-        };
-
-        M_NumRu {
-            display-name = "M_NumRu";
-            bindings = <
-&en LEFT_BRACKET  &en DOT    &kp N7      &kp N8      &kp N9  &en RIGHT_BRACKET                        &none   &none           &none             &none         &none             &none
-&en SEMICOLON     &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                                &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&en GRAVE         &kp MINUS  &kp N1      &kp N2      &kp N3  &en BSLH                                 &none   &none           &none             &none         &none             &none
-                             &to_ru_mac  &to_en_mac  &trans  &trans             &trans    &kp DELETE  &mo 11  &trans          &to_en_mac        &to_ru_mac
-            >;
+            label = "M_Num";
         };
 
         M_Nav {
             bindings = <
-&none  &none             &none         &none             &none           &none                     &kp LG(Z)       &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(LS(Z))  &none
-&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &none                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &none
-&none  &none             &none         &none             &none           &none                     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &none
-                         &to_ru_mac    &to_en_mac        &trans          &mo 11  &trans    &trans  &trans          &trans          &to_en_mac    &to_ru_mac
+&none  &none             &none         &none             &none           &none                    &kp LG(Z)       &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(LS(Z))  &none
+&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &none                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &none
+&none  &none             &none         &none             &none           &none                    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &none
+                         &to_ru_mac    &to_en_mac        &trans          &mo 9  &trans    &trans  &trans          &trans          &to_en_mac    &to_ru_mac
             >;
 
             display-name = "M_Nav";
@@ -764,7 +755,7 @@
             bindings = <
 &none  &kp F12  &kp F7      &kp F8      &kp F9  &kp PRINTSCREEN                    &out OUT_BLE     &out OUT_USB                     &none                            &none                   &none                        &bootloader
 &none  &kp F11  &kp F4      &kp F5      &kp F6  &kp SCROLLLOCK                     &kp C_PREVIOUS   &hrm_r LEFT_SHIFT C_VOLUME_DOWN  &hrm_r LEFT_COMMAND C_VOLUME_UP  &hrm_r LEFT_ALT C_NEXT  &hrm_r LEFT_CONTROL C_PAUSE  &studio_unlock
-&none  &kp F10  &kp F1      &kp F2      &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 6 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
+&none  &kp F10  &kp F1      &kp F2      &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 5 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
                 &to_ru_mac  &to_en_mac  &trans  &none            &trans    &trans  &none            &trans                           &to_en_mac                       &to_ru_mac
             >;
         };
@@ -772,10 +763,10 @@
         W_En {
             display-name = "W_En";
             bindings = <
-&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                      &kp T                                 &kp Y          &kp U                      &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
-&kp ESC    &hrm_l LEFT_COMMAND A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l_shift LEFT_SHIFT F  &kp G                                 &kp H          &hrm_r_shift LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                      &kp B                                 &kp N          &kp M                      &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
-                                  &kp GRAVE          &none                  &none                      &ltc 8 SPACE  &none    &kp BACKSPACE  &ltc 10 ENTER  &mo 12                     &kp BACKSLASH          &none
+&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                      &kp T                                 &kp Y         &kp U                      &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
+&kp ESC    &hrm_l LEFT_COMMAND A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l_shift LEFT_SHIFT F  &kp G                                 &kp H         &hrm_r_shift LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                      &kp B                                 &kp N         &kp M                      &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
+                                  &kp GRAVE          &none                  &none                      &ltc 7 SPACE  &none    &kp BACKSPACE  &ltc 8 ENTER  &mo 10                     &kp BACKSLASH          &none
             >;
         };
 
@@ -785,37 +776,29 @@
 &kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA                     &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                    &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
 &kp ESCAPE  &hrm_l LEFT_COMMAND RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_CONTROL RU_CYRILLIC_VE  &hrm_l_shift LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hrm_r_shift LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_CONTROL RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_COMMAND RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM                     &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN              &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &kp SLASH                            &kp RU_CYRILLIC_HARD_SIGN
-                                                &kp RU_CYRILLIC_IO                &none                               &none                                  &ltc 8 SPACE        &none    &kp BACKSPACE  &ltc 10 ENTER       &mo 12                                 &kp RU_BACKSLASH                    &none
+                                                &kp RU_CYRILLIC_IO                &none                               &none                                  &ltc 7 SPACE        &none    &kp BACKSPACE  &ltc 8 ENTER        &mo 10                                 &kp RU_BACKSLASH                    &none
             >;
         };
 
-        W_NumEn {
+        W_Num {
             display-name = "W_NumEn";
             bindings = <
-&kp LBKT   &kp DOT    &kp N7      &kp N8      &kp N9  &kp RBKT                         &none   &none           &none             &none         &none             &none
-&kp SEMI   &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                        &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&kp GRAVE  &kp MINUS  &kp N1      &kp N2      &kp N3  &kp BSLH                         &none   &none           &none             &none         &none             &none
-                      &to_ru_win  &to_en_win  &trans  &trans     &trans    &kp DELETE  &mo 11  &trans          &to_en_win        &to_ru_win
+&none  &none   &kp N7      &kp N8      &kp N9  &none                         &none  &none           &none             &none         &none             &none
+&none  &kp N0  &kp N4      &kp N5      &kp N6  &none                         &none  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
+&none  &none   &kp N1      &kp N2      &kp N3  &none                         &none  &none           &none             &none         &none             &none
+               &to_ru_win  &to_en_win  &trans  &trans  &trans    &kp DELETE  &mo 9  &trans          &to_en_win        &to_ru_win
             >;
-        };
 
-        W_NumRu {
-            display-name = "W_NumRu";
-            bindings = <
-&en LBKT   &en DOT    &kp N7      &kp N8      &kp N9  &en RBKT                         &none   &none           &none             &none         &none             &none
-&en SEMI   &kp N0     &kp N4      &kp N5      &kp N6  &kp EQUAL                        &none   &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&en GRAVE  &kp MINUS  &kp N1      &kp N2      &kp N3  &en BSLH                         &none   &none           &none             &none         &none             &none
-                      &to_ru_win  &to_en_win  &trans  &trans     &trans    &kp DELETE  &mo 11  &trans          &to_en_win        &to_ru_win
-            >;
+            label = "W_Num";
         };
 
         W_Nav {
             display-name = "W_Nav";
             bindings = <
-&none  &none             &none         &none             &none           &none                     &kp LC(Z)       &kp LC(V)       &kp LC(C)     &kp LC(X)        &kp LC(LS(Z))  &none
-&none  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none                     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &none
-&none  &none             &none         &none             &none           &none                     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &none
-                         &to_ru_win    &to_en_win        &trans          &mo 11  &trans    &trans  &trans          &trans          &to_en_win    &to_ru_win
+&none  &none             &none         &none             &none           &none                    &kp LC(Z)       &kp LC(V)       &kp LC(C)     &kp LC(X)        &kp LC(LS(Z))  &none
+&none  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &none
+&none  &none             &none         &none             &none           &none                    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &none
+                         &to_ru_win    &to_en_win        &trans          &mo 9  &trans    &trans  &trans          &trans          &to_en_win    &to_ru_win
             >;
         };
 
@@ -823,7 +806,7 @@
             bindings = <
 &none  &kp F12  &kp F7      &kp F8      &kp F9  &kp PRINTSCREEN                    &out OUT_BLE     &out OUT_USB                     &none                            &none                   &none                        &bootloader
 &none  &kp F11  &kp F4      &kp F5      &kp F6  &kp SCROLLLOCK                     &kp C_PREVIOUS   &hrm_r LEFT_SHIFT C_VOLUME_DOWN  &hrm_r LEFT_CONTROL C_VOLUME_UP  &hrm_r LEFT_ALT C_NEXT  &hrm_r LEFT_COMMAND C_PAUSE  &studio_unlock
-&none  &kp F10  &kp F1      &kp F2      &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 6 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
+&none  &kp F10  &kp F1      &kp F2      &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 5 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
                 &to_ru_win  &to_en_win  &trans  &none            &trans    &trans  &none            &trans                           &to_en_win                       &to_ru_win
             >;
 
@@ -833,7 +816,7 @@
         Mouse {
             bindings = <
 &trans  &trans            &trans        &trans            &trans     &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 13  &mo 14
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 11  &mo 12
 &trans  &trans            &trans        &trans            &trans     &trans                    &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans
                           &trans        &trans            &trans     &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
