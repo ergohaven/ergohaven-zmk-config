@@ -874,4 +874,14 @@
         layers = <13>;
         input-processors = <&zip_xy_scaler 1 4>;
     };
+
+    m_mouse {
+        layers = <5>;
+        input-processors = <&zip_xy_scaler 1 4>;
+    };
+
+    w_mouse {
+        layers = <11>;
+        input-processors = <&zip_xy_scaler 1 4>;
+    };
 };
