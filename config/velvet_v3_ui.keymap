@@ -710,29 +710,29 @@
         M_En {
             display-name = "M_En";
             bindings = <
-&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                      &kp T                             &kp Y             &kp U                      &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
-&kp ESC    &hrm_l LEFT_CONTROL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l_shift LEFT_SHIFT F  &kp G                             &kp H             &hrm_r_shift LEFT_SHIFT J  &hrm_r LEFT_COMMAND K  &hrm_r LEFT_ALT L  &hrm_r LEFT_CONTROL SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                      &kp B                             &kp N             &kp M                      &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
-                                  &kp NON_US_BSLH    &none                  &none                      &ltc 3 SPACE  &none    &kp ENTER  &ltc 2 BACKSPACE  &mo 10                     &kp BACKSLASH          &none
+&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                      &kp T                                   &kp Y             &kp U                      &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
+&kp ESC    &hrm_l LEFT_CONTROL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l_shift LEFT_SHIFT F  &kp G                                   &kp H             &hrm_r_shift LEFT_SHIFT J  &hrm_r LEFT_COMMAND K  &hrm_r LEFT_ALT L  &hrm_r LEFT_CONTROL SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                      &kp B                                   &kp N             &kp M                      &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
+                                  &kp NON_US_BSLH    &none                  &none                      &ltc 3 SPACE  &ltc 10 TAB    &kp ENTER  &ltc 2 BACKSPACE  &mo 10                     &kp BACKSLASH          &none
             >;
         };
 
         M_Ru {
             display-name = "M_Ru";
             bindings = <
-&kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA                     &kp RU_CYRILLIC_IE                      &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                    &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
-&kp ESCAPE  &hrm_l LEFT_CONTROL RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_COMMAND RU_CYRILLIC_VE  &hrm_l_shift LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                      &kp RU_CYRILLIC_ER  &hrm_r_shift LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_COMMAND RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_CONTROL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM                     &kp RU_CYRILLIC_I                       &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN              &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &mac_ru_dotcomma                     &kp RU_CYRILLIC_HARD_SIGN
-                                                &kp RU_BACKSLASH                  &none                               &none                                  &ltc 3 SPACE        &none    &kp ENTER  &ltc 2 BACKSPACE    &mo 10                                 &kp RU_BACKSLASH                    &none
+&kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA                     &kp RU_CYRILLIC_IE                            &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                    &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
+&kp ESCAPE  &hrm_l LEFT_CONTROL RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_COMMAND RU_CYRILLIC_VE  &hrm_l_shift LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                            &kp RU_CYRILLIC_ER  &hrm_r_shift LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_COMMAND RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_CONTROL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM                     &kp RU_CYRILLIC_I                             &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN              &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &mac_ru_dotcomma                     &kp RU_CYRILLIC_HARD_SIGN
+                                                &kp RU_BACKSLASH                  &none                               &none                                  &ltc 3 SPACE        &ltc 10 TAB    &kp ENTER  &ltc 2 BACKSPACE    &mo 10                                 &kp RU_BACKSLASH                    &none
             >;
         };
 
         M_Num {
             bindings = <
-&none  &none   &kp N7      &kp N8      &kp N9  &none                        &none  &none           &none             &none         &none             &none
-&none  &kp N0  &kp N4      &kp N5      &kp N6  &none                        &none  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&none  &none   &kp N1      &kp N2      &kp N3  &none                        &none  &none           &none             &none         &none             &none
-               &to_ru_mac  &to_en_mac  &trans  &trans  &trans    &kp ENTER  &mo 9  &trans          &to_en_mac        &to_ru_mac
+&none  &none   &kp N7      &kp N8      &kp N9  &none                    &none  &none           &none             &none         &none             &none
+&none  &kp N0  &kp N4      &kp N5      &kp N6  &none                    &none  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
+&none  &none   &kp N1      &kp N2      &kp N3  &none                    &none  &none           &none             &none         &none             &none
+               &to_ru_mac  &to_en_mac  &trans  &mo 4  &trans    &trans  &none  &trans          &to_en_mac        &to_ru_mac
             >;
 
             display-name = "M_NumEn";
@@ -744,7 +744,7 @@
 &none  &none             &none         &none             &none           &none                    &kp LG(Z)       &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(LS(Z))  &none
 &none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &none                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &none
 &none  &none             &none         &none             &none           &none                    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &none
-                         &to_ru_mac    &to_en_mac        &trans          &mo 9  &trans    &trans  &trans          &trans          &to_en_mac    &to_ru_mac
+                         &to_ru_mac    &to_en_mac        &trans          &none  &trans    &trans  &mo 4           &trans          &to_en_mac    &to_ru_mac
             >;
 
             display-name = "M_Nav";
@@ -763,30 +763,30 @@
         W_En {
             display-name = "W_En";
             bindings = <
-&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                      &kp T                             &kp Y             &kp U                      &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
-&kp ESC    &hrm_l LEFT_COMMAND A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l_shift LEFT_SHIFT F  &kp G                             &kp H             &hrm_r_shift LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                      &kp B                             &kp N             &kp M                      &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
-                                  &kp GRAVE          &none                  &none                      &ltc 7 SPACE  &none    &kp ENTER  &ltc 8 BACKSPACE  &mo 10                     &kp BACKSLASH          &none
+&kp TAB    &kp Q                  &kp W              &kp E                  &kp R                      &kp T                                   &kp Y             &kp U                      &kp I                  &kp O              &kp P                          &kp LEFT_BRACKET
+&kp ESC    &hrm_l LEFT_COMMAND A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l_shift LEFT_SHIFT F  &kp G                                   &kp H             &hrm_r_shift LEFT_SHIFT J  &hrm_r LEFT_CONTROL K  &hrm_r LEFT_ALT L  &hrm_r LEFT_COMMAND SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                  &kp X              &kp C                  &kp V                      &kp B                                   &kp N             &kp M                      &kp COMMA              &kp DOT            &kp FSLH                       &kp RIGHT_BRACKET
+                                  &kp GRAVE          &none                  &none                      &ltc 8 SPACE  &ltc 10 TAB    &kp ENTER  &ltc 7 BACKSPACE  &mo 10                     &kp BACKSLASH          &none
             >;
         };
 
         W_Ru {
             display-name = "W_Ru";
             bindings = <
-&kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA                     &kp RU_CYRILLIC_IE                      &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                    &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
-&kp ESCAPE  &hrm_l LEFT_COMMAND RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_CONTROL RU_CYRILLIC_VE  &hrm_l_shift LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                      &kp RU_CYRILLIC_ER  &hrm_r_shift LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_CONTROL RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_COMMAND RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM                     &kp RU_CYRILLIC_I                       &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN              &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &kp SLASH                            &kp RU_CYRILLIC_HARD_SIGN
-                                                &kp RU_CYRILLIC_IO                &none                               &none                                  &ltc 7 SPACE        &none    &kp ENTER  &ltc 8 BACKSPACE    &mo 10                                 &kp RU_BACKSLASH                    &none
+&kp TAB     &kp RU_CYRILLIC_SHORT_I             &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_KA                     &kp RU_CYRILLIC_IE                            &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                    &kp RU_CYRILLIC_SHA                 &kp RU_CYRILLIC_SHCHA           &kp RU_CYRILLIC_ZE                   &kp RU_CYRILLIC_HA
+&kp ESCAPE  &hrm_l LEFT_COMMAND RU_CYRILLIC_EF  &hrm_l LEFT_ALT RU_CYRILLIC_YERU  &hrm_l LEFT_CONTROL RU_CYRILLIC_VE  &hrm_l_shift LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                            &kp RU_CYRILLIC_ER  &hrm_r_shift LEFT_SHIFT RU_CYRILLIC_O  &hrm_r LEFT_CONTROL RU_CYRILLIC_EL  &hrm_r LEFT_ALT RU_CYRILLIC_DE  &hrm_r LEFT_COMMAND RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp LSHFT   &kp RU_CYRILLIC_YA                  &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES                  &kp RU_CYRILLIC_EM                     &kp RU_CYRILLIC_I                             &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN              &kp RU_CYRILLIC_BE                  &kp RU_CYRILLIC_YU              &kp SLASH                            &kp RU_CYRILLIC_HARD_SIGN
+                                                &kp RU_CYRILLIC_IO                &none                               &none                                  &ltc 8 SPACE        &ltc 10 TAB    &kp ENTER  &ltc 7 BACKSPACE    &mo 10                                 &kp RU_BACKSLASH                    &none
             >;
         };
 
         W_Num {
             display-name = "W_NumEn";
             bindings = <
-&none  &none   &kp N7      &kp N8      &kp N9  &none                        &none  &none           &none             &none         &none             &none
-&none  &kp N0  &kp N4      &kp N5      &kp N6  &none                        &none  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
-&none  &none   &kp N1      &kp N2      &kp N3  &none                        &none  &none           &none             &none         &none             &none
-               &to_ru_win  &to_en_win  &trans  &trans  &trans    &kp ENTER  &mo 9  &trans          &to_en_win        &to_ru_win
+&none  &none   &kp N7      &kp N8      &kp N9  &none                    &none  &none           &none             &none         &none             &none
+&none  &kp N0  &kp N4      &kp N5      &kp N6  &none                    &none  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none
+&none  &none   &kp N1      &kp N2      &kp N3  &none                    &none  &none           &none             &none         &none             &none
+               &to_ru_win  &to_en_win  &trans  &mo 9  &trans    &trans  &none  &trans          &to_en_win        &to_ru_win
             >;
 
             label = "W_Num";
@@ -798,7 +798,7 @@
 &none  &none             &none         &none             &none           &none                    &kp LC(Z)       &kp LC(V)       &kp LC(C)     &kp LC(X)        &kp LC(LS(Z))  &none
 &none  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &none
 &none  &none             &none         &none             &none           &none                    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &none
-                         &to_ru_win    &to_en_win        &trans          &mo 9  &trans    &trans  &trans          &trans          &to_en_win    &to_ru_win
+                         &to_ru_win    &to_en_win        &trans          &none  &trans    &trans  &mo 9           &trans          &to_en_win    &to_ru_win
             >;
         };
 
