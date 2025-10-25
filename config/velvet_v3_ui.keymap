@@ -850,10 +850,10 @@
 
         Sniper {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans            &trans        &trans            &trans          &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &trans            &trans        &trans            &trans          &trans                    &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans
+                          &trans        &trans            &trans          &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
         };
     };
