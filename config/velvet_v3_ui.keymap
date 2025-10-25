@@ -762,10 +762,10 @@
 
         M_Mouse {
             bindings = <
-&trans  &trans             &trans         &trans             &trans           &trans                    &kp LG(Z)       &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(LS(Z))  &none
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LSHFT  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 12  &mo 13
-&trans  &trans            &trans        &trans            &trans     &trans                    &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans
-                          &trans        &trans            &trans     &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans            &trans        &trans            &trans     &trans                    &kp LG(Z)  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(LS(Z))  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LSHFT  &trans                    &trans     &mkp MB1   &mkp MB2   &mkp MB3   &mo 12         &mo 13
+&trans  &trans            &trans        &trans            &trans     &trans                    &trans     &trans     &mkp MB4   &mkp MB5   &trans         &trans
+                          &trans        &trans            &trans     &trans  &trans    &trans  &trans     &trans     &trans     &trans
             >;
 
             label = "M_Mouse";
@@ -826,10 +826,10 @@
 
         W_Mouse {
             bindings = <
-&trans  &trans             &trans         &trans             &trans           &trans                    &kp LC(Z)       &kp LC(V)       &kp LC(C)     &kp LC(X)        &kp LC(LS(Z))  &none
-&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 12  &mo 13
-&trans  &trans            &trans        &trans            &trans     &trans                    &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans
-                          &trans        &trans            &trans     &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans            &trans        &trans            &trans     &trans                    &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(LS(Z))  &trans
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &trans                    &trans     &mkp MB1   &mkp MB2   &mkp MB3   &mo 12         &mo 13
+&trans  &trans            &trans        &trans            &trans     &trans                    &trans     &trans     &mkp MB4   &mkp MB5   &trans         &trans
+                          &trans        &trans            &trans     &trans  &trans    &trans  &trans     &trans     &trans     &trans
             >;
 
             label = "W_Mouse";
