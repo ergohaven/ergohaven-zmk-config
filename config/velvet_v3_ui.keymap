@@ -870,11 +870,6 @@
             <&zip_xy_to_scroll_mapper>;
     };
 
-    sniper {
-        layers = <13>;
-        input-processors = <&zip_xy_scaler 1 4>;
-    };
-
     m_mouse {
         layers = <5>;
         input-processors = <&zip_xy_scaler 1 4>;
