@@ -102,6 +102,8 @@
             hold-trigger-key-positions = <39>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <100>;
+        };
+        
         mouse_layer: mouse_layer {
             compatible = "zmk,behavior-sticky-key";
             label = "MOUSE_LAYER";
