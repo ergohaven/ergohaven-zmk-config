@@ -74,6 +74,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LC(N2))>;
             label = "TO_RU";
+            wait-ms = <0>;
+            tap-ms = <30>;
         };
 
         to_en: to_en {
@@ -81,6 +83,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LC(N1))>;
             label = "TO_EN";
+            wait-ms = <0>;
+            tap-ms = <30>;
         };
 
         layer_en: layer_en {
@@ -88,6 +92,8 @@
             #binding-cells = <0>;
             bindings = <&to 0 &to_en>;
             label = "LAYER_EN";
+            wait-ms = <0>;
+            tap-ms = <30>;
         };
 
         layer_ru: layer_ru {
@@ -95,18 +101,26 @@
             #binding-cells = <0>;
             bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
+            tap-ms = <30>;
+            wait-ms = <0>;
         };
 
         en: en {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_wait_time 10>,
-                <&to_ru>,
-                <&macro_wait_time 10>;
+                <&to_en>,
+                <&macro_press>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&to_ru>;
 
             label = "EN";
+            wait-ms = <0>;
+            tap-ms = <30>;
         };
     };
 
@@ -120,6 +134,8 @@
   &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
                                           &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
             >;
+
+            display-name = "Base";
         };
 
         ru {
@@ -129,6 +145,8 @@
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
                                                                                    &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp TAB
             >;
+
+            display-name = "Ru";
         };
 
         sym_en {
@@ -138,6 +156,8 @@
   &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                     &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK
                                                     &trans           &mo 5      &trans    &trans  &none      &trans
             >;
+
+            display-name = "Symbols";
         };
 
         sym_ru {
@@ -147,6 +167,8 @@
   &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                     &en AT     &en PIPE  &kp RU_COMMA        &kp RU_DOT  &kp RU_QMARK
                                                             &trans           &mo 5      &trans    &trans  &none      &trans
             >;
+
+            display-name = "Symbols";
         };
 
         nav {
@@ -156,6 +178,8 @@
   &layer_en      &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &layer_ru
                                       &trans     &none       &trans    &trans  &mo 5            &trans
             >;
+
+            display-name = "Navigation";
         };
 
         adj {
@@ -165,6 +189,8 @@
   &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_PREV           &kp C_PP           &kp C_NEXT          &studio_unlock
                                             &trans         &trans   &trans    &trans  &trans        &trans
             >;
+
+            display-name = "Adjust";
         };
     };
 };
