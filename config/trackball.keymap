@@ -1,0 +1,119 @@
+#include "keys_ru.h"
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
+
+/ {
+    behaviors {
+        adj1: adj1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ADJ1";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
+        };
+
+        adj2: adj2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ADJ2";
+            #binding-cells = <0>;
+            bindings = <&bt BT_NXT>, <&bt BT_CLR_ALL>;
+        };
+
+        adj_td: adj_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ADJ_TD";
+            #binding-cells = <0>;
+            bindings = <&hold_mo_tap_mkp 1 MB3>, <&to 3>;
+        };
+
+        hold_mo_tap_mkp: hold_mo_tap_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_MO_TAP_MKP";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            tapping-term-ms = <200>;
+            hold-while-undecided-linger;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        base_combo {
+            bindings = <&adj_td>;
+            key-positions = <0 1>;
+            layers = <0 1 2>;
+        };
+
+        adj_combo {
+            bindings = <&to 0>;
+            key-positions = <0 1>;
+            layers = <3>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        base {
+            bindings = <
+&mkp MB1  &hold_mo_tap_mkp 2 MB2
+            >;
+
+            display-name = "Base";
+        };
+
+        scroll {
+            bindings = <
+&trans  &trans
+            >;
+
+            display-name = "Scroll";
+        };
+
+        sniper {
+            bindings = <
+&trans  &trans
+            >;
+
+            display-name = "Sniper";
+        };
+
+        adjust {
+            bindings = <
+&adj1  &adj2
+            >;
+
+            label = "Adjust";
+        };
+    };
+};
+
+&trackball { cpi = <1000>; };
+
+&trackball_listener {
+    input-processors = <&zip_xy_scaler 9 20>;
+
+    scroller {
+        layers = <1>;
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_xy_scaler 1 32>,
+            <&zip_xy_to_scroll_mapper>;
+    };
+
+    sniper {
+        layers = <2>;
+        input-processors = <&zip_xy_scaler 1 4>;
+    };
+
+    adjust {
+        layers = <3>;
+        input-processors = <&zip_xy_scaler 1 8>;
+    };
+};
