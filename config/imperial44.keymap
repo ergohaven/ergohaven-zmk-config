@@ -96,7 +96,7 @@
 &kp ESC    &kp Q            &kp W            &kp E         &kp R              &kp T                                      &kp Y  &kp U               &kp I         &kp O             &kp P                &kp LEFT_BRACKET
 &kp TAB    &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                                      &kp H  &hmr RIGHT_SHIFT J  &hmr RCTRL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMI  &kp SQT
 &kp GRAVE  &kp Z            &kp X            &kp C         &kp V              &kp B            &kp MINUS    &kp EQUAL    &kp N  &kp M               &kp COMMA     &kp DOT           &kp FSLH             &kp RIGHT_BRACKET
-                                                           &kp DELETE         &lt 1 LG(SPACE)  &kp SPACE    &lt 4 ENTER  &mo 2  &kp BACKSPACE
+                                                           &lt 3 DELETE       &lt 1 LG(SPACE)  &kp SPACE    &lt 4 ENTER  &mo 2  &kp BACKSPACE
             >;
 
             display-name = "Base";
@@ -104,10 +104,10 @@
 
         nav {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                                         &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans                                         &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)  &kp LS(LG(LC(NUMBER_4)))    &trans  &trans  &trans    &trans    &trans  &trans     &trans
-                                         &trans     &trans     &trans                      &trans  &mo 3   &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                            &trans     &trans     &trans    &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                            &trans     &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)  &kp LS(LG(LC(NUMBER_4)))    &trans     &trans     &trans     &trans    &trans  &trans     &trans
+                                         &trans     &trans     &kp LS(LC(LG(NUMBER_4)))    &kp LG(C)  &kp LG(V)  &kp LG(A)
             >;
 
             display-name = "Navigation";
@@ -115,10 +115,10 @@
 
         sym {
             bindings = <
-&none     &kp EXCL   &kp AT_SIGN  &kp HASH       &kp DOLLAR       &none                                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LPAR  &kp RPAR   &kp PIPE     &kp AMPERSAND  &kp NUBS         &none                                        &trans  &trans  &trans  &trans  &trans  &trans
-&none     &kp CARET  &kp STAR     &kp FSLH       &kp NON_US_HASH  &kp RU_SEMICOLON  &kp RU_QUESTION    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                 &trans           &mo 3             &trans             &trans  &trans  &trans
+&none     &kp EXCL   &kp AT_SIGN  &kp HASH       &kp DOLLAR       &none                                         &trans  &trans      &trans  &trans  &trans  &trans
+&kp LPAR  &kp RPAR   &kp PIPE     &kp AMPERSAND  &kp NUBS         &none                                         &trans  &trans      &trans  &trans  &trans  &trans
+&none     &kp CARET  &kp STAR     &kp FSLH       &kp NON_US_HASH  &none     &kp RU_QUESTION    &trans           &trans  &trans      &trans  &trans  &trans  &trans
+                                                 &kp EXCL         &kp FSLH  &kp RU_COMMA       &kp RU_QUESTION  &trans  &kp RU_DOT
             >;
 
             display-name = "Symbols";
