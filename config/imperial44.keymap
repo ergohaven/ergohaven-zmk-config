@@ -36,7 +36,7 @@
         };
 
         reshetka {
-            bindings = <&kp NON_US_HASH>;
+            bindings = <&kp LA(NUMBER_3)>;
             key-positions = <3 2>;
         };
 
@@ -103,10 +103,10 @@
 
         sym {
             bindings = <
-&trans    &kp EXCL  &kp AT_SIGN  &kp HASH       &kp DOLLAR       &kp CARET                                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LPAR  &kp RPAR  &kp PIPE     &kp AMPERSAND  &kp NUBS         &kp RU_COLON                                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans    &kp STAR     &kp FSLH       &kp NON_US_HASH  &kp RU_SEMICOLON  &kp RU_QUESTION    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans           &mo 3             &trans             &trans  &trans  &trans
+&none     &kp EXCL   &kp AT_SIGN  &kp HASH       &kp DOLLAR       &none                                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LPAR  &kp RPAR   &kp PIPE     &kp AMPERSAND  &kp NUBS         &none                                        &trans  &trans  &trans  &trans  &trans  &trans
+&none     &kp CARET  &kp STAR     &kp FSLH       &kp NON_US_HASH  &kp RU_SEMICOLON  &kp RU_QUESTION    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                 &trans           &mo 3             &trans             &trans  &trans  &trans
             >;
 
             display-name = "Symbols";
