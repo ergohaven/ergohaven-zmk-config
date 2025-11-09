@@ -115,10 +115,10 @@
 
         sym {
             bindings = <
-&none     &kp EXCL   &kp AT_SIGN  &kp HASH       &kp DOLLAR       &none                                         &trans  &trans      &trans  &trans  &trans  &trans
-&kp LPAR  &kp RPAR   &kp PIPE     &kp AMPERSAND  &kp NUBS         &none                                         &trans  &trans      &trans  &trans  &trans  &trans
-&none     &kp CARET  &kp STAR     &kp FSLH       &kp NON_US_HASH  &none     &kp RU_QUESTION    &trans           &trans  &trans      &trans  &trans  &trans  &trans
-                                                 &kp EXCL         &kp FSLH  &kp RU_COMMA       &kp RU_QUESTION  &trans  &kp RU_DOT
+&none     &kp EXCL   &kp AT_SIGN  &kp HASH       &kp DOLLAR       &none                                            &trans  &trans      &trans  &trans  &trans  &trans
+&kp LPAR  &kp RPAR   &kp PIPE     &kp AMPERSAND  &kp NUBS         &none                                            &trans  &trans      &trans  &trans  &trans  &trans
+&none     &kp CARET  &kp STAR     &kp FSLH       &kp NON_US_HASH  &none        &kp RU_QUESTION    &trans           &trans  &trans      &trans  &trans  &trans  &trans
+                                                 &kp EXCL         &kp RU_FSLH  &kp RU_COMMA       &kp RU_QUESTION  &trans  &kp RU_DOT
             >;
 
             display-name = "Symbols";
