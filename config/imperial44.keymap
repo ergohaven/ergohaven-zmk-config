@@ -4,30 +4,88 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+&mt {
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <150>;
+    flavor = "tap-preferred";
+};
+
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        yooo {
+            bindings = <&kp RU_CYRILLIC_IO>;
+            key-positions = <5 4>;
+            layers = <0>;
+        };
+
+        tochka {
+            bindings = <&kp DOT>;
+            key-positions = <37 36>;
+        };
+
+        zpt {
+            bindings = <&kp COMMA>;
+            key-positions = <36 35>;
+        };
+
+        rouble {
+            bindings = <&kp RU_RUBLE>;
+            key-positions = <18 19>;
+        };
+    };
+
+    behaviors {
+        hml: home_row_mode_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <31 41 6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 36 37 42 43>;
+        };
+
+        hmr: home_mod_row_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 30 38 39 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R      &kp T                          &kp Y  &kp U     &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp TAB    &kp A  &kp S  &kp D  &kp F      &kp G                          &kp H  &kp J     &kp K      &kp L    &kp SEMI  &kp LGUI
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V      &kp B  &kp LBKT     &kp RBKT   &kp N  &kp M     &kp COMMA  &kp DOT  &kp SQT   &kp RSHFT
-                                &kp LCTRL  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LALT
+&kp ESC    &kp Q            &kp W            &kp E         &kp R              &kp T                                    &kp Y  &kp U               &kp I         &kp O             &kp P                &kp LEFT_BRACKET
+&kp TAB    &hml A LEFT_GUI  &hml S LEFT_ALT  &hml D LCTRL  &hml F LEFT_SHIFT  &kp G                                    &kp H  &hmr J RIGHT_SHIFT  &hmr K RCTRL  &hmr L RIGHT_ALT  &hmr SEMI RIGHT_GUI  &kp SQT
+&kp GRAVE  &kp Z            &kp X            &kp C         &kp V              &kp B            &kp MINUS    &kp EQUAL  &kp N  &kp M               &kp COMMA     &kp DOT           &kp FSLH             &kp RIGHT_BRACKET
+                                                           &kp DELETE         &lt 1 LG(SPACE)  &kp SPACE    &kp ENTER  &mo 2  &kp BACKSPACE
             >;
 
             display-name = "Base";
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         nav {
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3      &kp N4     &kp N5                             &kp N6        &kp N7        &kp N8     &kp N9     &kp N0         &trans
-&trans  &kp HOME   &kp INS    &kp DELETE  &kp END    &kp LA(LSHFT)                      &trans        &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &kp PRINTSCREEN  &trans    &trans  &kp CAPSLOCK  &kp LC(LEFT)  &kp PG_DN  &kp PG_UP  &kp LC(RIGHT)  &trans
-                                          &trans     &trans           &trans    &trans  &mo 3         &trans
+&trans  &kp N1     &kp N2     &kp N3      &kp N4     &kp N5                                               &kp N6        &kp N7        &kp N8     &kp N9     &kp N0         &kp LPAR
+&trans  &kp HOME   &kp INS    &kp DELETE  &kp END    &kp LA(LSHFT)                                        &trans        &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &kp PRINTSCREEN  &kp LS(LG(LC(NUMBER_4)))    &trans  &kp CAPSLOCK  &kp LC(LEFT)  &kp PG_DN  &kp PG_UP  &kp LC(RIGHT)  &kp RPAR
+                                          &trans     &trans           &trans                      &trans  &mo 3         &trans
             >;
 
             display-name = "Navigation";
