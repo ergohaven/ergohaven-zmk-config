@@ -44,6 +44,18 @@
             bindings = <&kp RU_QUESTION>;
             key-positions = <23 22>;
         };
+
+        win-mac {
+            bindings = <&to 5>;
+            key-positions = <24 25>;
+            layers = <0>;
+        };
+
+        mac-win {
+            bindings = <&to 0>;
+            key-positions = <24 25>;
+            layers = <5>;
+        };
     };
 
     behaviors {
