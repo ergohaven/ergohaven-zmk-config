@@ -5,12 +5,6 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: ergohaven
-    shield: imperial44_left
-    keymap: imperial44_ruen
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: imperial44_left_ruen-ergohaven-zmk
-  - board: ergohaven
     shield: imperial44_right
   - board: ergohaven
     shield: imperial44_qube qube dongle_screen
@@ -18,18 +12,10 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: imperial44_qube-ergohaven-zmk
   - board: ergohaven
-    shield: imperial44_qube qube dongle_screen
-    keymap: imperial44_ruen
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: imperial44_qube_ruen-ergohaven-zmk
-  - board: ergohaven
     shield: imperial44_left_qube
-
   - board: ergohaven
     shield: trackball
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-
   - board: ergohaven
     shield: settings_reset
