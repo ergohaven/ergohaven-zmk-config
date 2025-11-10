@@ -31,7 +31,7 @@
         zip_auto_mouse: zip_auto_mouse {
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
-            require-prior-idle-ms = <800>;
+            require-prior-idle-ms = <100>;
             excluded-positions = <>;
         };
     };
