@@ -100,6 +100,7 @@
             >;
 
             display-name = "Base";
+            label = "mac-base";
         };
 
         nav {
@@ -111,6 +112,7 @@
             >;
 
             display-name = "Navigation";
+            label = "mac-navi";
         };
 
         sym {
@@ -122,6 +124,7 @@
             >;
 
             display-name = "Symbols";
+            label = "symbols";
         };
 
         adj {
@@ -133,6 +136,7 @@
             >;
 
             display-name = "Adjust";
+            label = "Fn";
         };
 
         NUM {
@@ -142,6 +146,8 @@
 &kp PRCNT  &none      &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp EQUAL    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                   &kp N0        &trans     &trans       &trans  &trans  &trans
             >;
+
+            label = "numbers";
         };
 
         base_win {
@@ -153,7 +159,7 @@
                                                            &kp DELETE         &lt 6 LG(SPACE)  &kp SPACE    &lt 4 ENTER  &mo 2  &kp BACKSPACE
             >;
 
-            label = "Base";
+            label = "win-base";
         };
 
         nav_win {
@@ -165,7 +171,7 @@
                                          &trans     &trans     &trans           &trans  &mo 3   &trans
             >;
 
-            label = "Navigation";
+            label = "win-navi";
         };
     };
 };
