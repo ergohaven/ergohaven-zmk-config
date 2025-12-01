@@ -136,7 +136,7 @@
                 &trans        &trans    &trans         &trans   &trans    &trans  &mo 5            &trans  &kp N0  &trans
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         sym_en {

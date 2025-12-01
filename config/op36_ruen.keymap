@@ -179,7 +179,7 @@
                                       &trans     &none       &trans    &trans  &mo 5            &trans
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         adj {

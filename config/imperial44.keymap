@@ -30,7 +30,7 @@
                                           &trans     &trans           &trans    &trans  &mo 3         &trans
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         sym {
