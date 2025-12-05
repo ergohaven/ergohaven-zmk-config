@@ -844,26 +844,37 @@
             >;
         };
 
-        gaming {
+        G_En {
             bindings = <
-&kp TAB         &kp T  &kp Q   &kp W         &kp E             &kp R                         &trans  &trans  &trans  &trans  &trans  &trans
-&kp ESC         &kp G  &kp A   &kp S         &kp D             &kp F                         &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp B  &kp Z   &kp X         &kp C             &kp V                         &trans  &trans  &trans  &trans  &trans  &trans
-                       &trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 14  &kp SPACE    &tog 13  &trans  &trans  &trans  &trans
+&kp TAB         &kp T  &kp Q             &kp W         &kp E             &kp R                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC         &kp G  &kp A             &kp S         &kp D             &kp F                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp B  &kp Z             &kp X         &kp C             &kp V                         &trans  &trans  &trans  &trans  &trans  &trans
+                       &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 14  &kp SPACE    &tog 13  &trans  &trans  &trans  &trans
             >;
 
-            label = "gaming";
+            label = "G_En";
         };
 
-        gaming2 {
+        G_Num {
             bindings = <
 &trans  &kp N6  &kp N7  &trans  &kp N8  &kp N9                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp N0                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &mo 15  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "gaming2";
+            label = "G_Num";
+        };
+
+        G_Adj {
+            bindings = <
+&trans  &kp F6  &kp F7   &trans   &kp F8  &kp F9                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans   &trans  &kp F10                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4  &kp F5                     &trans  &trans  &trans  &trans  &trans  &trans
+                &kp F11  &kp F12  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "G_Adj";
         };
     };
 
