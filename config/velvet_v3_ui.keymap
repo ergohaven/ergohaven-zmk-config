@@ -744,7 +744,7 @@
 &none  &none             &none         &none             &none           &none                    &kp LG(Z)       &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(LS(Z))  &none
 &none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &none                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &none
 &none  &none             &none         &none             &none           &none                    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &none
-                         &to_ru_mac    &to_en_mac        &trans          &none  &trans    &trans  &mo 4           &trans          &to_en_mac    &to_ru_mac
+                         &to_ru_mac    &to_en_mac        &trans          &none  &trans    &trans  &ltc 4 DELETE   &trans          &to_en_mac    &to_ru_mac
             >;
 
             display-name = "M_Nav";
@@ -809,7 +809,7 @@
 &none  &none             &none         &none             &none           &none                    &kp LC(Z)       &kp LC(V)       &kp LC(C)     &kp LC(X)        &kp LC(LS(Z))  &none
 &none  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK   &none
 &none  &none             &none         &none             &none           &none                    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &none
-                         &to_ru_win    &to_en_win        &trans          &none  &trans    &trans  &mo 10          &trans          &to_en_win    &to_ru_win
+                         &to_ru_win    &to_en_win        &trans          &none  &trans    &trans  &ltc 10 DELETE  &trans          &to_en_win    &to_ru_win
             >;
         };
 
