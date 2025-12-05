@@ -815,10 +815,10 @@
 
         W_Adj {
             bindings = <
-&none  &kp F12  &kp F7      &kp F8      &kp F9  &kp PRINTSCREEN                    &out OUT_BLE     &out OUT_USB                     &none                            &none                   &none                        &bootloader
-&none  &kp F11  &kp F4      &kp F5      &kp F6  &kp SCROLLLOCK                     &kp C_PREVIOUS   &hrm_r LEFT_SHIFT C_VOLUME_DOWN  &hrm_r LEFT_CONTROL C_VOLUME_UP  &hrm_r LEFT_ALT C_NEXT  &hrm_r LEFT_COMMAND C_PAUSE  &studio_unlock
-&none  &kp F10  &kp F1      &kp F2      &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 6 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
-                &to_ru_win  &to_en_win  &trans  &none            &trans    &trans  &none            &trans                           &to_en_win                       &to_ru_win
+&tog 13  &kp F12  &kp F7      &kp F8      &kp F9  &kp PRINTSCREEN                    &out OUT_BLE     &out OUT_USB                     &none                            &none                   &none                        &bootloader
+&none    &kp F11  &kp F4      &kp F5      &kp F6  &kp SCROLLLOCK                     &kp C_PREVIOUS   &hrm_r LEFT_SHIFT C_VOLUME_DOWN  &hrm_r LEFT_CONTROL C_VOLUME_UP  &hrm_r LEFT_ALT C_NEXT  &hrm_r LEFT_COMMAND C_PAUSE  &studio_unlock
+&none    &kp F10  &kp F1      &kp F2      &kp F3  &kp PAUSE_BREAK                    &bt_mac_mod 0 0  &bt_win_mod 6 0                  &bt BT_SEL 2                     &bt BT_SEL 3            &bt BT_SEL 4                 &bt BT_CLR
+                  &to_ru_win  &to_en_win  &trans  &none            &trans    &trans  &none            &trans                           &to_en_win                       &to_ru_win
             >;
 
             display-name = "W_Adj";
@@ -842,6 +842,28 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
+        };
+
+        gaming {
+            bindings = <
+&kp TAB         &kp T  &kp Q   &kp W         &kp E             &kp R                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC         &kp G  &kp A   &kp S         &kp D             &kp F                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp B  &kp Z   &kp X         &kp C             &kp V                         &trans  &trans  &trans  &trans  &trans  &trans
+                       &trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 14  &kp SPACE    &tog 13  &trans  &trans  &trans  &trans
+            >;
+
+            label = "gaming";
+        };
+
+        gaming2 {
+            bindings = <
+&trans  &kp N6  &kp N7  &trans  &kp N8  &kp N9                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp N0                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "gaming2";
         };
     };
 
