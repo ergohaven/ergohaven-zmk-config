@@ -36,6 +36,28 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        left_boot {
+            bindings = <&bootloader>;
+            key-positions = <0 24 29 5>;
+        };
+
+        right_boot {
+            bindings = <&bootloader>;
+            key-positions = <30 6 11 35>;
+        };
+    };
+
+        zip_auto_mouse: zip_auto_mouse {
+            compatible = "zmk,input-processor-temp-layer";
+            #input-processor-cells = <2>;
+            require-prior-idle-ms = <800>;
+            excluded-positions = <>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

@@ -50,13 +50,29 @@
             key-positions = <3 4>;
             layers = <0>;
         };
+
+        left_boot {
+            bindings = <&bootloader>;
+            key-positions = <0 24 29 5>;
+        };
+
+        right_boot {
+            bindings = <&bootloader>;
+            key-positions = <6 30 35 11>;
+        };
+
+        to_mouse {
+            bindings = <&sl 6>;
+            key-positions = <39 42 11 0>;
+            layers = <0 1>;
+        };
     };
 
     macros {
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N2))>;
+            bindings = <&kp LG(SPACE)>;
             label = "TO_RU";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -65,7 +81,7 @@
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N1))>;
+            bindings = <&kp LG(SPACE)>;
             label = "TO_EN";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -134,10 +150,10 @@
 
         nav {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
-&trans  &trans  &trans    &trans   &trans   &kp RET                    &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
-&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
-                &trans    &trans   &trans   &trans   &trans    &trans  &mo 5     &trans        &trans         &trans
+&trans     &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6    &kp N7        &kp N8         &kp N9              &kp N0         &trans
+&kp RCTRL  &trans  &trans    &trans   &trans   &kp RET                    &trans    &kp LEFT      &kp UP_ARROW   &kp DOWN_ARROW      &kp RIGHT      &trans
+&trans     &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_UP    &kp PAGE_DOWN       &kp LC(RIGHT)  &trans
+                   &trans    &trans   &trans   &trans   &trans    &trans  &mo 5     &mo 6         &kp RIGHT_WIN  &kp K_CONTEXT_MENU
             >;
 
             display-name = "Nav";
@@ -158,7 +174,7 @@
             display-name = "Symbols";
             bindings = <
 &kp RU_CYRILLIC_IO  &en HASH          &en LT    &kp EQUAL     &en GT       &en GRAVE                    &en CARET  &kp RU_DQT  &kp UNDER    &en SQT   &trans      &trans
-&kp RU_NUMERO       &kp RU_BACKSLASH  &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                     &kp PRCNT  &en LBRC    &kp RU_SEMI  &kp RBRC  &kp EXCL    &kp RU_QMARK
+&kp RU_NUMERO       &kp RU_BACKSLASH  &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                     &kp PRCNT  &en LBRC    &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QMARK
 &trans              &kp RU_COMMA      &kp STAR  &kp RU_COLON  &kp RU_FSLH  &en DLLR                     &en AT     &en PIPE    &en TILDE    &en AMPS  &kp RU_DOT  &trans
                                       &trans    &trans        &trans       &mo 5      &trans    &trans  &trans     &trans      &en LBKT     &en RBKT
             >;
@@ -167,9 +183,9 @@
         adj {
             bindings = <
 &bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
+&to 0        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
 &none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
-                    &none   &none    &none    &none    &none    &none  &none         &none         &none             &none
+                    &none   &none    &none    &none    &none    &none  &none         &none         &kp LEFT_ALT      &none
             >;
 
             display-name = "Adjust";
@@ -210,7 +226,7 @@
     };
 };
 
-&trackball { cpi = <1000>; };
+&trackball { cpi = <3200>; };
 
 &trackball_listener {
     input-processors = <&zip_auto_mouse 6 500>, <&zip_xy_scaler 9 20>;
@@ -225,6 +241,6 @@
 
     sniper {
         layers = <8>;
-        input-processors = <&zip_xy_scaler 1 4>;
+        input-processors = <&zip_xy_scaler 1 16>;
     };
 };
