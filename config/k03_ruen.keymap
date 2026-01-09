@@ -84,6 +84,13 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+
+        lg_tol: lg_tol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPSLOCK &tog 1>;
+            label = "LG_TOL";
+        };
     };
 
     keymap {
@@ -91,10 +98,10 @@
 
         en {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2            &kp N3    &kp N4            &kp N5                          &kp N6  &kp N7             &kp N8     &kp N9             &kp N0    &kp BACKSLASH
-&kp ESC    &kp Q   &kp W             &kp E     &kp R             &kp T                           &kp Y   &kp U              &kp I      &kp O              &kp P     &kp BACKSPACE
-&kp TAB    &kp A   &kp S             &kp D     &kp F             &kp G                           &kp H   &kp J              &kp K      &kp L              &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X             &kp C     &kp V             &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M              &kp COMMA  &kp DOT            &kp FSLH  &kp RSHFT
+&lg_tol    &kp N1  &kp N2            &kp N3    &kp N4            &kp N5                          &kp N6  &kp N7             &kp N8     &kp N9             &kp N0            &none
+&kp ESC    &kp Q   &kp W             &kp E     &kp R             &kp T                           &kp Y   &kp U              &kp I      &kp O              &kp P             &kp BACKSPACE
+&kp TAB    &kp A   &kp S             &kp D     &kp F             &kp G                           &kp H   &kp J              &kp K      &kp L              &kp SEMI          &kp CAPSLOCK
+&kp LSHFT  &kp Z   &kp X             &kp C     &kp V             &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M              &kp COMMA  &kp DOT            &kp SINGLE_QUOTE  &kp RSHFT
                    &kp LEFT_CONTROL  &kp LALT  &kp LEFT_COMMAND  &mo 2   &kp SPACE    &kp ENTER  &mo 3   &kp RIGHT_COMMAND  &kp RALT   &kp RIGHT_CONTROL
             >;
 
@@ -111,11 +118,11 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp GRAVE  &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                                               &kp N6              &kp N7                     &kp N8               &kp N9                 &kp N0               &kp BSPC
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSLH
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RSHFT
-                                    &kp LGUI              &kp LALT            &kp LCTRL           &mo 2               &kp SPACE             &kp ENTER                  &mo 4               &kp RCTRL                  &kp RALT             &kp RGUI
+&lg_tol    &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                                               &kp N6              &kp N7                     &kp N8               &kp N9                 &kp N0               &none
+&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BACKSPACE
+&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp CAPSLOCK
+&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E    &kp RSHFT
+                                    &kp LEFT_CONTROL      &kp LALT            &kp LEFT_COMMAND    &mo 2               &kp SPACE             &kp ENTER                  &mo 4               &kp RIGHT_COMMAND          &kp RALT             &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
