@@ -39,12 +39,14 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
+    combos { compatible = "zmk,combos"; };
 
-        left_tab {
-            bindings = <&kp TAB>;
-            key-positions = <10 30>;
+    macros {
+        ru_en_toggle: ru_en_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT>;
+            label = "RU_EN_TOGGLE";
         };
     };
 
@@ -64,10 +66,10 @@
 
         nav {
             bindings = <
-  &kp ESC         &kp HOME  &kp UP    &kp END    &none                         &kp PAGE_UP      &none   &none  &none  &kp BACKSPACE
-  &none           &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER                     &kp PAGE_DOWN    &none   &none  &none  &none
-  &kp LEFT_SHIFT  &none     &kp CAPS  &none      &kp DELETE                    &kp PRINTSCREEN  &none   &none  &none  &kp RIGHT_SHIFT
-                                      &trans     &trans      &trans    &trans  &mo 3            &trans
+  &kp ESC           &kp HOME  &kp UP    &kp END    &none                         &kp PAGE_UP      &ru_en_toggle  &none  &none  &kp BACKSPACE
+  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER                     &kp PAGE_DOWN    &none          &none  &none  &none
+  &kp LEFT_SHIFT    &none     &kp CAPS  &none      &kp DELETE                    &kp PRINTSCREEN  &none          &none  &none  &kp RIGHT_SHIFT
+                                        &trans     &trans      &trans    &trans  &mo 3            &trans
             >;
 
             display-name = "Nav";
