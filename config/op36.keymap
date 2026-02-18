@@ -53,10 +53,10 @@
 
         base {
             bindings = <
-  &kp Q            &kp W  &kp F  &kp P             &kp G                          &kp J  &kp L    &kp U      &kp Y    &kp SEMI
-  &kp LC(LS(TAB))  &kp S  &kp R  &kp T             &kp D                          &kp H  &kp N    &kp E      &kp I    &kp O
-  &kp Z            &kp X  &kp C  &kp V             &kp B                          &kp K  &kp M    &kp COMMA  &kp DOT  &kp QUESTION
-                                 &kp LEFT_CONTROL  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
+  &kp Q  &kp W  &kp F  &kp P             &kp G                          &kp J  &kp L    &kp U      &kp Y    &kp SEMI
+  &kp A  &kp S  &kp R  &kp T             &kp D                          &kp H  &kp N    &kp E      &kp I    &kp O
+  &kp Z  &kp X  &kp C  &kp V             &kp B                          &kp K  &kp M    &kp COMMA  &kp DOT  &kp QUESTION
+                       &kp LEFT_CONTROL  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
             >;
 
             display-name = "Base";
