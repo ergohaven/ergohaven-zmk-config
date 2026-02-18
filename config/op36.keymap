@@ -51,7 +51,7 @@
                 <&macro_tap>,
                 <&kp LEFT_SHIFT>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT>;
+                <&kp LEFT_ALT>;
 
             label = "RU_EN_TOGGLE";
         };
