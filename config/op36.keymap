@@ -45,7 +45,8 @@
         ru_en_toggle: ru_en_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT>;
+            bindings = <&kp LEFT_ALT>, <&macro_tap>, <&kp LEFT_SHIFT>;
+
             label = "RU_EN_TOGGLE";
         };
     };
