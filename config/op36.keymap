@@ -70,7 +70,7 @@
         nav {
             bindings = <
   &kp ESC         &kp HOME  &kp UP    &kp END    &none                         &kp PAGE_UP      &none   &none  &none  &kp BACKSPACE
-  &none           &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER                     &kp PAGE_DOWN    &none   &none  &none  &none
+  &kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER                     &kp PAGE_DOWN    &none   &none  &none  &none
   &kp LEFT_SHIFT  &none     &kp CAPS  &none      &kp DELETE                    &kp PRINTSCREEN  &none   &none  &none  &kp RIGHT_SHIFT
                                       &trans     &trans      &trans    &trans  &mo 3            &trans
             >;
@@ -80,10 +80,10 @@
 
         sym {
             bindings = <
-  &none           &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &none
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &none                        &none      &kp PIPE         &kp TILDE        &kp AMPS        &kp DLLR
-                                                    &trans           &mo 3      &trans    &trans  &trans     &trans
+  &none          &kp LT                &kp EQUAL  &kp GT                 &kp GRAVE                    &kp CARET  &kp LBKT        &kp UNDER  &kp RBKT         &none
+  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp PLUS                     &kp PRCNT  &kp LEFT_BRACE  &kp SEMI   &kp RIGHT_BRACE  &kp EXCLAMATION
+  &none          &kp STAR              &kp COLON  &kp FSLH               &none                        &none      &kp PIPE        &kp TILDE  &kp AMPS         &kp DLLR
+                                                  &trans                 &mo 3      &trans    &trans  &trans     &trans
             >;
 
             display-name = "Symbols";
