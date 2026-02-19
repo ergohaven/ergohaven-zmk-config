@@ -55,6 +55,45 @@
 
             label = "RU_EN_TOGGLE";
         };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>;
+
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>;
+
+            label = "PASTE";
+        };
+
+        save: save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>;
+
+            label = "SAVE";
+        };
     };
 
     keymap {
@@ -62,10 +101,10 @@
 
         base {
             bindings = <
-  &kp Q  &kp W  &kp F  &kp P             &kp G                          &kp J  &kp L    &kp U      &kp Y    &kp SEMI
-  &kp A  &kp S  &kp R  &kp T             &kp D                          &kp H  &kp N    &kp E      &kp I    &kp O
-  &kp Z  &kp X  &kp C  &kp V             &kp B                          &kp K  &kp M    &kp COMMA  &kp DOT  &kp QUESTION
-                       &kp LEFT_CONTROL  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
+  &kp Q  &kp W  &kp F  &kp P             &kp G                          &kp J  &kp L  &kp U      &kp Y    &kp SEMI
+  &kp A  &kp S  &kp R  &kp T             &kp D                          &kp H  &kp N  &kp E      &kp I    &kp O
+  &kp Z  &kp X  &kp C  &kp V             &kp B                          &kp K  &kp M  &kp COMMA  &kp DOT  &kp QUESTION
+                       &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &none
             >;
 
             display-name = "Base";
@@ -73,10 +112,10 @@
 
         nav {
             bindings = <
-  &kp ESC         &kp HOME  &kp UP    &kp END    &none                         &kp PAGE_UP      &ru_en_toggle     &none  &none  &kp BACKSPACE
-  &kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER                     &kp PAGE_DOWN    &none             &none  &none  &none
-  &kp LEFT_SHIFT  &none     &kp CAPS  &none      &kp DELETE                    &kp PRINTSCREEN  &none             &none  &none  &kp RIGHT_SHIFT
-                                      &trans     &trans      &trans    &trans  &mo 3            &kp LEFT_COMMAND
+  &kp ESC         &kp HOME  &kp UP    &kp END    &none                         &kp PAGE_UP    &ru_en_toggle     &none   &none  &kp BACKSPACE
+  &kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER                     &kp PAGE_DOWN  &copy             &paste  &none  &none
+  &kp LEFT_SHIFT  &none     &kp CAPS  &none      &kp DELETE                    &save          &none             &none   &none  &kp RIGHT_SHIFT
+                                      &trans     &trans      &trans    &trans  &mo 3          &kp LEFT_COMMAND
             >;
 
             display-name = "Nav";
