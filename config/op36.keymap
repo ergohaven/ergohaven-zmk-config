@@ -94,6 +94,45 @@
 
             label = "SAVE";
         };
+
+        revert: revert {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp Z>,
+                <&macro_release>;
+
+            label = "REVERT";
+        };
+
+        one: one {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp N1>,
+                <&macro_release>;
+
+            label = "ONE";
+        };
+
+        zero: zero {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp N0>,
+                <&macro_release>;
+
+            label = "ZERO";
+        };
     };
 
     keymap {
@@ -112,10 +151,10 @@
 
         nav {
             bindings = <
-  &kp ESC         &kp HOME  &kp UP    &kp END    &none                         &kp PAGE_UP    &ru_en_toggle     &none   &none  &kp BACKSPACE
-  &kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER                     &kp PAGE_DOWN  &copy             &paste  &none  &none
-  &kp LEFT_SHIFT  &none     &kp CAPS  &none      &kp DELETE                    &save          &none             &none   &none  &kp RIGHT_SHIFT
-                                      &trans     &trans      &trans    &trans  &mo 3          &kp LEFT_COMMAND
+  &kp ESC         &kp HOME      &kp UP    &kp END           &kp PRINTSCREEN                       &kp PAGE_UP    &ru_en_toggle     &kp RU_CYRILLIC_HA  &kp RU_CYRILLIC_HARD_SIGN  &kp BACKSPACE
+  &kp TAB         &kp LEFT      &kp DOWN  &kp RIGHT         &kp RU_CYRILLIC_BE                    &kp PAGE_DOWN  &copy             &paste              &revert                    &kp RU_CYRILLIC_ZHE
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp CAPS  &kp LEFT_CONTROL  &kp DELETE                            &save          &one              &zero               &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E
+                                          &trans            &trans              &trans    &trans  &mo 3          &kp LEFT_COMMAND
             >;
 
             display-name = "Nav";
