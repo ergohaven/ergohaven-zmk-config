@@ -73,10 +73,10 @@
 
         nav {
             bindings = <
-  &kp ESC           &kp HOME  &kp UP    &kp END    &none                         &kp PAGE_UP      &ru_en_toggle  &none  &none  &kp BACKSPACE
-  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER                     &kp PAGE_DOWN    &none          &none  &none  &none
-  &kp LEFT_SHIFT    &none     &kp CAPS  &none      &kp DELETE                    &kp PRINTSCREEN  &none          &none  &none  &kp RIGHT_SHIFT
-                                        &trans     &trans      &trans    &trans  &mo 3            &trans
+  &kp ESC         &kp HOME  &kp UP    &kp END    &none                         &kp PAGE_UP      &ru_en_toggle     &none  &none  &kp BACKSPACE
+  &kp TAB         &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER                     &kp PAGE_DOWN    &none             &none  &none  &none
+  &kp LEFT_SHIFT  &none     &kp CAPS  &none      &kp DELETE                    &kp PRINTSCREEN  &none             &none  &none  &kp RIGHT_SHIFT
+                                      &trans     &trans      &trans    &trans  &mo 3            &kp LEFT_COMMAND
             >;
 
             display-name = "Nav";
