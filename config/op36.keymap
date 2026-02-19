@@ -64,7 +64,8 @@
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp C>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
 
             label = "COPY";
         };
@@ -77,7 +78,8 @@
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp V>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
 
             label = "PASTE";
         };
@@ -90,7 +92,8 @@
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp S>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
 
             label = "SAVE";
         };
@@ -103,7 +106,8 @@
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp Z>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
 
             label = "REVERT";
         };
@@ -116,7 +120,8 @@
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp N1>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
 
             label = "ONE";
         };
@@ -129,7 +134,8 @@
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp N0>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
 
             label = "ZERO";
         };
