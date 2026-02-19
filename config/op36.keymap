@@ -47,11 +47,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,
+                <&kp LEFT_CONTROL>,
                 <&macro_tap>,
-                <&kp LEFT_SHIFT>,
+                <&kp SPACE>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&kp LEFT_CONTROL>;
 
             label = "RU_EN_TOGGLE";
         };
