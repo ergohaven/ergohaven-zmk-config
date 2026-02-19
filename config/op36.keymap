@@ -235,9 +235,9 @@
 
         numbers {
             bindings = <
-  &kp N1  &kp N2  &kp N3        &kp N4         &kp N5                  &kp N6  &kp N7        &kp N8      &kp N9        &kp N0
-  &none   &none   &prev_page    &next_page     &mo 4                   &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none
-  &none   &none   &pop_history  &push_history  &none                   &none   &kp C_PREV    &kp C_PP    &kp C_NEXT    &none
+  &kp N1  &kp N2        &kp N3  &kp N4         &kp N5                  &kp N6  &kp N7        &kp N8      &kp N9        &kp N0
+  &none   &prev_page    &none   &next_page     &mo 4                   &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none
+  &none   &pop_history  &none   &push_history  &none                   &none   &kp C_PREV    &kp C_PP    &kp C_NEXT    &none
                                 &none          &none   &none    &none  &none   &none
             >;
         };
