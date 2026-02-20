@@ -47,6 +47,15 @@
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
+
+        escp_morph: escp_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ESCP_MORPH";
+            bindings = <&kp Q>, <&kp ESC>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -212,10 +221,10 @@
 
         base {
             bindings = <
-  &kp Q       &kp W  &kp F  &kp P             &kp G                          &kp J  &kp L             &kp U      &kp Y    &kp BACKSPACE
-  &tab_morph  &kp S  &kp R  &kp T             &kp D                          &kp H  &kp N             &kp E      &kp I    &kp O
-  &kp Z       &kp X  &kp C  &kp V             &kp B                          &kp K  &kp M             &kp COMMA  &kp DOT  &kp QUESTION
-                            &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_COMMAND
+  &escp_morph  &kp W  &kp F  &kp P             &kp G                          &kp J  &kp L           &kp U      &kp Y    &kp BACKSPACE
+  &tab_morph   &kp S  &kp R  &kp T             &kp D                          &kp H  &kp N           &kp E      &kp I    &kp O
+  &kp Z        &kp X  &kp C  &kp V             &kp B                          &kp K  &kp M           &kp COMMA  &kp DOT  &kp QUESTION
+                             &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_SHIFT
             >;
 
             display-name = "Base";
@@ -246,9 +255,9 @@
         numbers {
             bindings = <
   &kp N1  &kp N2        &kp N3  &kp N4         &kp N5                  &kp N6  &kp N7        &kp N8      &kp N9        &kp N0
-  &none   &prev_page    &none   &next_page     &mo 4                   &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none
+  &none   &prev_page    &none   &next_page     &mo 4                   &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp LEFT_SHIFT
   &none   &pop_history  &none   &push_history  &none                   &none   &kp C_PREV    &kp C_PP    &kp C_NEXT    &none
-                                &none          &none   &none    &none  &none   &none
+                                &trans         &none   &none    &none  &none   &trans
             >;
         };
 
