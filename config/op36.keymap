@@ -257,8 +257,8 @@
 
         macros {
             bindings = <
-  &trans          &kp HOME      &kp UP    &kp END           &kp PRINTSCREEN                    &kp PAGE_UP    &ru_en_toggle  &none        &kp F12     &kp BACKSPACE
-  &trans          &kp LEFT      &kp DOWN  &kp RIGHT         &none                              &kp PAGE_DOWN  &copy          &paste       &revert     &none
+  &kp ESC         &kp HOME      &kp UP    &kp END           &kp PRINTSCREEN                    &kp PAGE_UP    &ru_en_toggle  &none        &kp F12     &kp BACKSPACE
+  &kp TAB         &kp LEFT      &kp DOWN  &kp RIGHT         &none                              &kp PAGE_DOWN  &copy          &paste       &revert     &none
   &kp LEFT_SHIFT  &kp LEFT_ALT  &kp CAPS  &kp LEFT_CONTROL  &kp DELETE                         &save          &macro_one     &macro_zero  &macro_two  &none
                                           &trans            &trans           &trans    &trans  &mo 3          &trans
             >;
@@ -268,8 +268,8 @@
 
         symbols {
             bindings = <
-  &trans          &kp LT                &kp EQUAL  &kp GT                 &kp GRAVE                    &kp CARET  &kp LBKT        &kp UNDER  &kp RBKT         &kp BACKSPACE
-  &trans          &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp PLUS                     &kp PRCNT  &kp LEFT_BRACE  &kp SEMI   &kp RIGHT_BRACE  &kp EXCLAMATION
+  &kp ESC         &kp LT                &kp EQUAL  &kp GT                 &kp GRAVE                    &kp CARET  &kp LBKT        &kp UNDER  &kp RBKT         &kp BACKSPACE
+  &kp TAB         &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp PLUS                     &kp PRCNT  &kp LEFT_BRACE  &kp SEMI   &kp RIGHT_BRACE  &kp EXCLAMATION
   &kp LEFT_SHIFT  &kp ASTRK             &kp COLON  &kp FSLH               &none                        &none      &kp PIPE        &kp TILDE  &kp AMPS         &kp FSLH
                                                    &trans                 &mo 3      &trans    &trans  &trans     &trans
             >;
@@ -280,7 +280,7 @@
         numbers {
             bindings = <
   &kp N1          &kp N2        &kp N3  &kp N4         &kp N5                    &kp N6  &kp N7        &kp N8      &kp N9        &kp N0
-  &trans          &prev_page    &none   &next_page     &mo 4                     &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none
+  &kp TAB         &prev_page    &none   &next_page     &mo 4                     &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none
   &kp LEFT_SHIFT  &pop_history  &none   &push_history  &none                     &none   &kp C_PREV    &kp C_PP    &kp C_NEXT    &kp LEFT_SHIFT
                                         &trans         &none   &trans    &trans  &none   &trans
             >;
