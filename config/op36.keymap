@@ -45,6 +45,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
         };
     };
 
