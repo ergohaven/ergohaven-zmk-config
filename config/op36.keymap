@@ -268,10 +268,10 @@
 
         symbols {
             bindings = <
-  &kp ESC         &kp LT                &kp EQUAL  &kp GT                 &kp GRAVE                    &kp CARET  &kp LBKT        &kp UNDER  &kp RBKT         &kp BACKSPACE
-  &kp TAB         &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp PLUS                     &kp PRCNT  &kp LEFT_BRACE  &kp SEMI   &kp RIGHT_BRACE  &kp EXCLAMATION
-  &kp LEFT_SHIFT  &kp ASTRK             &kp COLON  &kp FSLH               &none                        &none      &kp PIPE        &kp TILDE  &kp AMPS         &kp FSLH
-                                                   &trans                 &mo 3      &trans    &trans  &trans     &trans
+  &kp ESC         &kp LT                &kp EQUAL  &kp GT                 &kp GRAVE                    &kp CARET          &kp LBKT        &kp UNDER  &kp RBKT         &kp BACKSPACE
+  &kp TAB         &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp PLUS                     &kp PRCNT          &kp LEFT_BRACE  &kp SEMI   &kp RIGHT_BRACE  &kp EXCLAMATION
+  &kp LEFT_SHIFT  &kp ASTRK             &kp COLON  &kp FSLH               &none                        &kp DOUBLE_QUOTES  &kp PIPE        &kp TILDE  &kp AMPS         &kp FSLH
+                                                   &trans                 &mo 3      &trans    &trans  &trans             &trans
             >;
 
             display-name = "Symbols";
