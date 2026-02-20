@@ -67,6 +67,16 @@
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
+
+        a_morph: a_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_MORPH";
+            bindings = <&kp S>, <&kp A>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -239,6 +249,20 @@
 
             label = "TWO";
         };
+
+        select_word: select_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
+
+            label = "SELECT_WORD";
+        };
     };
 
     keymap {
@@ -246,10 +270,10 @@
 
         base {
             bindings = <
-  &escp_morph  &kp W  &kp F  &kp P             &kp G                          &kp J  &kp L           &kp U      &kp Y    &kp BACKSPACE
-  &tab_morph   &kp S  &kp R  &kp T             &kp D                          &kp H  &kp N           &kp E      &kp I    &kp O
-  &alt_morph   &kp X  &kp C  &kp V             &kp B                          &kp K  &kp M           &kp COMMA  &kp DOT  &kp QUESTION
-                             &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_SHIFT
+  &escp_morph  &kp W     &kp F  &kp P             &kp G                          &kp J  &kp L           &kp U      &kp Y    &kp BACKSPACE
+  &tab_morph   &a_morph  &kp R  &kp T             &kp D                          &kp H  &kp N           &kp E      &kp I    &kp O
+  &alt_morph   &kp X     &kp C  &kp V             &kp B                          &kp K  &kp M           &kp COMMA  &kp DOT  &kp QUESTION
+                                &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_SHIFT
             >;
 
             display-name = "Base";
@@ -257,10 +281,10 @@
 
         macros {
             bindings = <
-  &kp ESC         &kp HOME      &kp UP    &kp END           &kp PRINTSCREEN                    &kp PAGE_UP    &ru_en_toggle  &none        &kp F12     &kp BACKSPACE
-  &kp TAB         &kp LEFT      &kp DOWN  &kp RIGHT         &none                              &kp PAGE_DOWN  &copy          &paste       &revert     &none
-  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp CAPS  &kp LEFT_CONTROL  &kp DELETE                         &save          &macro_one     &macro_zero  &macro_two  &none
-                                          &trans            &trans           &trans    &trans  &mo 3          &trans
+  &kp ESC         &kp HOME      &kp UP    &kp END           &kp PRINTSCREEN                          &kp PAGE_UP    &ru_en_toggle  &none        &kp F12     &kp BACKSPACE
+  &kp TAB         &kp LEFT      &kp DOWN  &kp RIGHT         &none                                    &kp PAGE_DOWN  &copy          &paste       &revert     &none
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp CAPS  &kp LEFT_CONTROL  &kp DELETE                               &save          &macro_one     &macro_zero  &macro_two  &none
+                                          &trans            &trans           &trans    &select_word  &mo 3          &trans
             >;
 
             display-name = "Macros";
