@@ -286,7 +286,7 @@
             bindings = <
   &escp_morph  &kp W     &kp F  &kp P             &kp G                          &kp J  &kp L           &kp U      &kp Y    &kp BACKSPACE
   &tab_morph   &a_morph  &kp R  &kp T             &kp D                          &kp H  &kp N           &kp E      &kp I    &kp O
-  &alt_morph   &kp X     &kp C  &kp V             &kp B                          &kp K  &kp M           &kp COMMA  &kp DOT  &kp QUESTION
+  &alt_morph   &kp X     &kp C  &kp V             &kp B                          &kp K  &kp M           &kp COMMA  &kp DOT  &kp FSLH
                                 &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_SHIFT
             >;
 
@@ -308,7 +308,7 @@
             bindings = <
   &kp ESC         &kp LT                &kp EQUAL  &kp GT                 &kp GRAVE                            &kp CARET  &kp LBKT        &kp UNDER  &kp RBKT         &kp BACKSPACE
   &kp TAB         &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp PLUS                             &kp PRCNT  &kp LEFT_BRACE  &kp SEMI   &kp RIGHT_BRACE  &kp EXCLAMATION
-  &kp LEFT_SHIFT  &kp ASTRK             &kp COLON  &kp BACKSLASH          &kp DOUBLE_QUOTES                    &kp SQT    &kp PIPE        &kp TILDE  &kp AMPS         &kp FSLH
+  &kp LEFT_SHIFT  &kp ASTRK             &kp COLON  &kp BACKSLASH          &kp DOUBLE_QUOTES                    &kp SQT    &kp PIPE        &kp TILDE  &kp AMPS         &trans
                                                    &trans                 &mo 3              &trans    &trans  &trans     &trans
             >;
 
