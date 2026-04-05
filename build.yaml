@@ -4,6 +4,8 @@ include:
     shield: op36_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: ergohaven
+    shield: op36_right
 
   - board: ergohaven
     shield: settings_reset
