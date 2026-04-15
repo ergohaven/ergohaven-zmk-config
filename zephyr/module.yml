@@ -1,0 +1,3 @@
+build:
+  cmake: app
+  kconfig: app/Kconfig
