@@ -2,11 +2,32 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <scroll-snap.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        columns = <2>;
+        rows = <2>;
+        map = <
+        RC(0,3) RC(0,2)
+        RC(0,5) RC(0,4)
+        >;
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        base_combo {
+            bindings = <&hold_mo_tap_mkp 1 MB3>;
+            key-positions = <0 1>;
+        };
+    };
+
     behaviors {
         adj1: adj1 {
             compatible = "zmk,behavior-tap-dance";
@@ -22,38 +43,15 @@
             bindings = <&bt BT_NXT>, <&bt BT_CLR_ALL>;
         };
 
-        adj_td: adj_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ADJ_TD";
-            #binding-cells = <0>;
-            bindings = <&hold_mo_tap_mkp 1 MB3>, <&to 3>;
-        };
-
         hold_mo_tap_mkp: hold_mo_tap_mkp {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_MO_TAP_MKP";
             bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
-            hold-while-undecided;
             tapping-term-ms = <200>;
+            hold-while-undecided;
             hold-while-undecided-linger;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        base_combo {
-            bindings = <&adj_td>;
-            key-positions = <0 1>;
-            layers = <0 1 2>;
-        };
-
-        adj_combo {
-            bindings = <&to 0>;
-            key-positions = <0 1>;
-            layers = <3>;
         };
     };
 
@@ -63,6 +61,7 @@
         base {
             bindings = <
 &mkp MB1  &hold_mo_tap_mkp 2 MB2
+&adj1     &adj2
             >;
 
             display-name = "Base";
@@ -70,6 +69,7 @@
 
         scroll {
             bindings = <
+&trans  &trans
 &trans  &trans
             >;
 
@@ -79,17 +79,10 @@
         sniper {
             bindings = <
 &trans  &trans
+&trans  &trans
             >;
 
             display-name = "Sniper";
-        };
-
-        adjust {
-            bindings = <
-&adj1  &adj2
-            >;
-
-            label = "Adjust";
         };
     };
 };
@@ -104,7 +97,7 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_scaler 1 32>,
-            <&zip_xy_to_scroll_mapper>;
+            <&zip_xy_to_scroll_mapper &zip_scroll_snap>;
     };
 
     sniper {
