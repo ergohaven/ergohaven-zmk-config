@@ -138,11 +138,11 @@
 
         en {
             bindings = <
-&none      &kp N1  &kp N2            &kp N3    &kp N4            &kp N5                          &kp N6  &kp N7             &kp N8     &kp N9            &kp N0    &none
-&kp ESC    &kp Q   &kp W             &kp E     &kp R             &kp T                           &kp Y   &kp U              &kp I      &kp O             &kp P     &kp BACKSPACE
-&kp TAB    &kp A   &kp S             &kp D     &kp F             &kp G                           &kp H   &kp J              &kp K      &kp L             &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X             &kp C     &kp V             &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M              &kp COMMA  &kp DOT           &kp FSLH  &kp RSHFT
-                   &kp LEFT_CONTROL  &kp LALT  &kp LEFT_COMMAND  &mo 2   &kp SPACE    &kp ENTER  &mo 3   &kp RIGHT_COMMAND  &kp RALT   &kp LEFT_CONTROL
+&none      &kp N1  &kp N2        &kp N3            &kp N4        &kp N5                          &kp N6  &kp N7             &kp N8     &kp N9            &kp N0    &none
+&kp ESC    &kp Q   &kp W         &kp E             &kp R         &kp T                           &kp Y   &kp U              &kp I      &kp O             &kp P     &kp BACKSPACE
+&kp TAB    &kp A   &kp S         &kp D             &kp F         &kp G                           &kp H   &kp J              &kp K      &kp L             &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X         &kp C             &kp V         &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M              &kp COMMA  &kp DOT           &kp FSLH  &kp RSHFT
+                   &kp LEFT_WIN  &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 2   &kp SPACE    &kp ENTER  &mo 3   &kp RIGHT_COMMAND  &kp RALT   &kp LEFT_CONTROL
             >;
 
             display-name = "Base";
@@ -176,11 +176,11 @@
 
         nav {
             bindings = <
-&kp F1  &kp F2          &vscode_git   &vscode_search  &vscode_exp    &kp F6                                                      &vscode_gitlab     &kp F8  &kp F9  &kp F10  &kp F11       &kp F12
-&trans  &vscode_gitlab  &kp HOME      &kp UP          &kp END        &kp INS                                                     &kp PG_UP          &kp N7  &kp N8  &kp N9   &kp NUMBER_0  &trans
-&trans  &trans          &kp LEFT      &kp DOWN        &kp RIGHT      &kp RET                                                     &kp PG_DN          &kp N4  &kp N5  &kp N6   &trans        &trans
-&trans  &trans          &kp LA(LEFT)  &kp CAPS        &kp LA(RIGHT)  &kp DEL  &kp LA(LC(LEFT_ARROW))    &kp LA(LC(RIGHT_ARROW))  &kp LA(LC(ENTER))  &kp N1  &kp N2  &kp N3   &trans        &trans
-                        &trans        &trans          &trans         &trans   &trans                    &trans                   &mo 5              &trans  &trans  &trans
+&kp F1  &kp F2          &kp F3        &kp F4    &kp F5         &kp F6                                                      &vscode_gitlab     &kp F8  &kp F9  &kp F10  &kp F11       &kp F12
+&trans  &vscode_gitlab  &kp HOME      &kp UP    &kp END        &kp INS                                                     &kp PG_UP          &kp N7  &kp N8  &kp N9   &kp NUMBER_0  &trans
+&trans  &trans          &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                                                     &kp PG_DN          &kp N4  &kp N5  &kp N6   &trans        &trans
+&trans  &trans          &kp LA(LEFT)  &kp CAPS  &kp LA(RIGHT)  &kp DEL  &kp LA(LC(LEFT_ARROW))    &kp LA(LC(RIGHT_ARROW))  &kp LA(LC(ENTER))  &kp N1  &kp N2  &kp N3   &trans        &trans
+                        &trans        &trans    &trans         &trans   &trans                    &trans                   &mo 5              &trans  &trans  &trans
             >;
 
             display-name = "Nav";
