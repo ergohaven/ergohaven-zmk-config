@@ -174,7 +174,7 @@
         NazadStranica: vperedNazadStranica {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_ARROW)>;
+            bindings = <&kp LG(LEFT_ARROW)>;
             label = "VPEREDNAZADSTRANICA";
         };
 
@@ -195,7 +195,7 @@
         vperedStranica: vperedStranica {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(RIGHT_ARROW)>;
+            bindings = <&kp LG(RIGHT_ARROW)>;
             label = "VPEREDSTRANICA";
         };
 
